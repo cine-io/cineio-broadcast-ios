@@ -35,7 +35,7 @@ open <project>.xcworkspace
 ### Instantiate the client
 
 ```objective-c
-CineClient *client = [[CineClient alloc] initWithSecretKey:@"6e95ce96660bae74c954e291ea5b3e90"];
+CineClient *client = [[CineClient alloc] initWithSecretKey:@"<YOUR SECRET>"];
 ```
 
 ### Get your project (asynchronously)
