@@ -20,7 +20,7 @@ pod install
 
 Then you can open the project using the `<project>.xcworkspace` file:
 
-``bash
+```bash
 open <project>.xcworkspace
 ```
 
