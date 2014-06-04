@@ -10,12 +10,12 @@ Pod::Spec.new do |s|
   s.authors             = { "Jeffrey Wescott" => "jeffrey@cine.io" }
   s.source              = { :git => "https://github.com/cine-io/cineio-ios.git", :tag => s.version.to_s }
 
-  s.requires_arc        = true
+  s.requires_arc        = false
 
   s.header_dir          = 'cineio'
   s.header_mappings_dir = '.'
 
-  s.source_files        = [ '**/*.h', '**/*.m' ]
+  s.source_files        = [ 'cineio-ios/cineio-ios/*.h', 'cineio-ios/cineio-ios/*.m' ]
 
   s.frameworks          = [ 'Foundation' ]
 
