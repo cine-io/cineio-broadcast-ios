@@ -59,7 +59,7 @@ CineClient *client = [[CineClient alloc] initWithSecretKey:@"<YOUR SECRET>"];
 
 ## Publishing
 
-We recommend the excellent[VideoCore][VideoCore] library for publishing streams to the RTMP publishing endpoint.
+We recommend the excellent [VideoCore][VideoCore] library for publishing streams to the RTMP publishing endpoint.
 
 
 ## Playback
