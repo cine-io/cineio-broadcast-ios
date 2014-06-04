@@ -42,19 +42,34 @@ CineClient *client = [[CineClient alloc] initWithSecretKey:@"<YOUR SECRET>"];
 
 ```objective-c
 [client getProjectWithCompletionHandler:^(NSError *error, CineProject *project) {
-    // do something
+  // do something
 }];
 ```
 
 ### Get your streams (asynchronously)
 
 ```objective-c
-[project getStreamsWithCompletionHandler:^(NSError *err, NSArray *streams) {
-    for (id object in streams) {
-        CineStream *stream = (CineStream *)object;
-        // do something
-    }
+[client getStreamsWithCompletionHandler:^(NSError *err, NSArray *streams) {
+  for (id object in streams) {
+    CineStream *stream = (CineStream *)object;
+    // do something
+  }
 }];
+```
+
+### Get an individual stream (asynchronously)
+```objective-c
+[client getStream:@"<SOME STREAM ID>" withCompletionHandler:^(NSError* error, CineStream* stream) {
+  // do something
+}];
+```
+
+### Create a new stream (asynchronously)
+```objective-c
+[client createStream:nil /* reserved */ withCompletionHandler::^(NSError* error, CineStream* stream) {
+  // do something
+}];
+
 ```
 
 ## Publishing
