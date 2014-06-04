@@ -11,8 +11,10 @@
 @interface CineStream : NSObject
 
 @property (nonatomic, copy) NSString *streamId;
-@property (nonatomic, copy) NSString *playUrl;
+@property (nonatomic, copy) NSString *playUrlHLS;
+@property (nonatomic, copy) NSString *playUrlRTMP;
 @property (nonatomic, copy) NSString *publishUrl;
+@property (nonatomic, copy) NSString *publishStreamName;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *password;
 @property (nonatomic) NSDate *expiration;

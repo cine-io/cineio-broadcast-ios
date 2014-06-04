@@ -34,7 +34,7 @@
     return self;
 }
 
-- (void)getStreams:(void (^)(NSError* error, NSArray* streams))completion;
+- (void)getStreamsWithCompletionHandler:(void (^)(NSError* error, NSArray* streams))completion;
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];

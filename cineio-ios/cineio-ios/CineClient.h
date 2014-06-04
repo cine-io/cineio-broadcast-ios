@@ -15,6 +15,6 @@
 }
 
 - (id)initWithSecretKey:(NSString *)secretKey;
-- (void)getProject:(void (^)(NSError* error, CineProject* project))completion;
+- (void)getProjectWithCompletionHandler:(void (^)(NSError* error, CineProject* project))completion;
 
 @end

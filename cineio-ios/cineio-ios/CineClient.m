@@ -22,7 +22,7 @@
     return self;
 }
 
-- (void)getProject:(void (^)(NSError* error, CineProject* project))completion {
+- (void)getProjectWithCompletionHandler:(void (^)(NSError* error, CineProject* project))completion {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     NSString *url = [NSString stringWithFormat:@"%@%@", BaseUrl, @"/project"];

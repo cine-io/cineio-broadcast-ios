@@ -11,8 +11,10 @@
 @implementation CineStream
 
 @synthesize streamId;
-@synthesize playUrl;
+@synthesize playUrlHLS;
+@synthesize playUrlRTMP;
 @synthesize publishUrl;
+@synthesize publishStreamName;
 @synthesize name;
 @synthesize password;
 @synthesize expiration;
@@ -22,8 +24,10 @@
 {
     if (self = [super init]) {
         streamId = streamAttributes[@"id"];
-        playUrl = streamAttributes[@"playUrl"];
-        publishUrl = streamAttributes[@"publishUrl"];
+        playUrlHLS = streamAttributes[@"play"][@"hls"];
+        playUrlRTMP = streamAttributes[@"play"][@"rtmp"];
+        publishUrl = streamAttributes[@"publish"][@"url"];
+        publishStreamName = streamAttributes[@"publish"][@"stream"];
         name = streamAttributes[@"name"];
         password = streamAttributes[@"password"];
         expiration = streamAttributes[@"expiration"];
