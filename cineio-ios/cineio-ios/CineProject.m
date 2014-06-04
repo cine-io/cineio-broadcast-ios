@@ -9,7 +9,7 @@
 #import "CineProject.h"
 #import "CineConstants.h"
 #import "CineStream.h"
-#import <LRResty/LRResty.h>
+#import <AFNetworking/AFNetworking.h>
 
 @implementation CineProject
 
@@ -34,23 +34,26 @@
     return self;
 }
 
-- (NSArray *)getStreams
+- (void)getStreams:(void (^)(NSError* error, NSArray* streams))completion;
 {
-    NSDictionary *reqParams = @{@"secretKey" : secretKey};
-    
-    NSString *url = [NSString stringWithFormat:@"%@/%@", BaseUrl, @"/streams"];
-    LRRestyResponse *resp = [[LRResty client] get:url parameters:reqParams];
-    NSError *e = nil;
-    NSArray *streamDicts = [NSJSONSerialization JSONObjectWithData:[resp responseData] options:NSJSONReadingMutableContainers error:&e];
-    
-    NSMutableArray *streams = [[NSMutableArray alloc] initWithCapacity:[streamDicts count]];
-    for (id object in streamDicts) {
-        NSDictionary *streamDict = (NSDictionary *)object;
-        CineStream *stream = [[CineStream alloc] initWithAttributes:streamDict];
-        [streams addObject:stream];
-    }
-    
-    return streams;
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    NSString *url = [NSString stringWithFormat:@"%@%@", BaseUrl, @"/streams"];
+    NSDictionary *params = @{ @"secretKey" : secretKey };
+    [manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+        NSArray *streamDicts = (NSArray *)responseObject;
+        NSMutableArray *streams = [[NSMutableArray alloc] initWithCapacity:[streamDicts count]];
+        for (id object in streamDicts) {
+            NSDictionary *streamDict = (NSDictionary *)object;
+            CineStream *stream = [[CineStream alloc] initWithAttributes:streamDict];
+            [streams addObject:stream];
+        }
+        completion(nil, [streams copy]);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+        completion(error, nil);
+    }];
 }
 
 @end

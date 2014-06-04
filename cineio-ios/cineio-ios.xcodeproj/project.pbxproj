@@ -61,6 +61,7 @@
 		00C5E110193EF041009DA7B9 /* CineConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineConstants.m; sourceTree = "<group>"; };
 		00C5E112193EF88F009DA7B9 /* cineio-ios.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "cineio-ios.podspec"; path = "../cineio-ios.podspec"; sourceTree = "<group>"; };
 		00C5E113193EF8F2009DA7B9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		00C5E158193F0C5A009DA7B9 /* CineIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineIO.h; sourceTree = "<group>"; };
 		26949636F7104DB5AD709489 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B31761E41A64412FA6E1DC12 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,6 +124,7 @@
 		00C5E0E1193EBD63009DA7B9 /* cineio-ios */ = {
 			isa = PBXGroup;
 			children = (
+				00C5E158193F0C5A009DA7B9 /* CineIO.h */,
 				00C5E10F193EF02B009DA7B9 /* CineConstants.h */,
 				00C5E110193EF041009DA7B9 /* CineConstants.m */,
 				00C5E105193EBEE1009DA7B9 /* CineClient.h */,

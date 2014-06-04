@@ -18,6 +18,6 @@
 @property (nonatomic, readonly) NSDate *updatedAt;
 
 - (id)initWithAttributes:(NSDictionary *)projectAttributes;
-- (NSArray *)getStreams;
+- (void)getStreams:(void (^)(NSError* error, NSArray* streams))completion;
 
 @end

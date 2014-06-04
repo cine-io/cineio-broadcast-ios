@@ -8,25 +8,33 @@
 
 #import "CineClient.h"
 #import "CineConstants.h"
-#import <LRResty/LRResty.h>
+#import "CineStream.h"
+#import <AFNetworking/AFNetworking.h>
 
 @implementation CineClient
-
-@synthesize project;
 
 - (id)initWithSecretKey:(NSString *)secretKey
 {
     if (self = [super init]) {
-        NSDictionary *reqParams = @{@"secretKey" : secretKey};
-
-        NSString *url = [NSString stringWithFormat:@"%@/%@", BaseUrl, @"/project"];
-        LRRestyResponse *resp = [[LRResty client] get:url parameters:reqParams];
-        NSError *e = nil;
-        NSDictionary *projectAttributes = [NSJSONSerialization JSONObjectWithData:[resp responseData] options:NSJSONReadingMutableContainers error:&e];
-        project = [[CineProject alloc] initWithAttributes:projectAttributes];
+        _secretKey = secretKey;
     }
     
     return self;
+}
+
+- (void)getProject:(void (^)(NSError* error, CineProject* project))completion {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    NSString *url = [NSString stringWithFormat:@"%@%@", BaseUrl, @"/project"];
+    NSDictionary *params = @{ @"secretKey" : _secretKey };
+    [manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id attributes) {
+        NSLog(@"JSON: %@", attributes);
+        CineProject *project = [[CineProject alloc] initWithAttributes:attributes];
+        completion(nil, project);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+        completion(error, nil);
+    }];
 }
 
 @end

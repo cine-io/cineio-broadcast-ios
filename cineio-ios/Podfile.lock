@@ -1,13 +1,28 @@
 PODS:
-  - LRResty (0.11.0):
-    - NSData+Base64 (~> 1.0)
-  - NSData+Base64 (1.0.0)
+  - AFNetworking (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.2.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.2.4):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.2.4)
+  - AFNetworking/Security (2.2.4)
+  - AFNetworking/Serialization (2.2.4)
+  - AFNetworking/UIKit (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
 
 DEPENDENCIES:
-  - LRResty (~> 0.11.0)
+  - AFNetworking (~> 2.2.4)
 
 SPEC CHECKSUMS:
-  LRResty: 4e2b2d1e2080406c4bf684e22ed46906d65bd708
-  NSData+Base64: aae92a2e3f0bd88b29fe6093551ded3f5c062548
+  AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
 
 COCOAPODS: 0.33.1

@@ -10,9 +10,11 @@
 #import "CineProject.h"
 
 @interface CineClient : NSObject
-
-@property (nonatomic, readonly) CineProject *project;
+{
+    NSString *_secretKey;
+}
 
 - (id)initWithSecretKey:(NSString *)secretKey;
+- (void)getProject:(void (^)(NSError* error, CineProject* project))completion;
 
 @end

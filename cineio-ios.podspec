@@ -13,13 +13,12 @@ Pod::Spec.new do |s|
   s.requires_arc        = false
 
   s.header_dir          = 'cineio'
-  s.header_mappings_dir = '.'
 
   s.source_files        = [ 'cineio-ios/cineio-ios/*.h', 'cineio-ios/cineio-ios/*.m' ]
 
   s.frameworks          = [ 'Foundation' ]
 
-  s.dependency          'LRResty', '~> 0.11.0'
+  s.dependency          'AFNetworking', '~> 2.2.4'
 
   s.ios.deployment_target = '6.0'
 end
