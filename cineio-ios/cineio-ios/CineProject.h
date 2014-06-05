@@ -10,12 +10,12 @@
 
 @interface CineProject : NSObject
 
-@property (nonatomic, readonly) NSString *projectId;
-@property (nonatomic, readonly) NSString *publicKey;
-@property (nonatomic, readonly) NSString *secretKey;
-@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, copy, readonly) NSString *projectId;
+@property (nonatomic, copy, readonly) NSString *publicKey;
+@property (nonatomic, copy, readonly) NSString *secretKey;
+@property (nonatomic, copy, readonly) NSString *name;
 @property (nonatomic, readonly) NSInteger streamsCount;
-@property (nonatomic, readonly) NSDate *updatedAt;
+@property (nonatomic, copy, readonly) NSDate *updatedAt;
 
 - (id)initWithAttributes:(NSDictionary *)projectAttributes;
 

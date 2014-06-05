@@ -23,12 +23,12 @@
 - (id)initWithAttributes:(NSDictionary *)streamAttributes
 {
     if (self = [super init]) {
-        projectId = streamAttributes[@"id"];
-        publicKey = streamAttributes[@"publicKey"];
-        secretKey = streamAttributes[@"secretKey"];
-        name = streamAttributes[@"name"];
+        projectId = [streamAttributes[@"id"] copy];
+        publicKey = [streamAttributes[@"publicKey"] copy];
+        secretKey = [streamAttributes[@"secretKey"] copy];
+        name = [streamAttributes[@"name"] copy];
         streamsCount = [streamAttributes[@"streamsCount"] integerValue];
-        updatedAt = streamAttributes[@"updatedAt"];
+        updatedAt = [streamAttributes[@"updatedAt"] copy];
     }
     
     return self;

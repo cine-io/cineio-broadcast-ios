@@ -23,15 +23,15 @@
 - (id)initWithAttributes:(NSDictionary *)streamAttributes
 {
     if (self = [super init]) {
-        streamId = streamAttributes[@"id"];
-        playUrlHLS = streamAttributes[@"play"][@"hls"];
-        playUrlRTMP = streamAttributes[@"play"][@"rtmp"];
-        publishUrl = streamAttributes[@"publish"][@"url"];
-        publishStreamName = streamAttributes[@"publish"][@"stream"];
-        name = streamAttributes[@"name"];
-        password = streamAttributes[@"password"];
-        expiration = streamAttributes[@"expiration"];
-        assignedAt = streamAttributes[@"assignedAt"];
+        streamId = [streamAttributes[@"id"] copy];
+        playUrlHLS = [streamAttributes[@"play"][@"hls"] copy];
+        playUrlRTMP = [streamAttributes[@"play"][@"rtmp"] copy];
+        publishUrl = [streamAttributes[@"publish"][@"url"] copy];
+        publishStreamName = [streamAttributes[@"publish"][@"stream"] copy];
+        name = [streamAttributes[@"name"] copy];
+        password = [streamAttributes[@"password"] copy];
+        expiration = [streamAttributes[@"expiration"] copy];
+        assignedAt = [streamAttributes[@"assignedAt"] copy];
     }
     
     return self;
