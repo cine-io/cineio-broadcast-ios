@@ -93,16 +93,14 @@ CineClient *client = [[CineClient alloc] initWithSecretKey:@"<YOUR SECRET>"];
 
 We recommend the excellent [VideoCore][VideoCore] library for publishing streams to the RTMP publishing endpoint.
 
+To get started, check out the [cineio-broadcaster-ios][cineio-broadcaster-ios] repository.
+
 
 ## Playback
 
 Every `CineStream` object has an `playUrlHLS` property. It should be possible to hook this up to an `MPMoviePlayerController` and you'll be on your way.
 
-
-## TODO
-
-- Working sample application for publishing.
-- Working sample application for playback.
+**COMING SOON:** working sample application for playback.
 
 
 ## Contributing
@@ -119,3 +117,4 @@ Every `CineStream` object has an `playUrlHLS` property. It should be possible to
 [cineio]:https://www.cine.io/
 [cocoapods]:http://cocoapods.org/
 [VideoCore]:https://github.com/jamesghurley/VideoCore
+[cineio-broadcaster-ios]:https://github.com/cine-io/cineio-broadcaster-ios
