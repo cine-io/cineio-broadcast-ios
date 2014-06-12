@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0016E0C3194963120008BB95 /* SAMPLE-cineio-settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0016E0C2194963120008BB95 /* SAMPLE-cineio-settings.plist */; };
+		0016E0C5194963BF0008BB95 /* cineio-settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0016E0C4194963BF0008BB95 /* cineio-settings.plist */; };
 		00C5E0E0193EBD63009DA7B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DF193EBD63009DA7B9 /* Foundation.framework */; };
 		00C5E0EE193EBD63009DA7B9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0ED193EBD63009DA7B9 /* XCTest.framework */; };
 		00C5E0EF193EBD63009DA7B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DF193EBD63009DA7B9 /* Foundation.framework */; };
@@ -43,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0016E0C2194963120008BB95 /* SAMPLE-cineio-settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = "SAMPLE-cineio-settings.plist"; sourceTree = "<group>"; };
+		0016E0C4194963BF0008BB95 /* cineio-settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "cineio-settings.plist"; sourceTree = "<group>"; };
 		00C5E0DC193EBD63009DA7B9 /* libcineio-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcineio-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C5E0DF193EBD63009DA7B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		00C5E0E3193EBD63009DA7B9 /* cineio-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cineio-ios-Prefix.pch"; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 			children = (
 				00C5E0F7193EBD63009DA7B9 /* cineio-iosTests-Info.plist */,
 				00C5E0F8193EBD63009DA7B9 /* InfoPlist.strings */,
+				0016E0C2194963120008BB95 /* SAMPLE-cineio-settings.plist */,
+				0016E0C4194963BF0008BB95 /* cineio-settings.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -241,6 +247,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				00C5E0FA193EBD63009DA7B9 /* InfoPlist.strings in Resources */,
+				0016E0C3194963120008BB95 /* SAMPLE-cineio-settings.plist in Resources */,
+				0016E0C5194963BF0008BB95 /* cineio-settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

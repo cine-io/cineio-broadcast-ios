@@ -19,3 +19,6 @@ xcuserdata/
 
 # Pods
 Pods
+
+# Project specific
+cineio-ios/cineio-iosTests/cineio-settings.plist

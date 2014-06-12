@@ -66,11 +66,28 @@ CineClient *client = [[CineClient alloc] initWithSecretKey:@"<YOUR SECRET>"];
 
 ### Create a new stream (asynchronously)
 ```objective-c
-[client createStream:nil /* reserved */ withCompletionHandler::^(NSError* error, CineStream* stream) {
+[client createStream:@{ @"name" : @"my stream" } withCompletionHandler:^(NSError* error, CineStream* stream) {
   // do something
 }];
 
 ```
+
+### Update a stream (asynchronously)
+```objective-c
+[client updateStream:@{ @"" : "<SOME STREAM ID>", @"name" : @"my stream" } withCompletionHandler:^(NSError* error, CineStream* stream) {
+  // do something
+}];
+
+```
+
+### Delete a stream (asynchronously)
+```objective-c
+[client deleteStream:@"<SOME STREAM ID>" withCompletionHandler:^(NSError* error, NSHTTPURLResponse* response) {
+  // do something, like check for response.statusCode == 200
+}];
+
+```
+
 
 ## Publishing
 

@@ -66,9 +66,28 @@
 
 - (void)createStream:(NSDictionary *)attributes withCompletionHandler:(void (^)(NSError* error, CineStream* stream))completion
 {
-    [_http POST:[self url:@"/stream"] parameters:[self params:attributes] success:^(AFHTTPRequestOperation *operation, id attributes) {
-        CineStream *stream = [[CineStream alloc] initWithAttributes:attributes];
+    [_http POST:[self url:@"/stream"] parameters:[self params:attributes] success:^(AFHTTPRequestOperation *operation, id attrs) {
+        CineStream *stream = [[CineStream alloc] initWithAttributes:attrs];
         completion(nil, stream);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        completion(error, nil);
+    }];
+}
+
+- (void)updateStream:(NSDictionary *)attributes withCompletionHandler:(void (^)(NSError* error, CineStream* stream))completion
+{
+    [_http PUT:[self url:@"/stream"] parameters:[self params:attributes] success:^(AFHTTPRequestOperation *operation, id attrs) {
+        CineStream *stream = [[CineStream alloc] initWithAttributes:attrs];
+        completion(nil, stream);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        completion(error, nil);
+    }];
+}
+
+- (void)deleteStream:(NSString *)streamId withCompletionHandler:(void (^)(NSError* error, NSHTTPURLResponse* response))completion
+{
+    [_http DELETE:[self url:@"/stream"] parameters:[self params:@{@"id" : streamId}] success:^(AFHTTPRequestOperation *operation, id attributes) {
+        completion(nil, operation.response);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completion(error, nil);
     }];
