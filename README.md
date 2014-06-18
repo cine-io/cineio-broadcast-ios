@@ -88,19 +88,121 @@ CineClient *client = [[CineClient alloc] initWithSecretKey:@"<YOUR SECRET>"];
 
 ```
 
+## Publishing (using CineBroadcasterView and CineBroadcasterViewController)
 
-## Publishing
+To make publishing as easy as possible, cineio-ios comes with some ready-made
+user-interface components that take care of most of the heavy-lifting. Using
+them is pretty straight forward.
 
-We recommend the excellent [VideoCore][VideoCore] library for publishing streams to the RTMP publishing endpoint.
+### Setup
 
-To get started, check out the [cineio-broadcaster-ios][cineio-broadcaster-ios] repository.
+#### Handling Device Rotation
+
+For user-experience reasons, our CineBroadcasterView uses neither "Auto
+Layout" nor "Springs and Struts". Instead, the entire user-interface is
+constructed programatically. This means that we need to listen for
+notifications about when the device changes orientation. The best place to do
+this is in the `AppDelegate didFinishLaunchingWithOptions` method:
+
+```objective-c
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // Override point for customization after application launch.
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    return YES;
+}
+```
+
+#### Storyboard Setup
+
+If you're using XCode's Storyboards to build your user interface, our UI
+components should work seamlessly. To use them, follow these steps:
+
+1. Make your view controller inherit from `CineBroadcasterViewController` rather than `UIViewController`.
+2. Ensure that the view controller in your Storyboard has the correct class name set. It should be set to *your subclass* of `CineBroadcasterViewController`.
+3. Ensure that the view in your Storyboard has the correct class name set. It should be set to `CineBroadcasterView`.
+
+### Complying with `CineBroadcasterProtocol`
+
+Your `CineBroadcasterViewController` subclass must comply with
+`CineBroadcasterProtocol`. Specifically, you'll need to synthesize several
+properties in your subclass:
+
+```objective-c
+@implementation YourCineBroadcasterViewControllerSubclass
+
+// CineBroadcasterProtocol
+@synthesize frameWidth;
+@synthesize frameHeight;
+@synthesize framesPerSecond;
+@synthesize videoBitRate;
+@synthesize numAudioChannels;
+@synthesize sampleRateInHz;
+
+@synthesize publishUrl;
+@synthesize publishStreamName;
+```
+
+### Initializing the properties
+
+You'll need to initialize these properties, most likely in your `viewDidLoad` method. For example:
+
+```objective-c
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    //-- A/V setup
+    self.frameWidth = 1280;
+    self.frameHeight = 720;
+    self.framesPerSecond = 30;
+    self.videoBitRate = 1500000;
+    self.numAudioChannels = 2;
+    self.sampleRateInHz = 44100;
+
+    //-- cine.io setup
+
+    // read our cine.io configuration from a plist bundle
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"cineio-settings" ofType:@"plist"];
+    NSDictionary *settings = [[NSDictionary alloc] initWithContentsOfFile:path];
+
+    // create a new CineClient to fetch our stream information
+    CineClient *cine = [[CineClient alloc] initWithSecretKey:settings[@"CINE_IO_SECRET_KEY"]];
+    [self updateStatus:@"Configuring stream using cine.io ..."];
+    [cine getStream:settings[@"CINE_IO_STREAM_ID"] withCompletionHandler:^(NSError *error, CineStream *stream) {
+        if (error) {
+            [self updateStatus:@"ERROR: couldn't get stream information from cine.io"];
+        } else {
+            self.publishUrl = [stream publishUrl];
+            self.publishStreamName = [stream publishStreamName];
+
+            // once we've fully-configured our properties, we can enable the
+            // UI controls on our view
+            [self enableControls];
+        }
+    }];
+}
+```
+
+### Example Publisher Application
+
+Check out the [cineio-broadcaster-ios][cineio-broadcaster-ios] repository for
+a working example of a publisher.
 
 
 ## Playback
 
 Every `CineStream` object has an `playUrlHLS` property. It should be possible to hook this up to an `MPMoviePlayerController` and you'll be on your way.
 
-**COMING SOON:** working sample application for playback.
+### Example Player Application
+
+**COMING SOON**
+
+
+## Acknowledgements
+
+Much of the basis for the cine.io iOS SDK comes from the excellent
+[VideoCore][VideoCore] library.
 
 
 ## Contributing
