@@ -2,6 +2,7 @@
 
 This is the [cine.io][cineio] iOS SDK.
 
+
 ## Installation
 
 The easiest way to use the SDK is via [CocoaPods][cocoapods]. Create a new XCode project with a file named `Podfile` that contains at least the following:
@@ -24,7 +25,15 @@ Then you can open the project using the `<project>.xcworkspace` file:
 open <project>.xcworkspace
 ```
 
-## Usage
+
+## Example Application
+
+Check out the [cineio-ios-example-app][cineio-ios-example-app] repository for
+a working example of a simple application that uses this SDK.
+
+
+
+## Basic Usage
 
 ### Import the SDK
 
@@ -87,6 +96,51 @@ CineClient *client = [[CineClient alloc] initWithSecretKey:@"<YOUR SECRET>"];
 }];
 
 ```
+
+
+## Playback
+
+Every `CineStream` object has an `playUrlHLS` property. This URL can be sent
+directly to in instance of [`MPMoviePlayerController`][mp-movieplayer-
+controller] for playback, just as you would with any other HLS stream.
+
+```objective-c
+- (IBAction)startStreaming:(id)sender
+{
+    // assume that self.playUrlHLS is a property that we've set that contains
+    // the playback URL as obtained by the CineStream
+    NSURL *url = [NSURL URLWithString:self.playUrlHLS];
+    _moviePlayer =  [[MPMoviePlayerController alloc] initWithContentURL:url];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(stoppedStreaming:)
+                                                 name:MPMoviePlayerPlaybackDidFinishNotification
+                                               object:_moviePlayer];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(stoppedStreaming:)
+                                                 name:MPMoviePlayerDidExitFullscreenNotification
+                                               object:_moviePlayer];
+
+    _moviePlayer.controlStyle = MPMovieControlStyleDefault;
+    _moviePlayer.shouldAutoplay = YES;
+    [self.view addSubview:_moviePlayer.view];
+    [_moviePlayer setFullscreen:YES animated:YES];
+}
+
+- (void)stoppedStreaming:(NSNotification*)notification {
+    MPMoviePlayerController *player = [notification object];
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:MPMoviePlayerPlaybackDidFinishNotification
+                                                  object:player];
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:MPMoviePlayerDidExitFullscreenNotification
+                                                  object:player];
+
+    if ([player respondsToSelector:@selector(setFullscreen:animated:)]) {
+        [player.view removeFromSuperview];
+    }
+}
+```
+
 
 ## Publishing (using CineBroadcasterView and CineBroadcasterViewController)
 
@@ -184,20 +238,6 @@ You'll need to initialize these properties, most likely in your `viewDidLoad` me
 }
 ```
 
-### Example Publisher Application
-
-Check out the [cineio-ios-example-app][cineio-ios-example-app] repository for
-a working example of a publisher.
-
-
-## Playback
-
-Every `CineStream` object has an `playUrlHLS` property. It should be possible to hook this up to an `MPMoviePlayerController` and you'll be on your way.
-
-### Example Player Application
-
-**COMING SOON**
-
 
 ## Acknowledgements
 
@@ -220,3 +260,4 @@ Much of the basis for the cine.io iOS SDK comes from the excellent
 [cocoapods]:http://cocoapods.org/
 [VideoCore]:https://github.com/jamesghurley/VideoCore
 [cineio-ios-example-app]:https://github.com/cine-io/cineio-ios-example-app
+[mp-movieplayer-controller]:https://developer.apple.com/library/ios/documentation/MediaPlayer/Reference/MPMoviePlayerController_Class/Reference/Reference.html
