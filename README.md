@@ -186,7 +186,7 @@ You'll need to initialize these properties, most likely in your `viewDidLoad` me
 
 ### Example Publisher Application
 
-Check out the [cineio-broadcaster-ios][cineio-ios-example-app] repository for
+Check out the [cineio-ios-example-app][cineio-ios-example-app] repository for
 a working example of a publisher.
 
 
