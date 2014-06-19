@@ -101,8 +101,9 @@ CineClient *client = [[CineClient alloc] initWithSecretKey:@"<YOUR SECRET>"];
 ## Playback
 
 Every `CineStream` object has an `playUrlHLS` property. This URL can be sent
-directly to in instance of [`MPMoviePlayerController`][mp-movieplayer-
-controller] for playback, just as you would with any other HLS stream.
+directly to in instance of
+[`MPMoviePlayerController`][mp-movieplayer-controller]for playback, just as
+[`you would with any other HLS stream.
 
 ```objective-c
 - (IBAction)startStreaming:(id)sender
