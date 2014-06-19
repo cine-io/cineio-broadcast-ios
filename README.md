@@ -186,7 +186,7 @@ You'll need to initialize these properties, most likely in your `viewDidLoad` me
 
 ### Example Publisher Application
 
-Check out the [cineio-broadcaster-ios][cineio-broadcaster-ios] repository for
+Check out the [cineio-broadcaster-ios][cineio-ios-example-app] repository for
 a working example of a publisher.
 
 
@@ -219,4 +219,4 @@ Much of the basis for the cine.io iOS SDK comes from the excellent
 [cineio]:https://www.cine.io/
 [cocoapods]:http://cocoapods.org/
 [VideoCore]:https://github.com/jamesghurley/VideoCore
-[cineio-broadcaster-ios]:https://github.com/cine-io/cineio-broadcaster-ios
+[cineio-ios-example-app]:https://github.com/cine-io/cineio-ios-example-app
