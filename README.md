@@ -1,6 +1,18 @@
 # cineio-ios - cine.io iOS SDK
 
-This is the [cine.io][cineio] iOS SDK.
+This is the [cine.io][cineio] iOS SDK. This library allows you to do real-time
+live video streaming from your iOS device to any other device that supports
+RTMP or HLS streaming (iOS, Android, web).
+
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Example Application](#example-application)
+- [Playback](#playback)
+- [Publishing](#publishing-using-cinebroadcasterview-and-cinebroadcasterviewcontroller)
+- [Acknowledgements](#acknowledgements)
+- [Contributing](#contributing)
 
 
 ## Installation
