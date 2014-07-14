@@ -13,6 +13,22 @@
 		00ADC6C619745BC400857375 /* CineBroadcasterPipeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6BE19745BC400857375 /* CineBroadcasterPipeline.cpp */; };
 		00ADC6C719745BC400857375 /* CineBroadcasterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6C219745BC400857375 /* CineBroadcasterView.m */; };
 		00ADC6C819745BC400857375 /* CineBroadcasterViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6C419745BC400857375 /* CineBroadcasterViewController.mm */; };
+		00ADC6CD1974632B00857375 /* CinePixelBufferOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6C91974632B00857375 /* CinePixelBufferOutput.cpp */; };
+		00ADC6CE1974632B00857375 /* CineRecordButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6CC1974632B00857375 /* CineRecordButtonView.m */; };
+		00ADC6D0197464C700857375 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6CF197464C700857375 /* QuartzCore.framework */; };
+		00ADC6D2197464CF00857375 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D1197464CF00857375 /* CoreGraphics.framework */; };
+		00ADC6D4197464D700857375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D3197464D700857375 /* UIKit.framework */; };
+		00ADC6D61974651A00857375 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D51974651A00857375 /* AVFoundation.framework */; };
+		00ADC6D71974657900857375 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D51974651A00857375 /* AVFoundation.framework */; };
+		00ADC6D81974658200857375 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6CF197464C700857375 /* QuartzCore.framework */; };
+		00ADC6D91974658A00857375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D3197464D700857375 /* UIKit.framework */; };
+		00ADC6DA1974659500857375 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D1197464CF00857375 /* CoreGraphics.framework */; };
+		00ADC6DC1974660C00857375 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6DB1974660C00857375 /* CoreMedia.framework */; };
+		00ADC6E01974662500857375 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6DB1974660C00857375 /* CoreMedia.framework */; };
+		00ADC6E21974669800857375 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E11974669800857375 /* AudioToolbox.framework */; };
+		00ADC6E3197466A600857375 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E11974669800857375 /* AudioToolbox.framework */; };
+		00ADC6E5197466AF00857375 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E4197466AF00857375 /* CoreAudio.framework */; };
+		00ADC6E6197466BC00857375 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E4197466AF00857375 /* CoreAudio.framework */; };
 		00C5E0E0193EBD63009DA7B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DF193EBD63009DA7B9 /* Foundation.framework */; };
 		00C5E0EE193EBD63009DA7B9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0ED193EBD63009DA7B9 /* XCTest.framework */; };
 		00C5E0EF193EBD63009DA7B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DF193EBD63009DA7B9 /* Foundation.framework */; };
@@ -60,6 +76,18 @@
 		00ADC6C219745BC400857375 /* CineBroadcasterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineBroadcasterView.m; sourceTree = "<group>"; };
 		00ADC6C319745BC400857375 /* CineBroadcasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineBroadcasterViewController.h; sourceTree = "<group>"; };
 		00ADC6C419745BC400857375 /* CineBroadcasterViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CineBroadcasterViewController.mm; sourceTree = "<group>"; };
+		00ADC6C91974632B00857375 /* CinePixelBufferOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CinePixelBufferOutput.cpp; sourceTree = "<group>"; };
+		00ADC6CA1974632B00857375 /* CinePixelBufferOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinePixelBufferOutput.h; sourceTree = "<group>"; };
+		00ADC6CB1974632B00857375 /* CineRecordButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineRecordButtonView.h; sourceTree = "<group>"; };
+		00ADC6CC1974632B00857375 /* CineRecordButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineRecordButtonView.m; sourceTree = "<group>"; };
+		00ADC6CF197464C700857375 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		00ADC6D1197464CF00857375 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		00ADC6D3197464D700857375 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		00ADC6D51974651A00857375 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		00ADC6DB1974660C00857375 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		00ADC6DD1974661200857375 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00ADC6E11974669800857375 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00ADC6E4197466AF00857375 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		00C5E0DC193EBD63009DA7B9 /* libcineio-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcineio-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C5E0DF193EBD63009DA7B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		00C5E0E3193EBD63009DA7B9 /* cineio-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cineio-ios-Prefix.pch"; sourceTree = "<group>"; };
@@ -90,6 +118,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				00C5E0E0193EBD63009DA7B9 /* Foundation.framework in Frameworks */,
+				00ADC6D4197464D700857375 /* UIKit.framework in Frameworks */,
+				00ADC6D0197464C700857375 /* QuartzCore.framework in Frameworks */,
+				00ADC6D2197464CF00857375 /* CoreGraphics.framework in Frameworks */,
+				00ADC6E6197466BC00857375 /* CoreAudio.framework in Frameworks */,
+				00ADC6DC1974660C00857375 /* CoreMedia.framework in Frameworks */,
+				00ADC6E21974669800857375 /* AudioToolbox.framework in Frameworks */,
+				00ADC6D61974651A00857375 /* AVFoundation.framework in Frameworks */,
 				ADA9581DB5FF4B4F835BAD16 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,9 +133,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00C5E10E193ED668009DA7B9 /* libcineio-ios.a in Frameworks */,
-				00C5E0EE193EBD63009DA7B9 /* XCTest.framework in Frameworks */,
 				00C5E0EF193EBD63009DA7B9 /* Foundation.framework in Frameworks */,
+				00ADC6D91974658A00857375 /* UIKit.framework in Frameworks */,
+				00ADC6D81974658200857375 /* QuartzCore.framework in Frameworks */,
+				00ADC6DA1974659500857375 /* CoreGraphics.framework in Frameworks */,
+				00ADC6E5197466AF00857375 /* CoreAudio.framework in Frameworks */,
+				00ADC6E01974662500857375 /* CoreMedia.framework in Frameworks */,
+				00ADC6E3197466A600857375 /* AudioToolbox.framework in Frameworks */,
+				00ADC6D71974657900857375 /* AVFoundation.framework in Frameworks */,
+				00C5E0EE193EBD63009DA7B9 /* XCTest.framework in Frameworks */,
+				00C5E10E193ED668009DA7B9 /* libcineio-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +175,14 @@
 		00C5E0DE193EBD63009DA7B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00ADC6E4197466AF00857375 /* CoreAudio.framework */,
+				00ADC6E11974669800857375 /* AudioToolbox.framework */,
+				00ADC6DD1974661200857375 /* AudioUnit.framework */,
+				00ADC6DB1974660C00857375 /* CoreMedia.framework */,
+				00ADC6D51974651A00857375 /* AVFoundation.framework */,
+				00ADC6D3197464D700857375 /* UIKit.framework */,
+				00ADC6D1197464CF00857375 /* CoreGraphics.framework */,
+				00ADC6CF197464C700857375 /* QuartzCore.framework */,
 				00C5E0DF193EBD63009DA7B9 /* Foundation.framework */,
 				00C5E0ED193EBD63009DA7B9 /* XCTest.framework */,
 				B31761E41A64412FA6E1DC12 /* libPods.a */,
@@ -161,6 +211,10 @@
 				00ADC6C219745BC400857375 /* CineBroadcasterView.m */,
 				00ADC6C319745BC400857375 /* CineBroadcasterViewController.h */,
 				00ADC6C419745BC400857375 /* CineBroadcasterViewController.mm */,
+				00ADC6C91974632B00857375 /* CinePixelBufferOutput.cpp */,
+				00ADC6CA1974632B00857375 /* CinePixelBufferOutput.h */,
+				00ADC6CB1974632B00857375 /* CineRecordButtonView.h */,
+				00ADC6CC1974632B00857375 /* CineRecordButtonView.m */,
 				00C5E0E2193EBD63009DA7B9 /* Supporting Files */,
 			);
 			path = "cineio-ios";
@@ -344,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00ADC6CD1974632B00857375 /* CinePixelBufferOutput.cpp in Sources */,
 				00ADC6C819745BC400857375 /* CineBroadcasterViewController.mm in Sources */,
 				00ADC6C519745BC400857375 /* CineBroadcasterControlsView.m in Sources */,
 				00C5E107193EBEE1009DA7B9 /* CineClient.m in Sources */,
@@ -351,6 +406,7 @@
 				00C5E111193EF041009DA7B9 /* CineConstants.m in Sources */,
 				00ADC6C619745BC400857375 /* CineBroadcasterPipeline.cpp in Sources */,
 				00C5E10D193EC1CD009DA7B9 /* CineStream.m in Sources */,
+				00ADC6CE1974632B00857375 /* CineRecordButtonView.m in Sources */,
 				00C5E10A193EC06B009DA7B9 /* CineProject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +460,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -442,6 +499,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
