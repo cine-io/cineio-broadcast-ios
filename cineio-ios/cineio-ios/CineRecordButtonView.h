@@ -13,6 +13,6 @@
 
 @property (nonatomic) BOOL enabled;
 @property (nonatomic) BOOL recording;
-@property (nonatomic) UIButton *button;
+@property (nonatomic, strong) UIButton *button;
 
 @end

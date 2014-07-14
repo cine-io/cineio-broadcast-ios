@@ -11,6 +11,6 @@
 
 @interface CineBroadcasterControlsView : UIView
 
-@property (nonatomic) CineRecordButtonView *recordButton;
+@property (nonatomic, strong) CineRecordButtonView *recordButton;
 
 @end

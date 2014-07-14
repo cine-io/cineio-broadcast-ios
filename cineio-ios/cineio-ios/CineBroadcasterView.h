@@ -11,11 +11,11 @@
 
 @interface CineBroadcasterView : UIView
 
-@property (nonatomic) UIImageView *cameraView;
+@property (nonatomic, strong) UIImageView *cameraView;
 
-@property (nonatomic) UIView *statusView;
-@property (nonatomic) UILabel *status;
+@property (nonatomic, strong) UIView *statusView;
+@property (nonatomic, strong) UILabel *status;
 
-@property (nonatomic) CineBroadcasterControlsView *controlsView;
+@property (nonatomic, strong) CineBroadcasterControlsView *controlsView;
 
 @end
