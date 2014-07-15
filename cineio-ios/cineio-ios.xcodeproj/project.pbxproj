@@ -29,6 +29,8 @@
 		00ADC6E3197466A600857375 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E11974669800857375 /* AudioToolbox.framework */; };
 		00ADC6E5197466AF00857375 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E4197466AF00857375 /* CoreAudio.framework */; };
 		00ADC6E6197466BC00857375 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E4197466AF00857375 /* CoreAudio.framework */; };
+		00ADC6F41975993C00857375 /* CinePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6F31975993C00857375 /* CinePlayerViewController.m */; };
+		00ADC6F91975A05B00857375 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6F81975A05B00857375 /* MediaPlayer.framework */; };
 		00C5E0E0193EBD63009DA7B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DF193EBD63009DA7B9 /* Foundation.framework */; };
 		00C5E0EE193EBD63009DA7B9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0ED193EBD63009DA7B9 /* XCTest.framework */; };
 		00C5E0EF193EBD63009DA7B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DF193EBD63009DA7B9 /* Foundation.framework */; };
@@ -88,6 +90,9 @@
 		00ADC6DD1974661200857375 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		00ADC6E11974669800857375 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		00ADC6E4197466AF00857375 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		00ADC6F21975993C00857375 /* CinePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinePlayerViewController.h; sourceTree = "<group>"; };
+		00ADC6F31975993C00857375 /* CinePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CinePlayerViewController.m; sourceTree = "<group>"; };
+		00ADC6F81975A05B00857375 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		00C5E0DC193EBD63009DA7B9 /* libcineio-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcineio-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C5E0DF193EBD63009DA7B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		00C5E0E3193EBD63009DA7B9 /* cineio-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cineio-ios-Prefix.pch"; sourceTree = "<group>"; };
@@ -123,6 +128,7 @@
 				00ADC6D2197464CF00857375 /* CoreGraphics.framework in Frameworks */,
 				00ADC6E6197466BC00857375 /* CoreAudio.framework in Frameworks */,
 				00ADC6DC1974660C00857375 /* CoreMedia.framework in Frameworks */,
+				00ADC6F91975A05B00857375 /* MediaPlayer.framework in Frameworks */,
 				00ADC6E21974669800857375 /* AudioToolbox.framework in Frameworks */,
 				00ADC6D61974651A00857375 /* AVFoundation.framework in Frameworks */,
 				ADA9581DB5FF4B4F835BAD16 /* libPods.a in Frameworks */,
@@ -175,6 +181,7 @@
 		00C5E0DE193EBD63009DA7B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00ADC6F81975A05B00857375 /* MediaPlayer.framework */,
 				00ADC6E4197466AF00857375 /* CoreAudio.framework */,
 				00ADC6E11974669800857375 /* AudioToolbox.framework */,
 				00ADC6DD1974661200857375 /* AudioUnit.framework */,
@@ -211,6 +218,8 @@
 				00ADC6C219745BC400857375 /* CineBroadcasterView.m */,
 				00ADC6C319745BC400857375 /* CineBroadcasterViewController.h */,
 				00ADC6C419745BC400857375 /* CineBroadcasterViewController.mm */,
+				00ADC6F21975993C00857375 /* CinePlayerViewController.h */,
+				00ADC6F31975993C00857375 /* CinePlayerViewController.m */,
 				00ADC6C91974632B00857375 /* CinePixelBufferOutput.cpp */,
 				00ADC6CA1974632B00857375 /* CinePixelBufferOutput.h */,
 				00ADC6CB1974632B00857375 /* CineRecordButtonView.h */,
@@ -400,6 +409,7 @@
 			files = (
 				00ADC6CD1974632B00857375 /* CinePixelBufferOutput.cpp in Sources */,
 				00ADC6C819745BC400857375 /* CineBroadcasterViewController.mm in Sources */,
+				00ADC6F41975993C00857375 /* CinePlayerViewController.m in Sources */,
 				00ADC6C519745BC400857375 /* CineBroadcasterControlsView.m in Sources */,
 				00C5E107193EBEE1009DA7B9 /* CineClient.m in Sources */,
 				00ADC6C719745BC400857375 /* CineBroadcasterView.m in Sources */,
