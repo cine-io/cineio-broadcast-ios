@@ -22,7 +22,7 @@ The easiest way to use the SDK is via [CocoaPods][cocoapods]. Create a new XCode
 ```ruby
 platform :ios, '6.0'
 
-pod 'cineio-ios', '~> 0.3.0'
+pod 'cineio-ios', '~> 0.3.1'
 ```
 
 Then, install the Pod by running the `pod install` command:
@@ -157,11 +157,36 @@ valid `CineStream` object.
     }];
 ```
 
-### Playback Starts Automatically
+### Starting Playback
 
-When the `viewDidAppear` method is called, the `CinePlayerViewController` will
-attempt to load and play the stream, and will display an appropriate error
-message if the stream is not available or inactive.
+To start playback, simply call `startStreaming`. This method will firstr
+attempt to (asynchronously) validate that a stream exists at the given HLS
+URL, and if it does, will start to play it. Otherwise, an appropriate error
+message will be displayed in a `UIAlert`.
+
+```objective-c
+- (IBAction)playButtonPressed:(id)sender
+{
+    playButton.enabled = NO;
+    playButton.hidden = YES;
+    [self startStreaming];
+}
+```
+
+### Cleaning up
+
+When the stream has finished playing (for any reason, including the user
+quitting, the stream ending, or if errors are encountered), `finishStreaming`
+will be called. You should put any cleanup code that you want executed into
+this method.
+
+```objective-c
+- (void)finishStreaming
+{
+    playButton.hidden = NO;
+    playButton.enabled = YES;
+}
+```
 
 
 ## Publishing (using `CineBroadcasterView` and `CineBroadcasterViewController`)
