@@ -110,52 +110,61 @@ CineClient *client = [[CineClient alloc] initWithSecretKey:@"<YOUR SECRET>"];
 ```
 
 
-## Playback
+## Playback (using `CinePlayerView`)
 
-Every `CineStream` object has an `playUrlHLS` property. This URL can be sent
-directly to in instance of
-[`MPMoviePlayerController`][mp-movieplayer-controller]for playback, just as
-[`you would with any other HLS stream.
+To make playback as easy as possible, cineio-ios comes with a ready-made view
+controller that takes care of most of the heavy-lifting. Using it is pretty
+straight forward.
+
+### Storyboard Setup
+
+If you're using XCode's Storyboards to build your user interface, our UI
+components should work seamlessly. To use them, follow these steps:
+
+1. Make your view controller inherit from `CinePlayerViewController` rather than `UIViewController`.
+2. Ensure that the view controller in your Storyboard has the correct class name set. It should be set to *your subclass* of `CinePlayererViewController`.
+
+### The `stream` Property
+
+Your class that inherits from `CinePlayerViewController` will have a writeable
+`stream` property. You'll need to ensure that this property is set with a
+valid `CineStream` object.
 
 ```objective-c
-- (IBAction)startStreaming:(id)sender
+- (void)viewDidLoad
 {
-    // assume that self.playUrlHLS is a property that we've set that contains
-    // the playback URL as obtained by the CineStream
-    NSURL *url = [NSURL URLWithString:self.playUrlHLS];
-    _moviePlayer =  [[MPMoviePlayerController alloc] initWithContentURL:url];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(stoppedStreaming:)
-                                                 name:MPMoviePlayerPlaybackDidFinishNotification
-                                               object:_moviePlayer];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(stoppedStreaming:)
-                                                 name:MPMoviePlayerDidExitFullscreenNotification
-                                               object:_moviePlayer];
+    [super viewDidLoad];
 
-    _moviePlayer.controlStyle = MPMovieControlStyleDefault;
-    _moviePlayer.shouldAutoplay = YES;
-    [self.view addSubview:_moviePlayer.view];
-    [_moviePlayer setFullscreen:YES animated:YES];
-}
+    //-- cine.io setup
 
-- (void)stoppedStreaming:(NSNotification*)notification {
-    MPMoviePlayerController *player = [notification object];
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:MPMoviePlayerPlaybackDidFinishNotification
-                                                  object:player];
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:MPMoviePlayerDidExitFullscreenNotification
-                                                  object:player];
+    // read our cine.io configuration from a plist bundle
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"cineio-settings" ofType:@"plist"];
+    NSDictionary *settings = [[NSDictionary alloc] initWithContentsOfFile:path];
 
-    if ([player respondsToSelector:@selector(setFullscreen:animated:)]) {
-        [player.view removeFromSuperview];
-    }
-}
+    // create a new CineClient to fetch our stream information
+    CineClient *cine = [[CineClient alloc] initWithSecretKey:settings[@"CINE_IO_SECRET_KEY"]];
+    [cine getStream:settings[@"CINE_IO_STREAM_ID"] withCompletionHandler:^(NSError *error, CineStream *stream) {
+        if (error) {
+          UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network error"
+                                                          message:@"Couldn't get stream settings from cine.io."
+                                                         delegate:nil
+                                                cancelButtonTitle:@"OK"
+                                                otherButtonTitles:nil];
+          [alert show];
+        } else {
+          self.stream = stream;
+        }
+    }];
 ```
 
+### Playback Starts Automatically
 
-## Publishing (using CineBroadcasterView and CineBroadcasterViewController)
+When the `viewDidAppear` method is called, the `CinePlayerViewController` will
+attempt to load and play the stream, and will display an appropriate error
+message if the stream is not available or inactive.
+
+
+## Publishing (using `CineBroadcasterView` and `CineBroadcasterViewController`)
 
 To make publishing as easy as possible, cineio-ios comes with some ready-made
 user-interface components that take care of most of the heavy-lifting. Using
