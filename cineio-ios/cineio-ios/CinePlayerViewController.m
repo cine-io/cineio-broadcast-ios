@@ -93,9 +93,12 @@
     if (numTries < 3) {
         numTries++;
         AFHTTPRequestOperationManager *http = [AFHTTPRequestOperationManager manager];
+        http.responseSerializer.acceptableContentTypes = [http.responseSerializer.acceptableContentTypes setByAddingObject:@"application/vnd.apple.mpegurl"];
+        http.responseSerializer = [AFHTTPResponseSerializer serializer];
         [http GET:stream.playUrlHLS parameters:nil success:^(AFHTTPRequestOperation *operation, id attributes) {
             [self playStream];
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"error: %@", error);
             if (numTries < 3) {
                 NSLog(@"Stream not yet available. Tried %lu times.", numTries);
                 [NSThread sleepForTimeInterval:1.0];
@@ -116,6 +119,7 @@
 }
 
 - (void)stoppedStreaming:(NSNotification*)notification {
+    NSLog(@"stopped streaming");
     MPMoviePlayerController *player = [notification object];
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:MPMoviePlayerPlaybackDidFinishNotification
