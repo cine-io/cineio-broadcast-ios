@@ -7,6 +7,7 @@
 //
 
 #import "CinePlayerViewController.h"
+#import <AFNetworking/AFNetworking.h>
 
 @interface CinePlayerViewController ()
 
@@ -52,47 +53,17 @@
                                                          attribute:NSLayoutAttributeCenterY
                                                         multiplier:1.0
                                                           constant:0.0]];
-    [spinner startAnimating];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [self attemptToPlayStream];
-}
-
--(void)attemptToPlayStream
-{
-    NSAssert(stream != nil, @"The stream was never set for this player.");
-    
-    NSInteger statusCode = 0;
-    NSInteger numTries = 0;
-    while (statusCode != 200 && numTries < 3) {
-        NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:stream.playUrlHLS]];
-        NSHTTPURLResponse *res = nil;
-        NSError *err = nil;
-        [NSURLConnection sendSynchronousRequest:req
-                              returningResponse:&res
-                                          error:&err];
-        statusCode = res.statusCode;
-        numTries++;
-        NSLog(@"statusCode = %ld", (long)statusCode);
-        [NSThread sleepForTimeInterval:1.0];
-    }
-    if (statusCode == 200) {
-        [self startStreaming];
-    } else {
-        [spinner stopAnimating];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Stream unavailable"
-                                                        message:@"The stream you attempted to play is either inactive or unavailable."
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];
-        [self finishStreaming];
-    }
+    [spinner stopAnimating];
 }
 
 - (void)startStreaming
+{
+    NSAssert(stream != nil, @"The stream was never set for this player.");
+    [spinner startAnimating];
+    [self attemptToPlayStream:0];
+}
+
+- (void)playStream
 {
     NSLog(@"about to play: %@", stream.playUrlHLS);
     NSURL *url = [NSURL URLWithString:stream.playUrlHLS];
@@ -115,6 +86,33 @@
     moviePlayer.shouldAutoplay = YES;
     [self.view addSubview:moviePlayer.view];
     [moviePlayer setFullscreen:YES animated:YES];
+}
+
+- (void)attemptToPlayStream:(NSUInteger)numTries
+{
+    if (numTries < 3) {
+        numTries++;
+        AFHTTPRequestOperationManager *http = [AFHTTPRequestOperationManager manager];
+        [http GET:stream.playUrlHLS parameters:nil success:^(AFHTTPRequestOperation *operation, id attributes) {
+            [self playStream];
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            if (numTries < 3) {
+                NSLog(@"Stream not yet available. Tried %lu times.", numTries);
+                [NSThread sleepForTimeInterval:1.0];
+                [self attemptToPlayStream:numTries];
+            } else {
+                NSLog(@"Stream not available. Tried %lu times.", numTries);
+                [spinner stopAnimating];
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Stream unavailable"
+                                                                message:@"The stream you attempted to play is either inactive or unavailable."
+                                                               delegate:nil
+                                                      cancelButtonTitle:@"OK"
+                                                      otherButtonTitles:nil];
+                [alert show];
+                [self finishStreaming];
+            }
+        }];
+    }
 }
 
 - (void)stoppedStreaming:(NSNotification*)notification {

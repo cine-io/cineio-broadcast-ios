@@ -13,9 +13,10 @@
 @interface CinePlayerViewController : UIViewController
 
 @property (nonatomic, strong) UIActivityIndicatorView *spinner;
-@property (nonatomic, weak) CineStream *stream;
+@property (nonatomic, strong) CineStream *stream;
 @property (nonatomic, strong) MPMoviePlayerController *moviePlayer;
 
+- (void)startStreaming;
 - (void)finishStreaming;
 
 @end
