@@ -32,6 +32,14 @@ const NSInteger ControlsViewHeight = 86;
     return self;
 }
 
+- (void)layoutSubviews
+{
+    [cameraView setFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)];
+    [statusView setFrame:CGRectMake(0, 0, self.bounds.size.width, StatusViewHeight)];
+    [status setFrame:CGRectMake(10, 10, statusView.bounds.size.width-20, 20)];
+    [controlsView setFrame:CGRectMake(0, self.bounds.size.height-ControlsViewHeight, self.bounds.size.width, ControlsViewHeight)];
+}
+
 - (void)setupUI
 {
     self.backgroundColor = [UIColor clearColor];
