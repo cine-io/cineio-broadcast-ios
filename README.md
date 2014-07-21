@@ -249,13 +249,14 @@ You'll need to initialize these properties, most likely in your `viewDidLoad` me
 ```objective-c
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-
     //-- A/V setup
     self.frameWidth = 1280;
     self.frameHeight = 720;
     self.framesPerSecond = 30;
     self.videoBitRate = 1500000;
+
+    // must be called _after_ we set up our properties, as our superclass will use them
+    [super viewDidLoad];
 
     //-- cine.io setup
 
