@@ -22,7 +22,7 @@ The easiest way to use the SDK is via [CocoaPods][cocoapods]. Create a new XCode
 ```ruby
 platform :ios, '6.0'
 
-pod 'cineio-ios', '~> 0.3.2'
+pod 'cineio-ios', '~> 0.3.3'
 ```
 
 Then, install the Pod by running the `pod install` command:
@@ -237,8 +237,6 @@ properties in your subclass:
 @synthesize frameHeight;
 @synthesize framesPerSecond;
 @synthesize videoBitRate;
-@synthesize numAudioChannels;
-@synthesize sampleRateInHz;
 
 @synthesize publishUrl;
 @synthesize publishStreamName;
@@ -258,8 +256,6 @@ You'll need to initialize these properties, most likely in your `viewDidLoad` me
     self.frameHeight = 720;
     self.framesPerSecond = 30;
     self.videoBitRate = 1500000;
-    self.numAudioChannels = 2;
-    self.sampleRateInHz = 44100;
 
     //-- cine.io setup
 
