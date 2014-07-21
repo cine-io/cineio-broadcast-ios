@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "CineBroadcasterProtocol.h"
-#import "CineBroadcasterPipeline.h"
 #import "CineBroadcasterView.h"
 
 @interface CineBroadcasterViewController : UIViewController <CineBroadcasterProtocol>
 {
-    std::unique_ptr<Broadcaster::CineBroadcasterPipeline> pipeline;
+
 }
 
 - (void)toggleStreaming:(id)sender;

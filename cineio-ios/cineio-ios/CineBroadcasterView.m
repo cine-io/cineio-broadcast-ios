@@ -44,7 +44,7 @@ const NSInteger ControlsViewHeight = 86;
 {
     self.backgroundColor = [UIColor clearColor];
     
-    cameraView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)];
+    cameraView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)];
     cameraView.backgroundColor = [UIColor clearColor];
     [cameraView setContentMode:UIViewContentModeCenter];
     [cameraView setContentMode:UIViewContentModeScaleAspectFit];

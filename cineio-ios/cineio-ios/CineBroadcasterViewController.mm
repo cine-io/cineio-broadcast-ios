@@ -8,11 +8,14 @@
 
 #import "CineBroadcasterViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import <videocore/api/iOS/VCSimpleSession.h>
 
-@interface CineBroadcasterViewController ()
+@interface CineBroadcasterViewController () <VCSessionDelegate>
 {
     CineBroadcasterView *_broadcasterView;
 }
+
+@property (nonatomic, retain) VCSimpleSession* session;
 
 @end
 
@@ -33,9 +36,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
+    _session = [[VCSimpleSession alloc] initWithVideoSize:CGSizeMake(self.frameWidth, self.frameHeight) frameRate:self.framesPerSecond bitrate:self.videoBitRate];
+
     _broadcasterView = (CineBroadcasterView *)self.view;
     [_broadcasterView.controlsView.recordButton.button addTarget:self action:@selector(toggleStreaming:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_broadcasterView.cameraView addSubview:_session.previewView];
+    _session.previewView.frame = _broadcasterView.bounds;
+    _session.delegate = self;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -60,31 +69,18 @@
 - (void)toggleStreaming:(id)sender
 {
     NSLog(@"record / stop button touched");
-    
-    if (!_broadcasterView.controlsView.recordButton.recording) {
-        _broadcasterView.controlsView.recordButton.recording = YES;
-        NSString* rtmpUrl = [NSString stringWithFormat:@"%@/%@", self.publishUrl, self.publishStreamName];
-        
-        NSLog(@"RTMP URL: %@", rtmpUrl);
-        [self updateStatus:@"Connecting to server ..."];
 
-        
-        pipeline.reset(new Broadcaster::CineBroadcasterPipeline([self](Broadcaster::SessionState state){
-            [self connectionStatusChange:state];
-        }));
-        
-        
-        pipeline->setPBCallback([=](const uint8_t* const data, size_t size) {
-            [self gotPixelBuffer: data withSize: size];
-        });
-        
-        pipeline->startRtmpSession([rtmpUrl UTF8String], self.frameWidth, self.frameHeight, self.videoBitRate, self.framesPerSecond, 2, 44100);
-    } else {
-        [self updateStatus:@"Stopping ..."];
-        _broadcasterView.controlsView.recordButton.recording = NO;
-        // disconnect
-        pipeline.reset();
-        [self updateStatus:@"Stopped"];
+    switch(_session.rtmpSessionState) {
+        case VCSessionStateNone:
+        case VCSessionStatePreviewStarted:
+        case VCSessionStateEnded:
+        case VCSessionStateError:
+            [_session startRtmpSessionWithURL:self.publishUrl andStreamKey:self.publishStreamName];
+            break;
+        default:
+            [self updateStatus:@"Stopping ..."];
+            [_session endRtmpSession];
+            break;
     }
 }
 
@@ -100,38 +96,26 @@
     [self updateStatus:@"Ready"];
 }
 
-- (void) connectionStatusChange:(Broadcaster::SessionState) state
+- (void) connectionStatusChanged:(VCSessionState)state
 {
-    if(state == Broadcaster::kSessionStateStarted) {
-        [self updateStatus:@"Streaming"];
-    } else if(state == Broadcaster::kSessionStateError) {
-        [self updateStatus:@"Couldn't connect to server"];
-        pipeline.reset();
-    } else if (state == Broadcaster::kSessionStateEnded) {
-        [self updateStatus:@"Disconnected"];
-        pipeline.reset();
-    }
-}
-
-- (void) gotPixelBuffer: (const uint8_t* const) data withSize: (size_t) size {
-    @autoreleasepool {
-        CVPixelBufferRef pb = (CVPixelBufferRef) data;
-        float width = CVPixelBufferGetWidth(pb);
-        float height = CVPixelBufferGetHeight(pb);
-        CVPixelBufferLockBaseAddress(pb, 1);
-        CIImage *ciImage = [CIImage imageWithCVPixelBuffer:pb];
-        
-        CIContext *temporaryContext = [CIContext contextWithOptions:nil];
-        CGImageRef videoImage = [temporaryContext
-                                 createCGImage:ciImage
-                                 fromRect:CGRectMake(0, 0, width, height)];
-        
-        UIImage *uiImage = [UIImage imageWithCGImage:videoImage];
-        CVPixelBufferUnlockBaseAddress(pb, 0);
-        
-        [_broadcasterView.cameraView performSelectorOnMainThread:@selector(setImage:) withObject:uiImage waitUntilDone:NO];
-        
-        CGImageRelease(videoImage);
+    switch(state) {
+        case VCSessionStateStarting:
+            _broadcasterView.controlsView.recordButton.recording = YES;
+            [self updateStatus:@"Connecting to server ..."];
+            break;
+        case VCSessionStateStarted:
+            [self updateStatus:@"Streaming"];
+            break;
+        case VCSessionStateEnded:
+            _broadcasterView.controlsView.recordButton.recording = NO;
+            [self updateStatus:@"Disconnected"];
+            break;
+        case VCSessionStateError:
+            _broadcasterView.controlsView.recordButton.recording = NO;
+            [self updateStatus:@"Couldn't connect to server"];
+            break;
+        default:
+            break;
     }
 }
 

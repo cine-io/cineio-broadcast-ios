@@ -10,7 +10,6 @@
 		0016E0C3194963120008BB95 /* SAMPLE-cineio-settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0016E0C2194963120008BB95 /* SAMPLE-cineio-settings.plist */; };
 		0016E0C5194963BF0008BB95 /* cineio-settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0016E0C4194963BF0008BB95 /* cineio-settings.plist */; };
 		00ADC6C519745BC400857375 /* CineBroadcasterControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6BD19745BC400857375 /* CineBroadcasterControlsView.m */; };
-		00ADC6C619745BC400857375 /* CineBroadcasterPipeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6BE19745BC400857375 /* CineBroadcasterPipeline.cpp */; };
 		00ADC6C719745BC400857375 /* CineBroadcasterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6C219745BC400857375 /* CineBroadcasterView.m */; };
 		00ADC6C819745BC400857375 /* CineBroadcasterViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6C419745BC400857375 /* CineBroadcasterViewController.mm */; };
 		00ADC6CD1974632B00857375 /* CinePixelBufferOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6C91974632B00857375 /* CinePixelBufferOutput.cpp */; };
@@ -71,8 +70,6 @@
 		0016E0C4194963BF0008BB95 /* cineio-settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "cineio-settings.plist"; sourceTree = "<group>"; };
 		00ADC6BC19745BC400857375 /* CineBroadcasterControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineBroadcasterControlsView.h; sourceTree = "<group>"; };
 		00ADC6BD19745BC400857375 /* CineBroadcasterControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineBroadcasterControlsView.m; sourceTree = "<group>"; };
-		00ADC6BE19745BC400857375 /* CineBroadcasterPipeline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CineBroadcasterPipeline.cpp; sourceTree = "<group>"; };
-		00ADC6BF19745BC400857375 /* CineBroadcasterPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineBroadcasterPipeline.h; sourceTree = "<group>"; };
 		00ADC6C019745BC400857375 /* CineBroadcasterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineBroadcasterProtocol.h; sourceTree = "<group>"; };
 		00ADC6C119745BC400857375 /* CineBroadcasterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineBroadcasterView.h; sourceTree = "<group>"; };
 		00ADC6C219745BC400857375 /* CineBroadcasterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineBroadcasterView.m; sourceTree = "<group>"; };
@@ -211,8 +208,6 @@
 				00C5E10C193EC1CD009DA7B9 /* CineStream.m */,
 				00ADC6BC19745BC400857375 /* CineBroadcasterControlsView.h */,
 				00ADC6BD19745BC400857375 /* CineBroadcasterControlsView.m */,
-				00ADC6BE19745BC400857375 /* CineBroadcasterPipeline.cpp */,
-				00ADC6BF19745BC400857375 /* CineBroadcasterPipeline.h */,
 				00ADC6C019745BC400857375 /* CineBroadcasterProtocol.h */,
 				00ADC6C119745BC400857375 /* CineBroadcasterView.h */,
 				00ADC6C219745BC400857375 /* CineBroadcasterView.m */,
@@ -414,7 +409,6 @@
 				00C5E107193EBEE1009DA7B9 /* CineClient.m in Sources */,
 				00ADC6C719745BC400857375 /* CineBroadcasterView.m in Sources */,
 				00C5E111193EF041009DA7B9 /* CineConstants.m in Sources */,
-				00ADC6C619745BC400857375 /* CineBroadcasterPipeline.cpp in Sources */,
 				00C5E10D193EC1CD009DA7B9 /* CineStream.m in Sources */,
 				00ADC6CE1974632B00857375 /* CineRecordButtonView.m in Sources */,
 				00C5E10A193EC06B009DA7B9 /* CineProject.m in Sources */,
