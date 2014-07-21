@@ -13,11 +13,13 @@
 @property (nonatomic, copy) NSString *publishUrl;
 @property (nonatomic, copy) NSString *publishStreamName;
 
-@property (nonatomic) NSInteger frameWidth;
-@property (nonatomic) NSInteger frameHeight;
-@property (nonatomic) NSInteger videoBitRate;
-@property (nonatomic) NSInteger framesPerSecond;
-@property (nonatomic) NSInteger numAudioChannels;
-@property (nonatomic) NSInteger sampleRateInHz;
+@property (nonatomic) int frameWidth;
+@property (nonatomic) int frameHeight;
+@property (nonatomic) int videoBitRate;
+@property (nonatomic) int framesPerSecond;
+
+// TODO: uncomment these if / when VideoCore supports the ability to configure them
+//@property (nonatomic) int numAudioChannels;
+//@property (nonatomic) float sampleRateInHz;
 
 @end

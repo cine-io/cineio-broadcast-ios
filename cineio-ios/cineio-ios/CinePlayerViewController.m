@@ -100,11 +100,11 @@
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
             NSLog(@"error: %@", error);
             if (numTries < 3) {
-                NSLog(@"Stream not yet available. Tried %lu times.", numTries);
+                NSLog(@"Stream not yet available. Tried %lu times.", (unsigned long)numTries);
                 [NSThread sleepForTimeInterval:1.0];
                 [self attemptToPlayStream:numTries];
             } else {
-                NSLog(@"Stream not available. Tried %lu times.", numTries);
+                NSLog(@"Stream not available. Tried %lu times.", (unsigned long)numTries);
                 [spinner stopAnimating];
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Stream unavailable"
                                                                 message:@"The stream you attempted to play is either inactive or unavailable."

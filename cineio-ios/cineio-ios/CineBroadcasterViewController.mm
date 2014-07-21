@@ -18,6 +18,18 @@
 
 @implementation CineBroadcasterViewController
 
+@dynamic publishUrl;
+@dynamic publishStreamName;
+
+@dynamic frameWidth;
+@dynamic frameHeight;
+@dynamic videoBitRate;
+@dynamic framesPerSecond;
+
+// TODO: uncomment these if / when VideoCore supports the ability to configure them
+//@dynamic numAudioChannels;
+//@dynamic sampleRateInHz;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -66,7 +78,7 @@
             [self gotPixelBuffer: data withSize: size];
         });
         
-        pipeline->startRtmpSession([rtmpUrl UTF8String], self.frameWidth, self.frameHeight, self.videoBitRate, self.framesPerSecond, self.numAudioChannels, self.sampleRateInHz);
+        pipeline->startRtmpSession([rtmpUrl UTF8String], self.frameWidth, self.frameHeight, self.videoBitRate, self.framesPerSecond, 2, 44100);
     } else {
         [self updateStatus:@"Stopping ..."];
         _broadcasterView.controlsView.recordButton.recording = NO;
