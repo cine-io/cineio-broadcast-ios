@@ -68,6 +68,7 @@
 /* Begin PBXFileReference section */
 		0016E0C2194963120008BB95 /* SAMPLE-cineio-settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = "SAMPLE-cineio-settings.plist"; sourceTree = "<group>"; };
 		0016E0C4194963BF0008BB95 /* cineio-settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "cineio-settings.plist"; sourceTree = "<group>"; };
+		009CB1A21980965700C0ADF6 /* CineIconsBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CineIconsBase64.h; sourceTree = "<group>"; };
 		00ADC6BC19745BC400857375 /* CineBroadcasterControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineBroadcasterControlsView.h; sourceTree = "<group>"; };
 		00ADC6BD19745BC400857375 /* CineBroadcasterControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineBroadcasterControlsView.m; sourceTree = "<group>"; };
 		00ADC6C019745BC400857375 /* CineBroadcasterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineBroadcasterProtocol.h; sourceTree = "<group>"; };
@@ -198,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				00C5E158193F0C5A009DA7B9 /* CineIO.h */,
+				009CB1A21980965700C0ADF6 /* CineIconsBase64.h */,
 				00C5E10F193EF02B009DA7B9 /* CineConstants.h */,
 				00C5E110193EF041009DA7B9 /* CineConstants.m */,
 				00C5E105193EBEE1009DA7B9 /* CineClient.h */,
@@ -206,19 +208,19 @@
 				00C5E109193EC06B009DA7B9 /* CineProject.m */,
 				00C5E10B193EC1CD009DA7B9 /* CineStream.h */,
 				00C5E10C193EC1CD009DA7B9 /* CineStream.m */,
+				00ADC6CB1974632B00857375 /* CineRecordButtonView.h */,
+				00ADC6CC1974632B00857375 /* CineRecordButtonView.m */,
 				00ADC6BC19745BC400857375 /* CineBroadcasterControlsView.h */,
 				00ADC6BD19745BC400857375 /* CineBroadcasterControlsView.m */,
-				00ADC6C019745BC400857375 /* CineBroadcasterProtocol.h */,
 				00ADC6C119745BC400857375 /* CineBroadcasterView.h */,
 				00ADC6C219745BC400857375 /* CineBroadcasterView.m */,
+				00ADC6C019745BC400857375 /* CineBroadcasterProtocol.h */,
 				00ADC6C319745BC400857375 /* CineBroadcasterViewController.h */,
 				00ADC6C419745BC400857375 /* CineBroadcasterViewController.mm */,
 				00ADC6F21975993C00857375 /* CinePlayerViewController.h */,
 				00ADC6F31975993C00857375 /* CinePlayerViewController.m */,
 				00ADC6C91974632B00857375 /* CinePixelBufferOutput.cpp */,
 				00ADC6CA1974632B00857375 /* CinePixelBufferOutput.h */,
-				00ADC6CB1974632B00857375 /* CineRecordButtonView.h */,
-				00ADC6CC1974632B00857375 /* CineRecordButtonView.m */,
 				00C5E0E2193EBD63009DA7B9 /* Supporting Files */,
 			);
 			path = "cineio-ios";

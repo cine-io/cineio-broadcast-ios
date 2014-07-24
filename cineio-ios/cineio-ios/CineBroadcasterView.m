@@ -83,7 +83,6 @@ const NSInteger ControlsViewHeight = 86;
     switch (orientation) {
         case UIDeviceOrientationPortrait:
         {
-            NSLog(@"portrait");
             rotation = 0;
             statusFrame = CGRectMake(0, 0, self.bounds.size.width, StatusViewHeight);
             cameraFrame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
@@ -91,7 +90,6 @@ const NSInteger ControlsViewHeight = 86;
             break;
         case UIDeviceOrientationPortraitUpsideDown:
         {
-            NSLog(@"portrait upside down");
             rotation = M_PI;
             statusFrame = CGRectMake(0, 0, self.bounds.size.width, StatusViewHeight);
             cameraFrame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
@@ -99,7 +97,6 @@ const NSInteger ControlsViewHeight = 86;
             break;
         case UIDeviceOrientationLandscapeLeft:
         {
-            NSLog(@"landscape left");
             rotation = M_PI_2;
             statusFrame = CGRectMake(self.bounds.size.width-StatusViewHeight, 0, StatusViewHeight, self.bounds.size.height-ControlsViewHeight);
             cameraFrame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
@@ -107,7 +104,6 @@ const NSInteger ControlsViewHeight = 86;
             break;
         case UIDeviceOrientationLandscapeRight:
         {
-            NSLog(@"landscape right");
             rotation = -M_PI_2;
             statusFrame = CGRectMake(0, 0, StatusViewHeight, self.bounds.size.height-ControlsViewHeight);
             cameraFrame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);

@@ -8,14 +8,13 @@
 
 #import "CineBroadcasterViewController.h"
 #import <AVFoundation/AVFoundation.h>
-#import <videocore/api/iOS/VCSimpleSession.h>
 
 @interface CineBroadcasterViewController () <VCSessionDelegate>
 {
     CineBroadcasterView *_broadcasterView;
 }
 
-@property (nonatomic, retain) VCSimpleSession* session;
+@property (nonatomic, strong) VCSimpleSession* session;
 
 @end
 
@@ -29,6 +28,9 @@
 @dynamic videoBitRate;
 @dynamic framesPerSecond;
 
+@dynamic torchOn;
+@dynamic cameraState;
+
 // TODO: uncomment these if / when VideoCore supports the ability to configure them
 //@dynamic numAudioChannels;
 //@dynamic sampleRateInHz;
@@ -37,10 +39,13 @@
 {
     [super viewDidLoad];
 
-    _session = [[VCSimpleSession alloc] initWithVideoSize:CGSizeMake(self.frameWidth, self.frameHeight) frameRate:self.framesPerSecond bitrate:self.videoBitRate];
+    _session = [[VCSimpleSession alloc] initWithVideoSize:CGSizeMake(self.frameWidth, self.frameHeight) frameRate:self.framesPerSecond bitrate:self.videoBitRate useInterfaceOrientation:NO];
 
     _broadcasterView = (CineBroadcasterView *)self.view;
     [_broadcasterView.controlsView.recordButton.button addTarget:self action:@selector(toggleStreaming:) forControlEvents:UIControlEventTouchUpInside];
+    [_broadcasterView.controlsView.torchButton addTarget:self action:@selector(toggleTorch:) forControlEvents:UIControlEventTouchUpInside];
+    [_broadcasterView.controlsView.cameraStateButton addTarget:self action:@selector(toggleCameraState:) forControlEvents:UIControlEventTouchUpInside];
+    
     
     [_broadcasterView.cameraView addSubview:_session.previewView];
     _session.previewView.frame = _broadcasterView.bounds;
@@ -64,6 +69,42 @@
 
 - (BOOL) prefersStatusBarHidden {
     return YES;
+}
+
+- (BOOL)torchOn
+{
+    return _session.torch;
+}
+
+- (void)setTorchOn:(BOOL)isOn
+{
+    _session.torch = isOn;
+}
+
+- (CineCameraState)cameraState
+{
+    return (CineCameraState)_session.cameraState;
+}
+
+- (void)setCameraState:(CineCameraState)cameraState
+{
+    _session.cameraState = (VCCameraState)cameraState;
+}
+
+- (void)toggleTorch:(id)sender {
+    if (self.torchOn) {
+        self.torchOn = NO;
+    } else {
+        self.torchOn = YES;
+    }
+}
+
+- (void)toggleCameraState:(id)sender {
+    if (self.cameraState == CineCameraStateFront) {
+        self.cameraState = CineCameraStateBack;
+    } else {
+        self.cameraState = CineCameraStateFront;
+    }
 }
 
 - (void)toggleStreaming:(id)sender
