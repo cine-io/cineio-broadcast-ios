@@ -20,9 +20,9 @@ RTMP or HLS streaming (iOS, Android, web).
 The easiest way to use the SDK is via [CocoaPods][cocoapods]. Create a new XCode project with a file named `Podfile` that contains at least the following:
 
 ```ruby
-platform :ios, '6.0'
+platform :ios, '7.0'
 
-pod 'cineio-ios', '~> 0.3.4'
+pod 'cineio-ios', '~> 0.3.5'
 ```
 
 Then, install the Pod by running the `pod install` command:
