@@ -22,7 +22,7 @@ The easiest way to use the SDK is via [CocoaPods][cocoapods]. Create a new XCode
 ```ruby
 platform :ios, '7.0'
 
-pod 'cineio-ios', '~> 0.3.5'
+pod 'cineio-ios', '~> 0.4.0'
 ```
 
 Then, install the Pod by running the `pod install` command:
@@ -223,24 +223,6 @@ components should work seamlessly. To use them, follow these steps:
 2. Ensure that the view controller in your Storyboard has the correct class name set. It should be set to *your subclass* of `CineBroadcasterViewController`.
 3. Ensure that the view in your Storyboard has the correct class name set. It should be set to `CineBroadcasterView`.
 
-### Complying with `CineBroadcasterProtocol`
-
-Your `CineBroadcasterViewController` subclass must comply with
-`CineBroadcasterProtocol`. Specifically, you'll need to synthesize several
-properties in your subclass:
-
-```objective-c
-@implementation YourCineBroadcasterViewControllerSubclass
-
-// CineBroadcasterProtocol
-@synthesize frameWidth;
-@synthesize frameHeight;
-@synthesize framesPerSecond;
-@synthesize videoBitRate;
-
-@synthesize publishUrl;
-@synthesize publishStreamName;
-```
 
 ### Initializing the properties
 
@@ -254,8 +236,10 @@ You'll need to initialize these properties, most likely in your `viewDidLoad` me
     self.frameHeight = 720;
     self.framesPerSecond = 30;
     self.videoBitRate = 1500000;
+    self.sampleRateInHz = 44100; // either 44100 or 22050
 
-    // must be called _after_ we set up our properties, as our superclass will use them
+    // must be called _after_ we set up our properties, as our superclass
+    // will use them in its viewDidLoad method
     [super viewDidLoad];
 
     //-- cine.io setup
