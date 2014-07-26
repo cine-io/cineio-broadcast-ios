@@ -12,6 +12,12 @@
 @interface CineBroadcasterViewController () <VCSessionDelegate>
 {
     CineBroadcasterView *_broadcasterView;
+    CGSize _videoSize;
+    int _videoBitRate;
+    int _framesPerSecond;
+    float _sampleRateInHz;
+    BOOL _torchOn;
+    CineCameraState _cameraState;
 }
 
 @property (nonatomic, strong) VCSimpleSession* session;
@@ -20,26 +26,23 @@
 
 @implementation CineBroadcasterViewController
 
-@dynamic publishUrl;
-@dynamic publishStreamName;
+// managed by us
+@synthesize publishUrl;
+@synthesize publishStreamName;
 
-@dynamic frameWidth;
-@dynamic frameHeight;
+// managed by us (and we'll keep in sync w/ VCSimpleSession)
+@dynamic videoSize;
 @dynamic videoBitRate;
 @dynamic framesPerSecond;
-
+@dynamic sampleRateInHz;
 @dynamic torchOn;
 @dynamic cameraState;
-
-// TODO: uncomment these if / when VideoCore supports the ability to configure them
-//@dynamic numAudioChannels;
-//@dynamic sampleRateInHz;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    _session = [[VCSimpleSession alloc] initWithVideoSize:CGSizeMake(self.frameWidth, self.frameHeight) frameRate:self.framesPerSecond bitrate:self.videoBitRate useInterfaceOrientation:NO];
+    _session = [[VCSimpleSession alloc] initWithVideoSize:self.videoSize frameRate:self.framesPerSecond bitrate:self.videoBitRate useInterfaceOrientation:NO];
 
     _broadcasterView = (CineBroadcasterView *)self.view;
     [_broadcasterView.controlsView.recordButton.button addTarget:self action:@selector(toggleStreaming:) forControlEvents:UIControlEventTouchUpInside];
@@ -71,24 +74,65 @@
     return YES;
 }
 
+- (CGSize)videoSize
+{
+    return _videoSize;
+}
+
+- (void)setVideoSize:(CGSize)videoSize
+{
+    _session.videoSize = _videoSize = videoSize;
+}
+
+- (int)videoBitRate
+{
+    return _videoBitRate;
+}
+
+- (void)setVideoBitRate:(int)videoBitRate
+{
+    _session.bitrate = _videoBitRate = videoBitRate;
+}
+
+- (int)framesPerSecond
+{
+    return _framesPerSecond;
+}
+
+- (void)setFramesPerSecond:(int)framesPerSecond
+{
+    _session.fps = _framesPerSecond = framesPerSecond;
+}
+
+- (float)sampleRateInHz
+{
+    return _sampleRateInHz;
+}
+
+- (void)setSampleRateInHz:(float)sampleRateInHz
+{
+    _session.audioSampleRate = _sampleRateInHz = sampleRateInHz;
+}
+
 - (BOOL)torchOn
 {
-    return _session.torch;
+    return _torchOn;
 }
 
 - (void)setTorchOn:(BOOL)isOn
 {
-    _session.torch = isOn;
+    _session.torch = _torchOn = isOn;
 }
 
 - (CineCameraState)cameraState
 {
-    return (CineCameraState)_session.cameraState;
+    return _cameraState;
 }
 
 - (void)setCameraState:(CineCameraState)cameraState
 {
-    _session.cameraState = (VCCameraState)cameraState;
+    _cameraState = cameraState;
+    _session.cameraState = (VCCameraState)_cameraState;
 }
 
 - (void)toggleTorch:(id)sender {

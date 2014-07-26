@@ -16,20 +16,14 @@ enum CineCameraState {
 
 @protocol CineBroadcasterProtocol <NSObject>
 
-@property (nonatomic, copy) NSString *publishUrl;
-@property (nonatomic, copy) NSString *publishStreamName;
+@property (nonatomic, strong) NSString *publishUrl;
+@property (nonatomic, strong) NSString *publishStreamName;
 
-@property (nonatomic) int frameWidth;
-@property (nonatomic) int frameHeight;
-@property (nonatomic) int videoBitRate;
-@property (nonatomic) int framesPerSecond;
-
+@property (nonatomic, assign) CGSize videoSize;
+@property (nonatomic, assign) int videoBitRate;
+@property (nonatomic, assign) int framesPerSecond;
+@property (nonatomic, assign) float sampleRateInHz;
 @property (nonatomic, assign) BOOL torchOn;
 @property (nonatomic, assign) CineCameraState cameraState;
-
-
-// TODO: uncomment these if / when VideoCore supports the ability to configure them
-//@property (nonatomic) int numAudioChannels;
-//@property (nonatomic) float sampleRateInHz;
 
 @end
