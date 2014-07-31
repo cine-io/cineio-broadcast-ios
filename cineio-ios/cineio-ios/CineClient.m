@@ -9,6 +9,7 @@
 #import "CineClient.h"
 #import "CineConstants.h"
 #import "CineStream.h"
+#import "CineRecording.h"
 
 @interface CineClient (PrivateMethods)
 - (NSString *)url:(NSString *)endpoint;
@@ -87,6 +88,31 @@
 - (void)deleteStream:(NSString *)streamId withCompletionHandler:(void (^)(NSError* error, NSHTTPURLResponse* response))completion
 {
     [_http DELETE:[self url:@"/stream"] parameters:[self params:@{@"id" : streamId}] success:^(AFHTTPRequestOperation *operation, id attributes) {
+        completion(nil, operation.response);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        completion(error, nil);
+    }];
+}
+
+- (void)getStreamRecordings:(NSString *)streamId withCompletionHandler:(void (^)(NSError* error, NSArray* recordings))completion
+{
+    [_http GET:[self url:@"/stream/recordings"] parameters:[self params:@{@"id" : streamId}] success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSArray *recordingDicts = (NSArray *)responseObject;
+        NSMutableArray *recordings = [[NSMutableArray alloc] initWithCapacity:[recordingDicts count]];
+        for (id object in recordingDicts) {
+            NSDictionary *recordingDict = (NSDictionary *)object;
+            CineRecording *recording = [[CineRecording alloc] initWithAttributes:recordingDict];
+            [recordings addObject:recording];
+        }
+        completion(nil, [recordings copy]);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        completion(error, nil);
+    }];
+}
+
+- (void)deleteStreamRecording:(NSString *)streamId withName:(NSString *)name andCompletionHandler:(void (^)(NSError* error, NSHTTPURLResponse* response))completion
+{
+    [_http DELETE:[self url:@"/stream/recording"] parameters:[self params:@{@"id" : streamId, @"name" : name}] success:^(AFHTTPRequestOperation *operation, id attributes) {
         completion(nil, operation.response);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completion(error, nil);

@@ -116,4 +116,31 @@ const NSString *StreamName = @"my stream";
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:5.0];
 }
 
+- (void)testGetStreamRecordings
+{
+    [self prepare];
+    [_client getStreamRecordings:_stream.streamId withCompletionHandler:^(NSError *error, NSArray *recordings) {
+        if (error) {
+            [self notify:kXCTUnitWaitStatusFailure];
+        } else {
+            XCTAssertEqual([recordings count], 0);
+            [self notify:kXCTUnitWaitStatusSuccess];
+        }
+    }];
+   [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:10.0];
+}
+
+- (void)testDeleteStreamRecording
+{
+    // since we're using a newly-created stream, we'll just make sure the endpoint exists
+    // and test for the negative case
+    [self prepare];
+    [_client deleteStreamRecording:_stream.streamId withName:@"_SOME_123_NOT_VALID_NAME_456_" andCompletionHandler:^(NSError *error, NSHTTPURLResponse *response) {
+        XCTAssertNotNil(error);
+        XCTAssertTrue([[error localizedDescription] rangeOfString:@"bad request"].location != NSNotFound);
+        [self notify:kXCTUnitWaitStatusSuccess];
+    }];
+    [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:5.0];
+}
+
 @end

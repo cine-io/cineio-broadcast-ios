@@ -41,6 +41,7 @@
 		00C5E10E193ED668009DA7B9 /* libcineio-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DC193EBD63009DA7B9 /* libcineio-ios.a */; };
 		00C5E111193EF041009DA7B9 /* CineConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5E110193EF041009DA7B9 /* CineConstants.m */; };
 		00CDFB701989F4E0001C7304 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6F81975A05B00857375 /* MediaPlayer.framework */; };
+		00CDFB731989F6FD001C7304 /* CineRecording.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDFB721989F6FD001C7304 /* CineRecording.m */; };
 		ADA9581DB5FF4B4F835BAD16 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B31761E41A64412FA6E1DC12 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +113,8 @@
 		00C5E113193EF8F2009DA7B9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		00C5E158193F0C5A009DA7B9 /* CineIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineIO.h; sourceTree = "<group>"; };
 		00C5E159193F16B9009DA7B9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		00CDFB711989F6FD001C7304 /* CineRecording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineRecording.h; sourceTree = "<group>"; };
+		00CDFB721989F6FD001C7304 /* CineRecording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineRecording.m; sourceTree = "<group>"; };
 		26949636F7104DB5AD709489 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B31761E41A64412FA6E1DC12 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -208,6 +211,8 @@
 				00C5E106193EBEE1009DA7B9 /* CineClient.m */,
 				00C5E108193EC06B009DA7B9 /* CineProject.h */,
 				00C5E109193EC06B009DA7B9 /* CineProject.m */,
+				00CDFB711989F6FD001C7304 /* CineRecording.h */,
+				00CDFB721989F6FD001C7304 /* CineRecording.m */,
 				00C5E10B193EC1CD009DA7B9 /* CineStream.h */,
 				00C5E10C193EC1CD009DA7B9 /* CineStream.m */,
 				00ADC6CB1974632B00857375 /* CineRecordButtonView.h */,
@@ -409,6 +414,7 @@
 				00ADC6CD1974632B00857375 /* CinePixelBufferOutput.cpp in Sources */,
 				00ADC6C819745BC400857375 /* CineBroadcasterViewController.mm in Sources */,
 				00ADC6F41975993C00857375 /* CinePlayerViewController.m in Sources */,
+				00CDFB731989F6FD001C7304 /* CineRecording.m in Sources */,
 				00ADC6C519745BC400857375 /* CineBroadcasterControlsView.m in Sources */,
 				00C5E107193EBEE1009DA7B9 /* CineClient.m in Sources */,
 				00ADC6C719745BC400857375 /* CineBroadcasterView.m in Sources */,
