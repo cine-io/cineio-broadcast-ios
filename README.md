@@ -109,6 +109,23 @@ CineClient *client = [[CineClient alloc] initWithSecretKey:@"<YOUR SECRET>"];
 
 ```
 
+### Get the recordings of a stream (asynchronously)
+```objective-c
+[client getStreamRecordings:@"<SOME STREAM ID>" withCompletionHandler:^(NSError* error, NSArray* recordings) {
+  // do something
+}];
+```
+
+### Delete a stream recording (asynchronously)
+```objective-c
+[client deleteStreamRecording:@"<SOME STREAM ID>"
+                     withName:@"foo.mp4"
+         andCompletionHandler:^(NSError* error, NSHTTPURLResponse* response) {
+  // do something, like check for response.statusCode == 200
+}];
+
+```
+
 
 ## Playback (using `CinePlayerView`)
 
