@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "cineio-ios"
-  s.version             = "0.4.0"
+  s.version             = "0.4.1"
   s.summary             = "cine.io iOS SDK"
   s.description      = <<-DESC
                           iOS SDK for interacting with the cine.io API.
