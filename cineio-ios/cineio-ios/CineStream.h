@@ -19,6 +19,7 @@
 @property (nonatomic, copy, readonly) NSString *password;
 @property (nonatomic, copy, readonly) NSDate *expiration;
 @property (nonatomic, copy, readonly) NSDate *assignedAt;
+@property (nonatomic, readonly) BOOL record;
 
 - (id)initWithAttributes:(NSDictionary *)streamAttributes;
 

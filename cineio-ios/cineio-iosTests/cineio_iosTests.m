@@ -30,7 +30,8 @@ const NSString *StreamName = @"my stream";
     _client = [[CineClient alloc] initWithSecretKey:settings[@"CINE_IO_SECRET_KEY"]];
     
     [self prepare];
-    [_client createStream:@{ @"name" : StreamName } withCompletionHandler:^(NSError* error, CineStream* stream) {
+    [_client createStream:@{ @"name" : StreamName, @"record" : @"true" }
+    withCompletionHandler:^(NSError* error, CineStream* stream) {
         if (error) {
             [self notify:kXCTUnitWaitStatusFailure];
         } else {
@@ -52,6 +53,7 @@ const NSString *StreamName = @"my stream";
 {
     XCTAssertNotNil(_stream);
     XCTAssertEqualObjects(_stream.name, StreamName);
+    XCTAssertEqual(_stream.record, YES);
 }
 
 - (void)testGet

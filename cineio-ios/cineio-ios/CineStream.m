@@ -19,6 +19,7 @@
 @synthesize password;
 @synthesize expiration;
 @synthesize assignedAt;
+@synthesize record;
 
 - (id)initWithAttributes:(NSDictionary *)streamAttributes
 {
@@ -32,6 +33,7 @@
         password = [streamAttributes[@"password"] copy];
         expiration = [streamAttributes[@"expiration"] copy];
         assignedAt = [streamAttributes[@"assignedAt"] copy];
+        record = ((NSNumber *)[streamAttributes[@"record"] copy]).boolValue;
     }
     
     return self;

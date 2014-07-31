@@ -40,6 +40,7 @@
 		00C5E10D193EC1CD009DA7B9 /* CineStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5E10C193EC1CD009DA7B9 /* CineStream.m */; };
 		00C5E10E193ED668009DA7B9 /* libcineio-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DC193EBD63009DA7B9 /* libcineio-ios.a */; };
 		00C5E111193EF041009DA7B9 /* CineConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5E110193EF041009DA7B9 /* CineConstants.m */; };
+		00CDFB701989F4E0001C7304 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6F81975A05B00857375 /* MediaPlayer.framework */; };
 		ADA9581DB5FF4B4F835BAD16 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B31761E41A64412FA6E1DC12 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -143,6 +144,7 @@
 				00ADC6DA1974659500857375 /* CoreGraphics.framework in Frameworks */,
 				00ADC6E5197466AF00857375 /* CoreAudio.framework in Frameworks */,
 				00ADC6E01974662500857375 /* CoreMedia.framework in Frameworks */,
+				00CDFB701989F4E0001C7304 /* MediaPlayer.framework in Frameworks */,
 				00ADC6E3197466A600857375 /* AudioToolbox.framework in Frameworks */,
 				00ADC6D71974657900857375 /* AVFoundation.framework in Frameworks */,
 				00C5E0EE193EBD63009DA7B9 /* XCTest.framework in Frameworks */,
