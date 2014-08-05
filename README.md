@@ -249,8 +249,7 @@ You'll need to initialize these properties, most likely in your `viewDidLoad` me
 - (void)viewDidLoad
 {
     //-- A/V setup
-    self.frameWidth = 1280;
-    self.frameHeight = 720;
+    self.videoSize = CGSizeMake(1280, 720);
     self.framesPerSecond = 30;
     self.videoBitRate = 1500000;
     self.sampleRateInHz = 44100; // either 44100 or 22050
