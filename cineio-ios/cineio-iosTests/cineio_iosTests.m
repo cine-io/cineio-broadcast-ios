@@ -137,7 +137,7 @@ const NSString *StreamName = @"my stream";
     [self prepare];
     [_client deleteStreamRecording:_stream.streamId withName:@"_SOME_123_NOT_VALID_NAME_456_" andCompletionHandler:^(NSError *error, NSHTTPURLResponse *response) {
         XCTAssertNotNil(error);
-        XCTAssertTrue([[error localizedDescription] rangeOfString:@"bad request"].location != NSNotFound);
+        XCTAssertTrue([[error localizedDescription] rangeOfString:@"not found (404)"].location != NSNotFound);
         [self notify:kXCTUnitWaitStatusSuccess];
     }];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:5.0];
