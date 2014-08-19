@@ -1,3 +1,4 @@
 language: objective-c
 xcode_workspace: cineio-ios/cineio-ios.xcworkspace
 xcode_scheme: cineio-iosTests
+podfile: cineio-ios/Podfile
