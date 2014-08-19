@@ -1,4 +1,5 @@
 language: objective-c
 xcode_workspace: cineio-ios/cineio-ios.xcworkspace
-xcode_scheme: cineio-iosTests
+xcode_scheme: cineio-ios
 podfile: cineio-ios/Podfile
+script: "xctool -workspace cineio-ios/cineio-ios.xcworkspace -scheme cineio-ios build"
