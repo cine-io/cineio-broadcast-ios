@@ -23,6 +23,7 @@
     if (self = [super init]) {
         _secretKey = secretKey;
         _http = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:BaseUrl]];
+        [_http.requestSerializer setValue:UserAgent forHTTPHeaderField:@"User-Agent"];
         _http.responseSerializer = [AFJSONResponseSerializer serializer];
     }
     
