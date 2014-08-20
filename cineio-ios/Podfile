@@ -4,7 +4,7 @@ pod 'AFNetworking',       '~> 2.2.4'
 pod 'XCTAsyncTestCase',   '~> 0.1.0'
 
 # Comment out this line if working on VideoCore
-pod 'VideoCore',          '~> 0.1.9'
+pod 'VideoCore',          '~> 0.1.10'
 
 # Uncomment this line if working on VideoCore (also remove VideoCore version from cineio-ios.podspec)
 #pod 'VideoCore',          path: '/Users/jeffrey/dev/cine-dev/VideoCore'

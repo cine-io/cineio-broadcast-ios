@@ -12,7 +12,6 @@
 		00ADC6C519745BC400857375 /* CineBroadcasterControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6BD19745BC400857375 /* CineBroadcasterControlsView.m */; };
 		00ADC6C719745BC400857375 /* CineBroadcasterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6C219745BC400857375 /* CineBroadcasterView.m */; };
 		00ADC6C819745BC400857375 /* CineBroadcasterViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6C419745BC400857375 /* CineBroadcasterViewController.mm */; };
-		00ADC6CD1974632B00857375 /* CinePixelBufferOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6C91974632B00857375 /* CinePixelBufferOutput.cpp */; };
 		00ADC6CE1974632B00857375 /* CineRecordButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6CC1974632B00857375 /* CineRecordButtonView.m */; };
 		00ADC6D0197464C700857375 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6CF197464C700857375 /* QuartzCore.framework */; };
 		00ADC6D2197464CF00857375 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D1197464CF00857375 /* CoreGraphics.framework */; };
@@ -78,8 +77,6 @@
 		00ADC6C219745BC400857375 /* CineBroadcasterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineBroadcasterView.m; sourceTree = "<group>"; };
 		00ADC6C319745BC400857375 /* CineBroadcasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineBroadcasterViewController.h; sourceTree = "<group>"; };
 		00ADC6C419745BC400857375 /* CineBroadcasterViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CineBroadcasterViewController.mm; sourceTree = "<group>"; };
-		00ADC6C91974632B00857375 /* CinePixelBufferOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CinePixelBufferOutput.cpp; sourceTree = "<group>"; };
-		00ADC6CA1974632B00857375 /* CinePixelBufferOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinePixelBufferOutput.h; sourceTree = "<group>"; };
 		00ADC6CB1974632B00857375 /* CineRecordButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineRecordButtonView.h; sourceTree = "<group>"; };
 		00ADC6CC1974632B00857375 /* CineRecordButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineRecordButtonView.m; sourceTree = "<group>"; };
 		00ADC6CF197464C700857375 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -226,8 +223,6 @@
 				00ADC6C419745BC400857375 /* CineBroadcasterViewController.mm */,
 				00ADC6F21975993C00857375 /* CinePlayerViewController.h */,
 				00ADC6F31975993C00857375 /* CinePlayerViewController.m */,
-				00ADC6C91974632B00857375 /* CinePixelBufferOutput.cpp */,
-				00ADC6CA1974632B00857375 /* CinePixelBufferOutput.h */,
 				00C5E0E2193EBD63009DA7B9 /* Supporting Files */,
 			);
 			path = "cineio-ios";
@@ -411,7 +406,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00ADC6CD1974632B00857375 /* CinePixelBufferOutput.cpp in Sources */,
 				00ADC6C819745BC400857375 /* CineBroadcasterViewController.mm in Sources */,
 				00ADC6F41975993C00857375 /* CinePlayerViewController.m in Sources */,
 				00CDFB731989F6FD001C7304 /* CineRecording.m in Sources */,
