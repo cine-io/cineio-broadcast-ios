@@ -24,7 +24,7 @@ The easiest way to use the SDK is via [CocoaPods][cocoapods]. Create a new XCode
 ```ruby
 platform :ios, '7.0'
 
-pod 'cineio-ios', '~> 0.4.3'
+pod 'cineio-ios', '~> 0.4'
 ```
 
 Then, install the Pod by running the `pod install` command:
@@ -58,7 +58,30 @@ a working example of a simple application that uses this SDK.
 ### Instantiate the client
 
 ```objective-c
-CineClient *client = [[CineClient alloc] initWithSecretKey:@"<YOUR SECRET>"];
+CineClient *client = [[CineClient alloc] init];
+```
+
+### Set the client properties
+
+Most of the APIs on the CineClient require that the `projectSecretKey` property
+has been set. In addition, the `getProjectsWithCompletionHandler` API requires
+that the `masterKey` property has been set. Be sure to set the appropriate
+properties for the APIs you wish to use.
+
+```objective-c
+client.masterKey = @"YOUR_ACCOUNT_MASTER_KEY";
+client.projectSecretKey = @"YOUR_PROJECT_SECRET_KEY";
+```
+
+### Get your projects (asynchronously)
+
+```objective-c
+[client getProjectsWithCompletionHandler:^(NSError *err, NSArray *projects) {
+  for (id object in streams) {
+    CineProject *project = (CineProject *)object;
+    // do something
+  }
+}];
 ```
 
 ### Get your project (asynchronously)

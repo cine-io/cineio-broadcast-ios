@@ -14,11 +14,14 @@
 
 @interface CineClient : NSObject
 {
-    NSString *_secretKey;
     AFHTTPRequestOperationManager *_http;
 }
 
-- (id)initWithSecretKey:(NSString *)secretKey;
+@property (nonatomic, strong) NSString *masterKey;
+@property (nonatomic, strong) NSString *projectSecretKey;
+
+- (id)init;
+- (void)getProjectsWithCompletionHandler:(void (^)(NSError* error, NSArray* projects))completion;
 - (void)getProjectWithCompletionHandler:(void (^)(NSError* error, CineProject* project))completion;
 - (void)getStreamsWithCompletionHandler:(void (^)(NSError* error, NSArray* streams))completion;
 - (void)getStream:(NSString *)streamId withCompletionHandler:(void (^)(NSError* error, CineStream* stream))completion;

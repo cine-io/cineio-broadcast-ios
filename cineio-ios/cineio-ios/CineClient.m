@@ -18,10 +18,12 @@
 
 @implementation CineClient
 
-- (id)initWithSecretKey:(NSString *)secretKey
+@synthesize masterKey;
+@synthesize projectSecretKey;
+
+- (id)init
 {
     if (self = [super init]) {
-        _secretKey = secretKey;
         _http = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:BaseUrl]];
         [_http.requestSerializer setValue:UserAgent forHTTPHeaderField:@"User-Agent"];
         _http.responseSerializer = [AFJSONResponseSerializer serializer];
@@ -30,9 +32,27 @@
     return self;
 }
 
+- (void)getProjectsWithCompletionHandler:(void (^)(NSError* error, NSArray* projects))completion
+{
+    NSAssert(masterKey != nil, @"masterKey must be set!");
+    [_http GET:@"projects" parameters:@{ @"masterKey" : masterKey } success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSArray *projectDicts = (NSArray *)responseObject;
+        NSMutableArray *projects = [[NSMutableArray alloc] initWithCapacity:[projectDicts count]];
+        for (id object in projectDicts) {
+            NSDictionary *projectDict = (NSDictionary *)object;
+            CineProject *project = [[CineProject alloc] initWithAttributes:projectDict];
+            [projects addObject:project];
+        }
+        completion(nil, [projects copy]);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        completion(error, nil);
+    }];
+}
+
 - (void)getProjectWithCompletionHandler:(void (^)(NSError* error, CineProject* project))completion
 {
-    [_http GET:[self url:@"project"] parameters:[self params:nil] success:^(AFHTTPRequestOperation *operation, id attributes) {
+    NSAssert(projectSecretKey != nil, @"projectSecretKey must be set!");
+    [_http GET:@"project" parameters:[self params:nil] success:^(AFHTTPRequestOperation *operation, id attributes) {
         CineProject *project = [[CineProject alloc] initWithAttributes:attributes];
         completion(nil, project);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -42,7 +62,8 @@
 
 - (void)getStreamsWithCompletionHandler:(void (^)(NSError* error, NSArray* streams))completion
 {
-    [_http GET:@"streams" parameters:[self params:nil] success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    NSAssert(projectSecretKey != nil, @"projectSecretKey must be set!");
+   [_http GET:@"streams" parameters:[self params:nil] success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSArray *streamDicts = (NSArray *)responseObject;
         NSMutableArray *streams = [[NSMutableArray alloc] initWithCapacity:[streamDicts count]];
         for (id object in streamDicts) {
@@ -58,6 +79,7 @@
 
 - (void)getStream:(NSString *)streamId withCompletionHandler:(void (^)(NSError* error, CineStream* stream))completion
 {
+    NSAssert(projectSecretKey != nil, @"projectSecretKey must be set!");
     [_http GET:@"stream" parameters:[self params:@{@"id" : streamId}] success:^(AFHTTPRequestOperation *operation, id attributes) {
         CineStream *stream = [[CineStream alloc] initWithAttributes:attributes];
         completion(nil, stream);
@@ -68,6 +90,7 @@
 
 - (void)createStream:(NSDictionary *)attributes withCompletionHandler:(void (^)(NSError* error, CineStream* stream))completion
 {
+    NSAssert(projectSecretKey != nil, @"projectSecretKey must be set!");
     [_http POST:@"stream" parameters:[self params:attributes] success:^(AFHTTPRequestOperation *operation, id attrs) {
         CineStream *stream = [[CineStream alloc] initWithAttributes:attrs];
         completion(nil, stream);
@@ -78,7 +101,8 @@
 
 - (void)updateStream:(NSDictionary *)attributes withCompletionHandler:(void (^)(NSError* error, CineStream* stream))completion
 {
-    [_http PUT:@"stream" parameters:[self params:attributes] success:^(AFHTTPRequestOperation *operation, id attrs) {
+    NSAssert(projectSecretKey != nil, @"projectSecretKey must be set!");
+   [_http PUT:@"stream" parameters:[self params:attributes] success:^(AFHTTPRequestOperation *operation, id attrs) {
         CineStream *stream = [[CineStream alloc] initWithAttributes:attrs];
         completion(nil, stream);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -88,6 +112,7 @@
 
 - (void)deleteStream:(NSString *)streamId withCompletionHandler:(void (^)(NSError* error, NSHTTPURLResponse* response))completion
 {
+    NSAssert(projectSecretKey != nil, @"projectSecretKey must be set!");
     [_http DELETE:@"stream" parameters:[self params:@{@"id" : streamId}] success:^(AFHTTPRequestOperation *operation, id attributes) {
         completion(nil, operation.response);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -97,6 +122,7 @@
 
 - (void)getStreamRecordings:(NSString *)streamId withCompletionHandler:(void (^)(NSError* error, NSArray* recordings))completion
 {
+    NSAssert(projectSecretKey != nil, @"projectSecretKey must be set!");
     [_http GET:@"stream/recordings" parameters:[self params:@{@"id" : streamId}] success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSArray *recordingDicts = (NSArray *)responseObject;
         NSMutableArray *recordings = [[NSMutableArray alloc] initWithCapacity:[recordingDicts count]];
@@ -113,6 +139,7 @@
 
 - (void)deleteStreamRecording:(NSString *)streamId withName:(NSString *)name andCompletionHandler:(void (^)(NSError* error, NSHTTPURLResponse* response))completion
 {
+    NSAssert(projectSecretKey != nil, @"projectSecretKey must be set!");
     [_http DELETE:@"stream/recording" parameters:[self params:@{@"id" : streamId, @"name" : name}] success:^(AFHTTPRequestOperation *operation, id attributes) {
         completion(nil, operation.response);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -123,7 +150,7 @@
 - (NSDictionary *)params:(NSDictionary *)optionalParams
 {
     NSMutableDictionary *allParams = [[NSMutableDictionary alloc] init];
-    [allParams addEntriesFromDictionary:@{ @"secretKey" : _secretKey }];
+    [allParams addEntriesFromDictionary:@{ @"secretKey" : projectSecretKey }];
     if (optionalParams) [allParams addEntriesFromDictionary:optionalParams];
 
     return allParams;

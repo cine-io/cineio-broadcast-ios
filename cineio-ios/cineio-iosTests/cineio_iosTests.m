@@ -27,8 +27,19 @@ const NSString *StreamName = @"my stream";
     
     NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:@"cineio-settings" ofType:@"plist"];
     NSDictionary *settings = [[NSDictionary alloc] initWithContentsOfFile:path];
-    _client = [[CineClient alloc] initWithSecretKey:settings[@"CINE_IO_SECRET_KEY"]];
-    
+    _client = [[CineClient alloc] init];
+    _client.masterKey = settings[@"CINE_IO_ACCOUNT_MASTER_KEY"];
+    _client.projectSecretKey = settings[@"CINE_IO_PROJECT_SECRET_KEY"];
+}
+
+- (void)tearDown
+{
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    [super tearDown];
+}
+
+- (void)createStream
+{
     [self prepare];
     [_client createStream:@{ @"name" : StreamName, @"record" : @"true" }
     withCompletionHandler:^(NSError* error, CineStream* stream) {
@@ -43,21 +54,45 @@ const NSString *StreamName = @"my stream";
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:5.0];
 }
 
-- (void)tearDown
+- (void)testGetProjects
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+    [self prepare];
+    [_client getProjectsWithCompletionHandler:^(NSError *error, NSArray *projects) {
+        if (error) {
+            [self notify:kXCTUnitWaitStatusFailure];
+        } else {
+            XCTAssert([projects count] > 0);
+            [self notify:kXCTUnitWaitStatusSuccess];
+        }
+    }];
+    [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:5.0];
 }
 
-- (void)testCreate
+- (void)testGetProject
 {
+    [self prepare];
+    [_client getProjectWithCompletionHandler:^(NSError *error, CineProject *project) {
+        if (error) {
+            [self notify:kXCTUnitWaitStatusFailure];
+        } else {
+            XCTAssertNotNil(project);
+            [self notify:kXCTUnitWaitStatusSuccess];
+        }
+    }];
+    [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:5.0];
+}
+
+- (void)testCreateStream
+{
+    [self createStream];
     XCTAssertNotNil(_stream);
     XCTAssertEqualObjects(_stream.name, StreamName);
     XCTAssertEqual(_stream.record, YES);
 }
 
-- (void)testGet
+- (void)testGetStream
 {
+    [self createStream];
     [self prepare];
     [_client getStream:_stream.streamId withCompletionHandler:^(NSError *error, CineStream *stream) {
         if (error) {
@@ -72,6 +107,7 @@ const NSString *StreamName = @"my stream";
 
 - (void)testGetAllStreams
 {
+    [self createStream];
     [self prepare];
     [_client getStreamsWithCompletionHandler:^(NSError *error, NSArray *streams) {
         if (error) {
@@ -89,8 +125,9 @@ const NSString *StreamName = @"my stream";
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:5.0];
 }
 
-- (void)testUpdate
+- (void)testUpdateStream
 {
+    [self createStream];
     [self prepare];
     [_client updateStream:@{ @"id" : _stream.streamId, @"name" : @"my other stream" } withCompletionHandler:^(NSError *error, CineStream *stream) {
         if (error) {
@@ -103,8 +140,9 @@ const NSString *StreamName = @"my stream";
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:5.0];
 }
 
-- (void)testDelete
+- (void)testDeleteStream
 {
+    [self createStream];
     [self prepare];
     [_client deleteStream:_stream.streamId withCompletionHandler:^(NSError *error, NSHTTPURLResponse *response) {
         if (error || response.statusCode != 200) {
@@ -118,6 +156,7 @@ const NSString *StreamName = @"my stream";
 
 - (void)testGetStreamRecordings
 {
+    [self createStream];
     [self prepare];
     [_client getStreamRecordings:_stream.streamId withCompletionHandler:^(NSError *error, NSArray *recordings) {
         if (error) {
@@ -134,6 +173,7 @@ const NSString *StreamName = @"my stream";
 {
     // since we're using a newly-created stream, we'll just make sure the endpoint exists
     // and test for the negative case
+    [self createStream];
     [self prepare];
     [_client deleteStreamRecording:_stream.streamId withName:@"_SOME_123_NOT_VALID_NAME_456_" andCompletionHandler:^(NSError *error, NSHTTPURLResponse *response) {
         XCTAssertNotNil(error);
