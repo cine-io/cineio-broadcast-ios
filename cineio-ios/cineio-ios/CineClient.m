@@ -62,8 +62,18 @@
 
 - (void)getStreamsWithCompletionHandler:(void (^)(NSError* error, NSArray* streams))completion
 {
+    [self getStreams:nil withCompletionHandler:completion];
+}
+
+- (void)getStreamsForName:(NSString *)name withCompletionHandler:(void (^)(NSError* error, NSArray* streams))completion
+{
+    [self getStreams:@{@"name" : name} withCompletionHandler:completion];
+}
+
+- (void)getStreams:(NSDictionary *)attributes withCompletionHandler:(void (^)(NSError* error, NSArray* streams))completion
+{
     NSAssert(projectSecretKey != nil, @"projectSecretKey must be set!");
-   [_http GET:@"streams" parameters:[self params:nil] success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [_http GET:@"streams" parameters:[self params:attributes] success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSArray *streamDicts = (NSArray *)responseObject;
         NSMutableArray *streams = [[NSMutableArray alloc] initWithCapacity:[streamDicts count]];
         for (id object in streamDicts) {

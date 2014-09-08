@@ -24,6 +24,7 @@
 - (void)getProjectsWithCompletionHandler:(void (^)(NSError* error, NSArray* projects))completion;
 - (void)getProjectWithCompletionHandler:(void (^)(NSError* error, CineProject* project))completion;
 - (void)getStreamsWithCompletionHandler:(void (^)(NSError* error, NSArray* streams))completion;
+- (void)getStreamsForName:(NSString *)name withCompletionHandler:(void (^)(NSError* error, NSArray* streams))completion;
 - (void)getStream:(NSString *)streamId withCompletionHandler:(void (^)(NSError* error, CineStream* stream))completion;
 - (void)createStream:(NSDictionary *)attributes withCompletionHandler:(void (^)(NSError* error, CineStream* stream))completion;
 - (void)updateStream:(NSDictionary *)attributes withCompletionHandler:(void (^)(NSError* error, CineStream* stream))completion;

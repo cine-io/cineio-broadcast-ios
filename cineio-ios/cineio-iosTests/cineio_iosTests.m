@@ -105,6 +105,26 @@ const NSString *StreamName = @"my stream";
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:5.0];
 }
 
+- (void)testGetNamedStreams
+{
+    [self createStream];
+    [self prepare];
+    [_client getStreamsForName:(NSString *)StreamName withCompletionHandler:^(NSError *error, NSArray *streams) {
+        if (error) {
+            [self notify:kXCTUnitWaitStatusFailure];
+        } else {
+            XCTAssert(streams.count > 0);
+            BOOL found = false;
+            for (CineStream *stream in streams) {
+                found = found || ([stream.streamId isEqualToString:_stream.streamId]);
+            }
+            XCTAssert(found);
+            [self notify:kXCTUnitWaitStatusSuccess];
+        }
+    }];
+    [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:5.0];
+}
+
 - (void)testGetAllStreams
 {
     [self createStream];
