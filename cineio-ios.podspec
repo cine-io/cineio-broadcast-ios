@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "cineio-ios"
-  s.version             = "0.4.5"
+  s.version             = "0.4.6"
   s.summary             = "cine.io iOS SDK"
   s.description      = <<-DESC
                           iOS SDK for interacting with the cine.io API.
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.frameworks          = [ 'Foundation', 'UIKit', 'QuartzCore', 'CoreGraphics', 'CoreAudio', 'CoreMedia', 'AudioToolbox', 'AVFoundation', 'MediaPlayer' ]
 
-  s.dependency          'AFNetworking', '~> 2.2.4'
+  s.dependency          'AFNetworking', '~> 2.4.1'
   s.dependency          'VideoCore', '~> 0.1.10'
 
   # propagated from VideoCore
