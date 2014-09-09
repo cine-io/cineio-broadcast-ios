@@ -34,6 +34,9 @@ PODS:
   - boost/shared_ptr-includes (1.51.0)
   - boost/string_algorithms-includes (1.51.0)
   - glm (0.9.4.6)
+  - OHHTTPStubs (3.1.5):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/Core (3.1.5)
   - UriParser-cpp (0.1.3)
   - VideoCore (0.1.10.2):
     - boost (~> 1.51.0)
@@ -43,6 +46,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.2.4)
+  - OHHTTPStubs (~> 3.1.5)
   - VideoCore (~> 0.1.10)
   - XCTAsyncTestCase (~> 0.1.0)
 
@@ -50,6 +54,7 @@ SPEC CHECKSUMS:
   AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
   boost: 581038adda16d11045576013ad27e3eeeabc2d10
   glm: 840dd35fe3cc445935accf81ffd1384dad532ee7
+  OHHTTPStubs: c1e362552b71b81e1deb7a80f44c51585b946c43
   UriParser-cpp: e6df3fd87445ba4ab37a72acafb4f03bc39db524
   VideoCore: 9a53d2499463e596ccb502cbdcddb222b8a06759
   XCTAsyncTestCase: 05c35ff59afc379911544e7452d48af186c9c5a2

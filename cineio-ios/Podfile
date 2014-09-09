@@ -2,6 +2,7 @@ platform :ios, '7.0'
 
 pod 'AFNetworking',       '~> 2.2.4'
 pod 'XCTAsyncTestCase',   '~> 0.1.0'
+pod 'OHHTTPStubs',        '~> 3.1.5'
 
 # Comment out this line if working on VideoCore
 pod 'VideoCore',          '~> 0.1.10'
