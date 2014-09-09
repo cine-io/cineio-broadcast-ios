@@ -1,0 +1,17 @@
+{
+   "name" : "my stream",
+   "play" : {
+      "rtmp" : "rtmp://fml.cine.io/20C45E/cines/ekfsBIomXx?adbe-live-event=ekfsBIomXx",
+      "hls" : "http://hls.cine.io/cines/ekfsBIomXx/ekfsBIomXx.m3u8"
+   },
+   "publish" : {
+      "stream" : "ekfsBIomXx?notes28&amp;adbe-live-event=ekfsBIomXx",
+      "url" : "rtmp://stream.lax.cine.io/20C45E/cines"
+   },
+   "password" : "notes28",
+   "record" : true,
+   "expiration" : "2034-08-18T00:00:00.000Z",
+   "assignedAt" : "2014-08-18T23:39:20.865Z",
+   "id" : "540e3cfcdf00830a005860d1",
+   "streamName" : "ekfsBIomXx"
+}

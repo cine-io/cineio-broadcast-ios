@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		0016E0C3194963120008BB95 /* SAMPLE-cineio-settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0016E0C2194963120008BB95 /* SAMPLE-cineio-settings.plist */; };
 		0016E0C5194963BF0008BB95 /* cineio-settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0016E0C4194963BF0008BB95 /* cineio-settings.plist */; };
+		0064202219BE776600DF038B /* getNamedStreams.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202119BE776600DF038B /* getNamedStreams.json */; };
+		0064202419BE781000DF038B /* getAllStreams.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202319BE781000DF038B /* getAllStreams.json */; };
+		0064202619BE78A900DF038B /* getStream.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202519BE78A900DF038B /* getStream.json */; };
+		0064202919BE793B00DF038B /* getProject.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202719BE793B00DF038B /* getProject.json */; };
+		0064202A19BE793B00DF038B /* getProjects.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202819BE793B00DF038B /* getProjects.json */; };
+		0064202C19BE79FD00DF038B /* createStream.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202B19BE79FD00DF038B /* createStream.json */; };
+		0064202E19BE7A7600DF038B /* updateStream.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202D19BE7A7600DF038B /* updateStream.json */; };
+		0064203019BE7AD000DF038B /* deleteStream.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202F19BE7AD000DF038B /* deleteStream.json */; };
+		0064203319BE7C0500DF038B /* deleteStreamRecording.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064203119BE7C0500DF038B /* deleteStreamRecording.json */; };
+		0064203419BE7C0500DF038B /* getStreamRecordings.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064203219BE7C0500DF038B /* getStreamRecordings.json */; };
 		00ADC6C519745BC400857375 /* CineBroadcasterControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6BD19745BC400857375 /* CineBroadcasterControlsView.m */; };
 		00ADC6C719745BC400857375 /* CineBroadcasterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6C219745BC400857375 /* CineBroadcasterView.m */; };
 		00ADC6C819745BC400857375 /* CineBroadcasterViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6C419745BC400857375 /* CineBroadcasterViewController.mm */; };
@@ -69,6 +79,16 @@
 /* Begin PBXFileReference section */
 		0016E0C2194963120008BB95 /* SAMPLE-cineio-settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = "SAMPLE-cineio-settings.plist"; sourceTree = "<group>"; };
 		0016E0C4194963BF0008BB95 /* cineio-settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "cineio-settings.plist"; sourceTree = "<group>"; };
+		0064202119BE776600DF038B /* getNamedStreams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getNamedStreams.json; sourceTree = "<group>"; };
+		0064202319BE781000DF038B /* getAllStreams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getAllStreams.json; sourceTree = "<group>"; };
+		0064202519BE78A900DF038B /* getStream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getStream.json; sourceTree = "<group>"; };
+		0064202719BE793B00DF038B /* getProject.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getProject.json; sourceTree = "<group>"; };
+		0064202819BE793B00DF038B /* getProjects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getProjects.json; sourceTree = "<group>"; };
+		0064202B19BE79FD00DF038B /* createStream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = createStream.json; sourceTree = "<group>"; };
+		0064202D19BE7A7600DF038B /* updateStream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = updateStream.json; sourceTree = "<group>"; };
+		0064202F19BE7AD000DF038B /* deleteStream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deleteStream.json; sourceTree = "<group>"; };
+		0064203119BE7C0500DF038B /* deleteStreamRecording.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deleteStreamRecording.json; sourceTree = "<group>"; };
+		0064203219BE7C0500DF038B /* getStreamRecordings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getStreamRecordings.json; sourceTree = "<group>"; };
 		009CB1A21980965700C0ADF6 /* CineIconsBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CineIconsBase64.h; sourceTree = "<group>"; };
 		00ADC6BC19745BC400857375 /* CineBroadcasterControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineBroadcasterControlsView.h; sourceTree = "<group>"; };
 		00ADC6BD19745BC400857375 /* CineBroadcasterControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineBroadcasterControlsView.m; sourceTree = "<group>"; };
@@ -252,6 +272,16 @@
 				00C5E0F8193EBD63009DA7B9 /* InfoPlist.strings */,
 				0016E0C2194963120008BB95 /* SAMPLE-cineio-settings.plist */,
 				0016E0C4194963BF0008BB95 /* cineio-settings.plist */,
+				0064202819BE793B00DF038B /* getProjects.json */,
+				0064202719BE793B00DF038B /* getProject.json */,
+				0064202B19BE79FD00DF038B /* createStream.json */,
+				0064202319BE781000DF038B /* getAllStreams.json */,
+				0064202119BE776600DF038B /* getNamedStreams.json */,
+				0064202519BE78A900DF038B /* getStream.json */,
+				0064202D19BE7A7600DF038B /* updateStream.json */,
+				0064202F19BE7AD000DF038B /* deleteStream.json */,
+				0064203219BE7C0500DF038B /* getStreamRecordings.json */,
+				0064203119BE7C0500DF038B /* deleteStreamRecording.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -330,9 +360,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0064202419BE781000DF038B /* getAllStreams.json in Resources */,
+				0064202219BE776600DF038B /* getNamedStreams.json in Resources */,
+				0064203319BE7C0500DF038B /* deleteStreamRecording.json in Resources */,
+				0064202E19BE7A7600DF038B /* updateStream.json in Resources */,
+				0064202A19BE793B00DF038B /* getProjects.json in Resources */,
+				0064202619BE78A900DF038B /* getStream.json in Resources */,
+				0064202919BE793B00DF038B /* getProject.json in Resources */,
 				00C5E0FA193EBD63009DA7B9 /* InfoPlist.strings in Resources */,
 				0016E0C3194963120008BB95 /* SAMPLE-cineio-settings.plist in Resources */,
 				0016E0C5194963BF0008BB95 /* cineio-settings.plist in Resources */,
+				0064203419BE7C0500DF038B /* getStreamRecordings.json in Resources */,
+				0064203019BE7AD000DF038B /* deleteStream.json in Resources */,
+				0064202C19BE79FD00DF038B /* createStream.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
