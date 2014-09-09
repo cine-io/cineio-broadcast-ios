@@ -1,21 +1,23 @@
 PODS:
-  - AFNetworking (2.2.4):
+  - AFNetworking (2.4.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
     - AFNetworking/UIKit
-  - AFNetworking/NSURLConnection (2.2.4):
+  - AFNetworking/NSURLConnection (2.4.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.2.4):
-    - AFNetworking/NSURLConnection
-  - AFNetworking/Reachability (2.2.4)
-  - AFNetworking/Security (2.2.4)
-  - AFNetworking/Serialization (2.2.4)
-  - AFNetworking/UIKit (2.2.4):
+  - AFNetworking/NSURLSession (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.4.1)
+  - AFNetworking/Security (2.4.1)
+  - AFNetworking/Serialization (2.4.1)
+  - AFNetworking/UIKit (2.4.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - boost (1.51.0):
@@ -45,13 +47,13 @@ PODS:
   - XCTAsyncTestCase (0.1.0)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.2.4)
+  - AFNetworking (~> 2.4.1)
   - OHHTTPStubs (~> 3.1.5)
   - VideoCore (~> 0.1.10)
   - XCTAsyncTestCase (~> 0.1.0)
 
 SPEC CHECKSUMS:
-  AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
+  AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
   boost: 581038adda16d11045576013ad27e3eeeabc2d10
   glm: 840dd35fe3cc445935accf81ffd1384dad532ee7
   OHHTTPStubs: c1e362552b71b81e1deb7a80f44c51585b946c43
