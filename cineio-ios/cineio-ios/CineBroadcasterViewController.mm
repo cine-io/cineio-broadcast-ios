@@ -37,6 +37,7 @@
 @dynamic sampleRateInHz;
 @dynamic torchOn;
 @dynamic cameraState;
+@dynamic streamState;
 
 - (void)viewDidLoad
 {
@@ -133,6 +134,11 @@
 {
     _cameraState = cameraState;
     _session.cameraState = (VCCameraState)_cameraState;
+}
+
+- (CineStreamState)streamState
+{
+    return (CineStreamState)_session.rtmpSessionState;
 }
 
 - (void)toggleTorch:(id)sender {

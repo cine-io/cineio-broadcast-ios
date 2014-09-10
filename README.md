@@ -201,16 +201,19 @@ valid `CineStream` object.
 
 ### Starting Playback
 
-To start playback, simply call `startStreaming`. This method will firstr
+To start playback, simply call `startStreaming`. This method will first
 attempt to (asynchronously) validate that a stream exists at the given HLS
 URL, and if it does, will start to play it. Otherwise, an appropriate error
 message will be displayed in a `UIAlert`.
+
+You likely want to disable the idle timer in this method.
 
 ```objective-c
 - (IBAction)playButtonPressed:(id)sender
 {
     playButton.enabled = NO;
     playButton.hidden = YES;
+    [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
     [self startStreaming];
 }
 ```
@@ -220,11 +223,12 @@ message will be displayed in a `UIAlert`.
 When the stream has finished playing (for any reason, including the user
 quitting, the stream ending, or if errors are encountered), `finishStreaming`
 will be called. You should put any cleanup code that you want executed into
-this method.
+this method (such as re-enabling the idle timer).
 
 ```objective-c
 - (void)finishStreaming
 {
+    [[UIApplication sharedApplication] setIdleTimerDisabled:NO];
     playButton.hidden = NO;
     playButton.enabled = YES;
 }
@@ -306,6 +310,34 @@ You'll need to initialize these properties, most likely in your `viewDidLoad` me
     }];
 }
 ```
+
+### Streaming Hooks
+
+You may want to take certain actions before or after streaming. You can do that
+in the `toggleStreaming` method. For example, you will likely want to enable /
+disable the idle timer in this method as appropriate.
+
+
+```objective-c
+- (void)toggleStreaming:(id)sender
+{
+    switch(self.streamState) {
+        case CineStreamStateNone:
+        case CineStreamStatePreviewStarted:
+        case CineStreamStateEnded:
+        case CineStreamStateError:
+            [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
+            break;
+        default:
+            [[UIApplication sharedApplication] setIdleTimerDisabled:NO];
+            break;
+    }
+
+    // start / stop the actual stream
+    [super toggleStreaming:sender];
+}
+```
+
 
 
 ## Acknowledgements

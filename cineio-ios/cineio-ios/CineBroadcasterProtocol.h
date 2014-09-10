@@ -14,6 +14,15 @@ enum CineCameraState {
     CineCameraStateBack = VCCameraStateBack
 };
 
+enum CineStreamState {
+    CineStreamStateNone = VCSessionStateNone,
+    CineStreamStatePreviewStarted = VCSessionStatePreviewStarted,
+    CineStreamStateStarting = VCSessionStateStarting,
+    CineStreamStateStarted = VCSessionStateStarted,
+    CineStreamStateEnded = VCSessionStateEnded,
+    CineStreamStateError = VCSessionStateError
+};
+
 @protocol CineBroadcasterProtocol <NSObject>
 
 @property (nonatomic, strong) NSString *publishUrl;
@@ -25,5 +34,6 @@ enum CineCameraState {
 @property (nonatomic, assign) float sampleRateInHz;
 @property (nonatomic, assign) BOOL torchOn;
 @property (nonatomic, assign) CineCameraState cameraState;
+@property (nonatomic, readonly) CineStreamState streamState;
 
 @end
