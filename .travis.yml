@@ -2,5 +2,8 @@ language: objective-c
 xcode_workspace: cineio-ios/cineio-ios.xcworkspace
 xcode_scheme: cineio-iosTests
 podfile: cineio-ios/Podfile
-install: "travis_wait cd cineio-ios && pod install"
+install:
+  - cd cineio-ios
+  - travis_wait pod install
+  - cd ..
 script: "xctool -workspace cineio-ios/cineio-ios.xcworkspace -scheme cineio-iosTests -sdk iphonesimulator test"
