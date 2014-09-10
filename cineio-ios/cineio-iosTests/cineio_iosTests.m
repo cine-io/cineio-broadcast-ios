@@ -26,11 +26,9 @@ const NSString *StreamName = @"my stream";
 {
     [super setUp];
     
-    NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:@"cineio-settings" ofType:@"plist"];
-    NSDictionary *settings = [[NSDictionary alloc] initWithContentsOfFile:path];
     _client = [[CineClient alloc] init];
-    _client.masterKey = settings[@"CINE_IO_ACCOUNT_MASTER_KEY"];
-    _client.projectSecretKey = settings[@"CINE_IO_PROJECT_SECRET_KEY"];
+    _client.masterKey = @"IGNORE";
+    _client.projectSecretKey = @"IGNORE";
 }
 
 - (void)tearDown

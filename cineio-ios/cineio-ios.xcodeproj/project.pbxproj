@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0016E0C3194963120008BB95 /* SAMPLE-cineio-settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0016E0C2194963120008BB95 /* SAMPLE-cineio-settings.plist */; };
-		0016E0C5194963BF0008BB95 /* cineio-settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0016E0C4194963BF0008BB95 /* cineio-settings.plist */; };
 		0064202219BE776600DF038B /* getNamedStreams.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202119BE776600DF038B /* getNamedStreams.json */; };
 		0064202419BE781000DF038B /* getAllStreams.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202319BE781000DF038B /* getAllStreams.json */; };
 		0064202619BE78A900DF038B /* getStream.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202519BE78A900DF038B /* getStream.json */; };
@@ -77,8 +75,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0016E0C2194963120008BB95 /* SAMPLE-cineio-settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = "SAMPLE-cineio-settings.plist"; sourceTree = "<group>"; };
-		0016E0C4194963BF0008BB95 /* cineio-settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "cineio-settings.plist"; sourceTree = "<group>"; };
 		0064202119BE776600DF038B /* getNamedStreams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getNamedStreams.json; sourceTree = "<group>"; };
 		0064202319BE781000DF038B /* getAllStreams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getAllStreams.json; sourceTree = "<group>"; };
 		0064202519BE78A900DF038B /* getStream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getStream.json; sourceTree = "<group>"; };
@@ -270,8 +266,6 @@
 			children = (
 				00C5E0F7193EBD63009DA7B9 /* cineio-iosTests-Info.plist */,
 				00C5E0F8193EBD63009DA7B9 /* InfoPlist.strings */,
-				0016E0C2194963120008BB95 /* SAMPLE-cineio-settings.plist */,
-				0016E0C4194963BF0008BB95 /* cineio-settings.plist */,
 				0064202819BE793B00DF038B /* getProjects.json */,
 				0064202719BE793B00DF038B /* getProject.json */,
 				0064202B19BE79FD00DF038B /* createStream.json */,
@@ -368,8 +362,6 @@
 				0064202619BE78A900DF038B /* getStream.json in Resources */,
 				0064202919BE793B00DF038B /* getProject.json in Resources */,
 				00C5E0FA193EBD63009DA7B9 /* InfoPlist.strings in Resources */,
-				0016E0C3194963120008BB95 /* SAMPLE-cineio-settings.plist in Resources */,
-				0016E0C5194963BF0008BB95 /* cineio-settings.plist in Resources */,
 				0064203419BE7C0500DF038B /* getStreamRecordings.json in Resources */,
 				0064203019BE7AD000DF038B /* deleteStream.json in Resources */,
 				0064202C19BE79FD00DF038B /* createStream.json in Resources */,
