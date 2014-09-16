@@ -1,7 +1,8 @@
 platform :ios, '7.0'
 
 pod 'AFNetworking',       '~> 2.4.1'
-pod 'XCTAsyncTestCase',   '~> 0.1.0'
+#pod 'XCTAsyncTestCase',   '~> 0.1.1'  # 0.1.1 hasn't been pushed to trunk yet. :-(
+pod 'XCTAsyncTestCase', git: 'https://github.com/iheartradio/xctest-additions.git'
 pod 'OHHTTPStubs',        '~> 3.1.5'
 
 # Comment out this line if working on VideoCore
