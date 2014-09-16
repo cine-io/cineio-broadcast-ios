@@ -24,7 +24,7 @@ The easiest way to use the SDK is via [CocoaPods][cocoapods]. Create a new XCode
 ```ruby
 platform :ios, '7.0'
 
-pod 'cineio-ios', '~> 0.4'
+pod 'cineio-ios', '~> 0.5'
 ```
 
 Then, install the Pod by running the `pod install` command:
