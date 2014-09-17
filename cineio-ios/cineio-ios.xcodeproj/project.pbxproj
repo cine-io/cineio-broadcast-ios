@@ -1,1851 +1,661 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0064202119BE776600DF038B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.json</string>
-			<key>path</key>
-			<string>getNamedStreams.json</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0064202219BE776600DF038B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0064202119BE776600DF038B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0064202319BE781000DF038B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.json</string>
-			<key>path</key>
-			<string>getAllStreams.json</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0064202419BE781000DF038B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0064202319BE781000DF038B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0064202519BE78A900DF038B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.json</string>
-			<key>path</key>
-			<string>getStream.json</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0064202619BE78A900DF038B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0064202519BE78A900DF038B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0064202719BE793B00DF038B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.json</string>
-			<key>path</key>
-			<string>getProject.json</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0064202819BE793B00DF038B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.json</string>
-			<key>path</key>
-			<string>getProjects.json</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0064202919BE793B00DF038B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0064202719BE793B00DF038B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0064202A19BE793B00DF038B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0064202819BE793B00DF038B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0064202B19BE79FD00DF038B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.json</string>
-			<key>path</key>
-			<string>createStream.json</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0064202C19BE79FD00DF038B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0064202B19BE79FD00DF038B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0064202D19BE7A7600DF038B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.json</string>
-			<key>path</key>
-			<string>updateStream.json</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0064202E19BE7A7600DF038B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0064202D19BE7A7600DF038B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0064202F19BE7AD000DF038B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.json</string>
-			<key>path</key>
-			<string>deleteStream.json</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0064203019BE7AD000DF038B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0064202F19BE7AD000DF038B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0064203119BE7C0500DF038B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.json</string>
-			<key>path</key>
-			<string>deleteStreamRecording.json</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0064203219BE7C0500DF038B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.json</string>
-			<key>path</key>
-			<string>getStreamRecordings.json</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0064203319BE7C0500DF038B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0064203119BE7C0500DF038B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0064203419BE7C0500DF038B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0064203219BE7C0500DF038B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>009CB1A21980965700C0ADF6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CineIconsBase64.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00ADC6BC19745BC400857375</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CineBroadcasterControlsView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00ADC6BD19745BC400857375</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CineBroadcasterControlsView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00ADC6C019745BC400857375</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CineBroadcasterProtocol.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00ADC6C119745BC400857375</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CineBroadcasterView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00ADC6C219745BC400857375</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CineBroadcasterView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00ADC6C319745BC400857375</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CineBroadcasterViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00ADC6C419745BC400857375</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.cpp.objcpp</string>
-			<key>path</key>
-			<string>CineBroadcasterViewController.mm</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00ADC6C519745BC400857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6BD19745BC400857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6C719745BC400857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6C219745BC400857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6C819745BC400857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6C419745BC400857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6CB1974632B00857375</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CineRecordButtonView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00ADC6CC1974632B00857375</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CineRecordButtonView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00ADC6CE1974632B00857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6CC1974632B00857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6CF197464C700857375</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>QuartzCore.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/QuartzCore.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>00ADC6D0197464C700857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6CF197464C700857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6D1197464CF00857375</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>00ADC6D2197464CF00857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6D1197464CF00857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6D3197464D700857375</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>00ADC6D4197464D700857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6D3197464D700857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6D51974651A00857375</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>AVFoundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/AVFoundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>00ADC6D61974651A00857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6D51974651A00857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6D71974657900857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6D51974651A00857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6D81974658200857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6CF197464C700857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6D91974658A00857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6D3197464D700857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6DA1974659500857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6D1197464CF00857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6DB1974660C00857375</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreMedia.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreMedia.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>00ADC6DC1974660C00857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6DB1974660C00857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6DD1974661200857375</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>AudioUnit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/AudioUnit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>00ADC6E01974662500857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6DB1974660C00857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6E11974669800857375</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>AudioToolbox.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/AudioToolbox.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>00ADC6E21974669800857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6E11974669800857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6E3197466A600857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6E11974669800857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6E4197466AF00857375</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreAudio.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreAudio.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>00ADC6E5197466AF00857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6E4197466AF00857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6E6197466BC00857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6E4197466AF00857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6F21975993C00857375</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CinePlayerViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00ADC6F31975993C00857375</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CinePlayerViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00ADC6F41975993C00857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6F31975993C00857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00ADC6F81975A05B00857375</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>MediaPlayer.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/MediaPlayer.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>00ADC6F91975A05B00857375</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6F81975A05B00857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00C5E0D3193EBD63009DA7B9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00C5E159193F16B9009DA7B9</string>
-				<string>00C5E113193EF8F2009DA7B9</string>
-				<string>00C5E112193EF88F009DA7B9</string>
-				<string>00C5E0E1193EBD63009DA7B9</string>
-				<string>00C5E0F5193EBD63009DA7B9</string>
-				<string>00C5E0DE193EBD63009DA7B9</string>
-				<string>00C5E0DD193EBD63009DA7B9</string>
-				<string>C93C4501B779D93707E7CE5E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E0D4193EBD63009DA7B9</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>cine.io</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>00C5E0D7193EBD63009DA7B9</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>00C5E0D3193EBD63009DA7B9</string>
-			<key>productRefGroup</key>
-			<string>00C5E0DD193EBD63009DA7B9</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>00C5E0DB193EBD63009DA7B9</string>
-				<string>00C5E0EB193EBD63009DA7B9</string>
-			</array>
-		</dict>
-		<key>00C5E0D7193EBD63009DA7B9</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>00C5E0FD193EBD63009DA7B9</string>
-				<string>00C5E0FE193EBD63009DA7B9</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>00C5E0D8193EBD63009DA7B9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>00ADC6C819745BC400857375</string>
-				<string>00ADC6F41975993C00857375</string>
-				<string>00CDFB731989F6FD001C7304</string>
-				<string>00ADC6C519745BC400857375</string>
-				<string>00C5E107193EBEE1009DA7B9</string>
-				<string>00ADC6C719745BC400857375</string>
-				<string>00C5E111193EF041009DA7B9</string>
-				<string>00C5E10D193EC1CD009DA7B9</string>
-				<string>00ADC6CE1974632B00857375</string>
-				<string>00C5E10A193EC06B009DA7B9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>00C5E0D9193EBD63009DA7B9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>00C5E0E0193EBD63009DA7B9</string>
-				<string>00ADC6D4197464D700857375</string>
-				<string>00ADC6D0197464C700857375</string>
-				<string>00ADC6D2197464CF00857375</string>
-				<string>00ADC6E6197466BC00857375</string>
-				<string>00ADC6DC1974660C00857375</string>
-				<string>00ADC6F91975A05B00857375</string>
-				<string>00ADC6E21974669800857375</string>
-				<string>00ADC6D61974651A00857375</string>
-				<string>ADA9581DB5FF4B4F835BAD16</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>00C5E0DA193EBD63009DA7B9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string>include/$(PRODUCT_NAME)</string>
-			<key>dstSubfolderSpec</key>
-			<string>16</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>00C5E0DB193EBD63009DA7B9</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>00C5E0FF193EBD63009DA7B9</string>
-			<key>buildPhases</key>
-			<array>
-				<string>066F3A811F054D2B901D1AB3</string>
-				<string>00C5E0D8193EBD63009DA7B9</string>
-				<string>00C5E0D9193EBD63009DA7B9</string>
-				<string>00C5E0DA193EBD63009DA7B9</string>
-				<string>C1F5D36C55024AACBE909460</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>cineio-ios</string>
-			<key>productName</key>
-			<string>cineio-ios</string>
-			<key>productReference</key>
-			<string>00C5E0DC193EBD63009DA7B9</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>00C5E0DC193EBD63009DA7B9</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libcineio-ios.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>00C5E0DD193EBD63009DA7B9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00C5E0DC193EBD63009DA7B9</string>
-				<string>00C5E0EC193EBD63009DA7B9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E0DE193EBD63009DA7B9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00ADC6F81975A05B00857375</string>
-				<string>00ADC6E4197466AF00857375</string>
-				<string>00ADC6E11974669800857375</string>
-				<string>00ADC6DD1974661200857375</string>
-				<string>00ADC6DB1974660C00857375</string>
-				<string>00ADC6D51974651A00857375</string>
-				<string>00ADC6D3197464D700857375</string>
-				<string>00ADC6D1197464CF00857375</string>
-				<string>00ADC6CF197464C700857375</string>
-				<string>00C5E0DF193EBD63009DA7B9</string>
-				<string>00C5E0ED193EBD63009DA7B9</string>
-				<string>B31761E41A64412FA6E1DC12</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E0DF193EBD63009DA7B9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>00C5E0E0193EBD63009DA7B9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00C5E0DF193EBD63009DA7B9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00C5E0E1193EBD63009DA7B9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00C5E158193F0C5A009DA7B9</string>
-				<string>009CB1A21980965700C0ADF6</string>
-				<string>00C5E10F193EF02B009DA7B9</string>
-				<string>00C5E110193EF041009DA7B9</string>
-				<string>00C5E105193EBEE1009DA7B9</string>
-				<string>00C5E106193EBEE1009DA7B9</string>
-				<string>00C5E108193EC06B009DA7B9</string>
-				<string>00C5E109193EC06B009DA7B9</string>
-				<string>00CDFB711989F6FD001C7304</string>
-				<string>00CDFB721989F6FD001C7304</string>
-				<string>00C5E10B193EC1CD009DA7B9</string>
-				<string>00C5E10C193EC1CD009DA7B9</string>
-				<string>00ADC6CB1974632B00857375</string>
-				<string>00ADC6CC1974632B00857375</string>
-				<string>00ADC6BC19745BC400857375</string>
-				<string>00ADC6BD19745BC400857375</string>
-				<string>00ADC6C119745BC400857375</string>
-				<string>00ADC6C219745BC400857375</string>
-				<string>00ADC6C019745BC400857375</string>
-				<string>00ADC6C319745BC400857375</string>
-				<string>00ADC6C419745BC400857375</string>
-				<string>00ADC6F21975993C00857375</string>
-				<string>00ADC6F31975993C00857375</string>
-				<string>00C5E0E2193EBD63009DA7B9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>cineio-ios</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E0E2193EBD63009DA7B9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00C5E0E3193EBD63009DA7B9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E0E3193EBD63009DA7B9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>cineio-ios-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E0E8193EBD63009DA7B9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>00C5E0FC193EBD63009DA7B9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>00C5E0E9193EBD63009DA7B9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>00C5E0EF193EBD63009DA7B9</string>
-				<string>00ADC6D91974658A00857375</string>
-				<string>00ADC6D81974658200857375</string>
-				<string>00ADC6DA1974659500857375</string>
-				<string>00ADC6E5197466AF00857375</string>
-				<string>00ADC6E01974662500857375</string>
-				<string>00CDFB701989F4E0001C7304</string>
-				<string>00ADC6E3197466A600857375</string>
-				<string>00ADC6D71974657900857375</string>
-				<string>00C5E0EE193EBD63009DA7B9</string>
-				<string>00C5E10E193ED668009DA7B9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>00C5E0EA193EBD63009DA7B9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0064202419BE781000DF038B</string>
-				<string>0064202219BE776600DF038B</string>
-				<string>0064203319BE7C0500DF038B</string>
-				<string>0064202E19BE7A7600DF038B</string>
-				<string>0064202A19BE793B00DF038B</string>
-				<string>0064202619BE78A900DF038B</string>
-				<string>0064202919BE793B00DF038B</string>
-				<string>00C5E0FA193EBD63009DA7B9</string>
-				<string>0064203419BE7C0500DF038B</string>
-				<string>0064203019BE7AD000DF038B</string>
-				<string>0064202C19BE79FD00DF038B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>00C5E0EB193EBD63009DA7B9</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>00C5E102193EBD63009DA7B9</string>
-			<key>buildPhases</key>
-			<array>
-				<string>2C8315657D0047019185E92E</string>
-				<string>00C5E0E8193EBD63009DA7B9</string>
-				<string>00C5E0E9193EBD63009DA7B9</string>
-				<string>00C5E0EA193EBD63009DA7B9</string>
-				<string>2553CDAF23B04686959D9A76</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>00C5E0F3193EBD63009DA7B9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>cineio-iosTests</string>
-			<key>productName</key>
-			<string>cineio-iosTests</string>
-			<key>productReference</key>
-			<string>00C5E0EC193EBD63009DA7B9</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>00C5E0EC193EBD63009DA7B9</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>cineio-iosTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>00C5E0ED193EBD63009DA7B9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>00C5E0EE193EBD63009DA7B9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00C5E0ED193EBD63009DA7B9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00C5E0EF193EBD63009DA7B9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00C5E0DF193EBD63009DA7B9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00C5E0F2193EBD63009DA7B9</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>00C5E0D4193EBD63009DA7B9</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>00C5E0DB193EBD63009DA7B9</string>
-			<key>remoteInfo</key>
-			<string>cineio-ios</string>
-		</dict>
-		<key>00C5E0F3193EBD63009DA7B9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>00C5E0DB193EBD63009DA7B9</string>
-			<key>targetProxy</key>
-			<string>00C5E0F2193EBD63009DA7B9</string>
-		</dict>
-		<key>00C5E0F5193EBD63009DA7B9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00C5E0FB193EBD63009DA7B9</string>
-				<string>00C5E0F6193EBD63009DA7B9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>cineio-iosTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E0F6193EBD63009DA7B9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00C5E0F7193EBD63009DA7B9</string>
-				<string>00C5E0F8193EBD63009DA7B9</string>
-				<string>0064202819BE793B00DF038B</string>
-				<string>0064202719BE793B00DF038B</string>
-				<string>0064202B19BE79FD00DF038B</string>
-				<string>0064202319BE781000DF038B</string>
-				<string>0064202119BE776600DF038B</string>
-				<string>0064202519BE78A900DF038B</string>
-				<string>0064202D19BE7A7600DF038B</string>
-				<string>0064202F19BE7AD000DF038B</string>
-				<string>0064203219BE7C0500DF038B</string>
-				<string>0064203119BE7C0500DF038B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E0F7193EBD63009DA7B9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>cineio-iosTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E0F8193EBD63009DA7B9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00C5E0F9193EBD63009DA7B9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E0F9193EBD63009DA7B9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E0FA193EBD63009DA7B9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00C5E0F8193EBD63009DA7B9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00C5E0FB193EBD63009DA7B9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>cineio_iosTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E0FC193EBD63009DA7B9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00C5E0FB193EBD63009DA7B9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00C5E0FD193EBD63009DA7B9</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_INPUT_FILETYPE</key>
-				<string>sourcecode.cpp.objcpp</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>00C5E0FE193EBD63009DA7B9</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_INPUT_FILETYPE</key>
-				<string>sourcecode.cpp.objcpp</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>00C5E0FF193EBD63009DA7B9</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>00C5E100193EBD63009DA7B9</string>
-				<string>00C5E101193EBD63009DA7B9</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>00C5E100193EBD63009DA7B9</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>18DA7FA643AA9FAC02020C3E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/cineio_ios.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>cineio-ios/cineio-ios-Prefix.pch</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>00C5E101193EBD63009DA7B9</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>34EE4272C1BB56B2C37C9BF7</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/cineio_ios.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>cineio-ios/cineio-ios-Prefix.pch</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>00C5E102193EBD63009DA7B9</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>00C5E103193EBD63009DA7B9</string>
-				<string>00C5E104193EBD63009DA7B9</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>00C5E103193EBD63009DA7B9</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>cineio-ios/cineio-ios-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>cineio-iosTests/cineio-iosTests-Info.plist</string>
-				<key>OTHER_LDFLAGS</key>
-				<array>
-					<string>-ObjC</string>
-					<string>-all_load</string>
-				</array>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>00C5E104193EBD63009DA7B9</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>cineio-ios/cineio-ios-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>cineio-iosTests/cineio-iosTests-Info.plist</string>
-				<key>OTHER_LDFLAGS</key>
-				<array>
-					<string>-ObjC</string>
-					<string>-all_load</string>
-				</array>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>00C5E105193EBEE1009DA7B9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CineClient.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E106193EBEE1009DA7B9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CineClient.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E107193EBEE1009DA7B9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00C5E106193EBEE1009DA7B9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00C5E108193EC06B009DA7B9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CineProject.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E109193EC06B009DA7B9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CineProject.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E10A193EC06B009DA7B9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00C5E109193EC06B009DA7B9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00C5E10B193EC1CD009DA7B9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CineStream.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E10C193EC1CD009DA7B9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CineStream.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E10D193EC1CD009DA7B9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00C5E10C193EC1CD009DA7B9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00C5E10E193ED668009DA7B9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00C5E0DC193EBD63009DA7B9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00C5E10F193EF02B009DA7B9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CineConstants.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E110193EF041009DA7B9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CineConstants.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E111193EF041009DA7B9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00C5E110193EF041009DA7B9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00C5E112193EF88F009DA7B9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>cineio-ios.podspec</string>
-			<key>path</key>
-			<string>../cineio-ios.podspec</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E113193EF8F2009DA7B9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>LICENSE</string>
-			<key>path</key>
-			<string>../LICENSE</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E158193F0C5A009DA7B9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CineIO.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C5E159193F16B9009DA7B9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>README.md</string>
-			<key>path</key>
-			<string>../README.md</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00CDFB701989F4E0001C7304</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00ADC6F81975A05B00857375</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00CDFB711989F6FD001C7304</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CineRecording.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00CDFB721989F6FD001C7304</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CineRecording.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00CDFB731989F6FD001C7304</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00CDFB721989F6FD001C7304</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>066F3A811F054D2B901D1AB3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>18DA7FA643AA9FAC02020C3E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2553CDAF23B04686959D9A76</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>2C8315657D0047019185E92E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>34EE4272C1BB56B2C37C9BF7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ADA9581DB5FF4B4F835BAD16</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B31761E41A64412FA6E1DC12</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B31761E41A64412FA6E1DC12</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C1F5D36C55024AACBE909460</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>C93C4501B779D93707E7CE5E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>18DA7FA643AA9FAC02020C3E</string>
-				<string>34EE4272C1BB56B2C37C9BF7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>00C5E0D4193EBD63009DA7B9</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0064202219BE776600DF038B /* getNamedStreams.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202119BE776600DF038B /* getNamedStreams.json */; };
+		0064202419BE781000DF038B /* getAllStreams.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202319BE781000DF038B /* getAllStreams.json */; };
+		0064202619BE78A900DF038B /* getStream.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202519BE78A900DF038B /* getStream.json */; };
+		0064202919BE793B00DF038B /* getProject.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202719BE793B00DF038B /* getProject.json */; };
+		0064202A19BE793B00DF038B /* getProjects.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202819BE793B00DF038B /* getProjects.json */; };
+		0064202C19BE79FD00DF038B /* createStream.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202B19BE79FD00DF038B /* createStream.json */; };
+		0064202E19BE7A7600DF038B /* updateStream.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202D19BE7A7600DF038B /* updateStream.json */; };
+		0064203019BE7AD000DF038B /* deleteStream.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202F19BE7AD000DF038B /* deleteStream.json */; };
+		0064203319BE7C0500DF038B /* deleteStreamRecording.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064203119BE7C0500DF038B /* deleteStreamRecording.json */; };
+		0064203419BE7C0500DF038B /* getStreamRecordings.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064203219BE7C0500DF038B /* getStreamRecordings.json */; };
+		00ADC6C519745BC400857375 /* CineBroadcasterControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6BD19745BC400857375 /* CineBroadcasterControlsView.m */; };
+		00ADC6C719745BC400857375 /* CineBroadcasterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6C219745BC400857375 /* CineBroadcasterView.m */; };
+		00ADC6C819745BC400857375 /* CineBroadcasterViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6C419745BC400857375 /* CineBroadcasterViewController.mm */; };
+		00ADC6CE1974632B00857375 /* CineRecordButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6CC1974632B00857375 /* CineRecordButtonView.m */; };
+		00ADC6D0197464C700857375 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6CF197464C700857375 /* QuartzCore.framework */; };
+		00ADC6D2197464CF00857375 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D1197464CF00857375 /* CoreGraphics.framework */; };
+		00ADC6D4197464D700857375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D3197464D700857375 /* UIKit.framework */; };
+		00ADC6D61974651A00857375 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D51974651A00857375 /* AVFoundation.framework */; };
+		00ADC6D71974657900857375 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D51974651A00857375 /* AVFoundation.framework */; };
+		00ADC6D81974658200857375 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6CF197464C700857375 /* QuartzCore.framework */; };
+		00ADC6D91974658A00857375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D3197464D700857375 /* UIKit.framework */; };
+		00ADC6DA1974659500857375 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D1197464CF00857375 /* CoreGraphics.framework */; };
+		00ADC6DC1974660C00857375 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6DB1974660C00857375 /* CoreMedia.framework */; };
+		00ADC6E01974662500857375 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6DB1974660C00857375 /* CoreMedia.framework */; };
+		00ADC6E21974669800857375 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E11974669800857375 /* AudioToolbox.framework */; };
+		00ADC6E3197466A600857375 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E11974669800857375 /* AudioToolbox.framework */; };
+		00ADC6E5197466AF00857375 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E4197466AF00857375 /* CoreAudio.framework */; };
+		00ADC6E6197466BC00857375 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E4197466AF00857375 /* CoreAudio.framework */; };
+		00ADC6F41975993C00857375 /* CinePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6F31975993C00857375 /* CinePlayerViewController.m */; };
+		00ADC6F91975A05B00857375 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6F81975A05B00857375 /* MediaPlayer.framework */; };
+		00C5E0E0193EBD63009DA7B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DF193EBD63009DA7B9 /* Foundation.framework */; };
+		00C5E0EE193EBD63009DA7B9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0ED193EBD63009DA7B9 /* XCTest.framework */; };
+		00C5E0EF193EBD63009DA7B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DF193EBD63009DA7B9 /* Foundation.framework */; };
+		00C5E0FA193EBD63009DA7B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00C5E0F8193EBD63009DA7B9 /* InfoPlist.strings */; };
+		00C5E0FC193EBD63009DA7B9 /* cineio_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5E0FB193EBD63009DA7B9 /* cineio_iosTests.m */; };
+		00C5E107193EBEE1009DA7B9 /* CineClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5E106193EBEE1009DA7B9 /* CineClient.m */; };
+		00C5E10A193EC06B009DA7B9 /* CineProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5E109193EC06B009DA7B9 /* CineProject.m */; };
+		00C5E10D193EC1CD009DA7B9 /* CineStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5E10C193EC1CD009DA7B9 /* CineStream.m */; };
+		00C5E10E193ED668009DA7B9 /* libcineio-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DC193EBD63009DA7B9 /* libcineio-ios.a */; };
+		00C5E111193EF041009DA7B9 /* CineConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5E110193EF041009DA7B9 /* CineConstants.m */; };
+		00CDFB701989F4E0001C7304 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6F81975A05B00857375 /* MediaPlayer.framework */; };
+		00CDFB731989F6FD001C7304 /* CineRecording.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDFB721989F6FD001C7304 /* CineRecording.m */; };
+		ADA9581DB5FF4B4F835BAD16 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B31761E41A64412FA6E1DC12 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00C5E0F2193EBD63009DA7B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C5E0D4193EBD63009DA7B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00C5E0DB193EBD63009DA7B9;
+			remoteInfo = "cineio-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00C5E0DA193EBD63009DA7B9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0064202119BE776600DF038B /* getNamedStreams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getNamedStreams.json; sourceTree = "<group>"; };
+		0064202319BE781000DF038B /* getAllStreams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getAllStreams.json; sourceTree = "<group>"; };
+		0064202519BE78A900DF038B /* getStream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getStream.json; sourceTree = "<group>"; };
+		0064202719BE793B00DF038B /* getProject.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getProject.json; sourceTree = "<group>"; };
+		0064202819BE793B00DF038B /* getProjects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getProjects.json; sourceTree = "<group>"; };
+		0064202B19BE79FD00DF038B /* createStream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = createStream.json; sourceTree = "<group>"; };
+		0064202D19BE7A7600DF038B /* updateStream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = updateStream.json; sourceTree = "<group>"; };
+		0064202F19BE7AD000DF038B /* deleteStream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deleteStream.json; sourceTree = "<group>"; };
+		0064203119BE7C0500DF038B /* deleteStreamRecording.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deleteStreamRecording.json; sourceTree = "<group>"; };
+		0064203219BE7C0500DF038B /* getStreamRecordings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getStreamRecordings.json; sourceTree = "<group>"; };
+		009CB1A21980965700C0ADF6 /* CineIconsBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CineIconsBase64.h; sourceTree = "<group>"; };
+		00ADC6BC19745BC400857375 /* CineBroadcasterControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineBroadcasterControlsView.h; sourceTree = "<group>"; };
+		00ADC6BD19745BC400857375 /* CineBroadcasterControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineBroadcasterControlsView.m; sourceTree = "<group>"; };
+		00ADC6C019745BC400857375 /* CineBroadcasterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineBroadcasterProtocol.h; sourceTree = "<group>"; };
+		00ADC6C119745BC400857375 /* CineBroadcasterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineBroadcasterView.h; sourceTree = "<group>"; };
+		00ADC6C219745BC400857375 /* CineBroadcasterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineBroadcasterView.m; sourceTree = "<group>"; };
+		00ADC6C319745BC400857375 /* CineBroadcasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineBroadcasterViewController.h; sourceTree = "<group>"; };
+		00ADC6C419745BC400857375 /* CineBroadcasterViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CineBroadcasterViewController.mm; sourceTree = "<group>"; };
+		00ADC6CB1974632B00857375 /* CineRecordButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineRecordButtonView.h; sourceTree = "<group>"; };
+		00ADC6CC1974632B00857375 /* CineRecordButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineRecordButtonView.m; sourceTree = "<group>"; };
+		00ADC6CF197464C700857375 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		00ADC6D1197464CF00857375 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		00ADC6D3197464D700857375 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		00ADC6D51974651A00857375 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		00ADC6DB1974660C00857375 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		00ADC6DD1974661200857375 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00ADC6E11974669800857375 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00ADC6E4197466AF00857375 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		00ADC6F21975993C00857375 /* CinePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinePlayerViewController.h; sourceTree = "<group>"; };
+		00ADC6F31975993C00857375 /* CinePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CinePlayerViewController.m; sourceTree = "<group>"; };
+		00ADC6F81975A05B00857375 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		00C5E0DC193EBD63009DA7B9 /* libcineio-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcineio-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00C5E0DF193EBD63009DA7B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		00C5E0E3193EBD63009DA7B9 /* cineio-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cineio-ios-Prefix.pch"; sourceTree = "<group>"; };
+		00C5E0EC193EBD63009DA7B9 /* cineio-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cineio-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00C5E0ED193EBD63009DA7B9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		00C5E0F7193EBD63009DA7B9 /* cineio-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cineio-iosTests-Info.plist"; sourceTree = "<group>"; };
+		00C5E0F9193EBD63009DA7B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00C5E0FB193EBD63009DA7B9 /* cineio_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cineio_iosTests.m; sourceTree = "<group>"; };
+		00C5E105193EBEE1009DA7B9 /* CineClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineClient.h; sourceTree = "<group>"; };
+		00C5E106193EBEE1009DA7B9 /* CineClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineClient.m; sourceTree = "<group>"; };
+		00C5E108193EC06B009DA7B9 /* CineProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineProject.h; sourceTree = "<group>"; };
+		00C5E109193EC06B009DA7B9 /* CineProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineProject.m; sourceTree = "<group>"; };
+		00C5E10B193EC1CD009DA7B9 /* CineStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineStream.h; sourceTree = "<group>"; };
+		00C5E10C193EC1CD009DA7B9 /* CineStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineStream.m; sourceTree = "<group>"; };
+		00C5E10F193EF02B009DA7B9 /* CineConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineConstants.h; sourceTree = "<group>"; };
+		00C5E110193EF041009DA7B9 /* CineConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineConstants.m; sourceTree = "<group>"; };
+		00C5E112193EF88F009DA7B9 /* cineio-ios.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "cineio-ios.podspec"; path = "../cineio-ios.podspec"; sourceTree = "<group>"; };
+		00C5E113193EF8F2009DA7B9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		00C5E158193F0C5A009DA7B9 /* CineIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineIO.h; sourceTree = "<group>"; };
+		00C5E159193F16B9009DA7B9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		00CDFB711989F6FD001C7304 /* CineRecording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineRecording.h; sourceTree = "<group>"; };
+		00CDFB721989F6FD001C7304 /* CineRecording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineRecording.m; sourceTree = "<group>"; };
+		18DA7FA643AA9FAC02020C3E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		34EE4272C1BB56B2C37C9BF7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B31761E41A64412FA6E1DC12 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00C5E0D9193EBD63009DA7B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C5E0E0193EBD63009DA7B9 /* Foundation.framework in Frameworks */,
+				00ADC6D4197464D700857375 /* UIKit.framework in Frameworks */,
+				00ADC6D0197464C700857375 /* QuartzCore.framework in Frameworks */,
+				00ADC6D2197464CF00857375 /* CoreGraphics.framework in Frameworks */,
+				00ADC6E6197466BC00857375 /* CoreAudio.framework in Frameworks */,
+				00ADC6DC1974660C00857375 /* CoreMedia.framework in Frameworks */,
+				00ADC6F91975A05B00857375 /* MediaPlayer.framework in Frameworks */,
+				00ADC6E21974669800857375 /* AudioToolbox.framework in Frameworks */,
+				00ADC6D61974651A00857375 /* AVFoundation.framework in Frameworks */,
+				ADA9581DB5FF4B4F835BAD16 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C5E0E9193EBD63009DA7B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C5E0EF193EBD63009DA7B9 /* Foundation.framework in Frameworks */,
+				00ADC6D91974658A00857375 /* UIKit.framework in Frameworks */,
+				00ADC6D81974658200857375 /* QuartzCore.framework in Frameworks */,
+				00ADC6DA1974659500857375 /* CoreGraphics.framework in Frameworks */,
+				00ADC6E5197466AF00857375 /* CoreAudio.framework in Frameworks */,
+				00ADC6E01974662500857375 /* CoreMedia.framework in Frameworks */,
+				00CDFB701989F4E0001C7304 /* MediaPlayer.framework in Frameworks */,
+				00ADC6E3197466A600857375 /* AudioToolbox.framework in Frameworks */,
+				00ADC6D71974657900857375 /* AVFoundation.framework in Frameworks */,
+				00C5E0EE193EBD63009DA7B9 /* XCTest.framework in Frameworks */,
+				00C5E10E193ED668009DA7B9 /* libcineio-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00C5E0D3193EBD63009DA7B9 = {
+			isa = PBXGroup;
+			children = (
+				00C5E159193F16B9009DA7B9 /* README.md */,
+				00C5E113193EF8F2009DA7B9 /* LICENSE */,
+				00C5E112193EF88F009DA7B9 /* cineio-ios.podspec */,
+				00C5E0E1193EBD63009DA7B9 /* cineio-ios */,
+				00C5E0F5193EBD63009DA7B9 /* cineio-iosTests */,
+				00C5E0DE193EBD63009DA7B9 /* Frameworks */,
+				00C5E0DD193EBD63009DA7B9 /* Products */,
+				C93C4501B779D93707E7CE5E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		00C5E0DD193EBD63009DA7B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C5E0DC193EBD63009DA7B9 /* libcineio-ios.a */,
+				00C5E0EC193EBD63009DA7B9 /* cineio-iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00C5E0DE193EBD63009DA7B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00ADC6F81975A05B00857375 /* MediaPlayer.framework */,
+				00ADC6E4197466AF00857375 /* CoreAudio.framework */,
+				00ADC6E11974669800857375 /* AudioToolbox.framework */,
+				00ADC6DD1974661200857375 /* AudioUnit.framework */,
+				00ADC6DB1974660C00857375 /* CoreMedia.framework */,
+				00ADC6D51974651A00857375 /* AVFoundation.framework */,
+				00ADC6D3197464D700857375 /* UIKit.framework */,
+				00ADC6D1197464CF00857375 /* CoreGraphics.framework */,
+				00ADC6CF197464C700857375 /* QuartzCore.framework */,
+				00C5E0DF193EBD63009DA7B9 /* Foundation.framework */,
+				00C5E0ED193EBD63009DA7B9 /* XCTest.framework */,
+				B31761E41A64412FA6E1DC12 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00C5E0E1193EBD63009DA7B9 /* cineio-ios */ = {
+			isa = PBXGroup;
+			children = (
+				00C5E158193F0C5A009DA7B9 /* CineIO.h */,
+				009CB1A21980965700C0ADF6 /* CineIconsBase64.h */,
+				00C5E10F193EF02B009DA7B9 /* CineConstants.h */,
+				00C5E110193EF041009DA7B9 /* CineConstants.m */,
+				00C5E105193EBEE1009DA7B9 /* CineClient.h */,
+				00C5E106193EBEE1009DA7B9 /* CineClient.m */,
+				00C5E108193EC06B009DA7B9 /* CineProject.h */,
+				00C5E109193EC06B009DA7B9 /* CineProject.m */,
+				00CDFB711989F6FD001C7304 /* CineRecording.h */,
+				00CDFB721989F6FD001C7304 /* CineRecording.m */,
+				00C5E10B193EC1CD009DA7B9 /* CineStream.h */,
+				00C5E10C193EC1CD009DA7B9 /* CineStream.m */,
+				00ADC6CB1974632B00857375 /* CineRecordButtonView.h */,
+				00ADC6CC1974632B00857375 /* CineRecordButtonView.m */,
+				00ADC6BC19745BC400857375 /* CineBroadcasterControlsView.h */,
+				00ADC6BD19745BC400857375 /* CineBroadcasterControlsView.m */,
+				00ADC6C119745BC400857375 /* CineBroadcasterView.h */,
+				00ADC6C219745BC400857375 /* CineBroadcasterView.m */,
+				00ADC6C019745BC400857375 /* CineBroadcasterProtocol.h */,
+				00ADC6C319745BC400857375 /* CineBroadcasterViewController.h */,
+				00ADC6C419745BC400857375 /* CineBroadcasterViewController.mm */,
+				00ADC6F21975993C00857375 /* CinePlayerViewController.h */,
+				00ADC6F31975993C00857375 /* CinePlayerViewController.m */,
+				00C5E0E2193EBD63009DA7B9 /* Supporting Files */,
+			);
+			path = "cineio-ios";
+			sourceTree = "<group>";
+		};
+		00C5E0E2193EBD63009DA7B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00C5E0E3193EBD63009DA7B9 /* cineio-ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00C5E0F5193EBD63009DA7B9 /* cineio-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				00C5E0FB193EBD63009DA7B9 /* cineio_iosTests.m */,
+				00C5E0F6193EBD63009DA7B9 /* Supporting Files */,
+			);
+			path = "cineio-iosTests";
+			sourceTree = "<group>";
+		};
+		00C5E0F6193EBD63009DA7B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00C5E0F7193EBD63009DA7B9 /* cineio-iosTests-Info.plist */,
+				00C5E0F8193EBD63009DA7B9 /* InfoPlist.strings */,
+				0064202819BE793B00DF038B /* getProjects.json */,
+				0064202719BE793B00DF038B /* getProject.json */,
+				0064202B19BE79FD00DF038B /* createStream.json */,
+				0064202319BE781000DF038B /* getAllStreams.json */,
+				0064202119BE776600DF038B /* getNamedStreams.json */,
+				0064202519BE78A900DF038B /* getStream.json */,
+				0064202D19BE7A7600DF038B /* updateStream.json */,
+				0064202F19BE7AD000DF038B /* deleteStream.json */,
+				0064203219BE7C0500DF038B /* getStreamRecordings.json */,
+				0064203119BE7C0500DF038B /* deleteStreamRecording.json */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C93C4501B779D93707E7CE5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18DA7FA643AA9FAC02020C3E /* Pods.debug.xcconfig */,
+				34EE4272C1BB56B2C37C9BF7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00C5E0DB193EBD63009DA7B9 /* cineio-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00C5E0FF193EBD63009DA7B9 /* Build configuration list for PBXNativeTarget "cineio-ios" */;
+			buildPhases = (
+				066F3A811F054D2B901D1AB3 /* Check Pods Manifest.lock */,
+				00C5E0D8193EBD63009DA7B9 /* Sources */,
+				00C5E0D9193EBD63009DA7B9 /* Frameworks */,
+				00C5E0DA193EBD63009DA7B9 /* CopyFiles */,
+				C1F5D36C55024AACBE909460 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cineio-ios";
+			productName = "cineio-ios";
+			productReference = 00C5E0DC193EBD63009DA7B9 /* libcineio-ios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		00C5E0EB193EBD63009DA7B9 /* cineio-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00C5E102193EBD63009DA7B9 /* Build configuration list for PBXNativeTarget "cineio-iosTests" */;
+			buildPhases = (
+				2C8315657D0047019185E92E /* Check Pods Manifest.lock */,
+				00C5E0E8193EBD63009DA7B9 /* Sources */,
+				00C5E0E9193EBD63009DA7B9 /* Frameworks */,
+				00C5E0EA193EBD63009DA7B9 /* Resources */,
+				2553CDAF23B04686959D9A76 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00C5E0F3193EBD63009DA7B9 /* PBXTargetDependency */,
+			);
+			name = "cineio-iosTests";
+			productName = "cineio-iosTests";
+			productReference = 00C5E0EC193EBD63009DA7B9 /* cineio-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00C5E0D4193EBD63009DA7B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = cine.io;
+			};
+			buildConfigurationList = 00C5E0D7193EBD63009DA7B9 /* Build configuration list for PBXProject "cineio-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 00C5E0D3193EBD63009DA7B9;
+			productRefGroup = 00C5E0DD193EBD63009DA7B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00C5E0DB193EBD63009DA7B9 /* cineio-ios */,
+				00C5E0EB193EBD63009DA7B9 /* cineio-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00C5E0EA193EBD63009DA7B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0064202419BE781000DF038B /* getAllStreams.json in Resources */,
+				0064202219BE776600DF038B /* getNamedStreams.json in Resources */,
+				0064203319BE7C0500DF038B /* deleteStreamRecording.json in Resources */,
+				0064202E19BE7A7600DF038B /* updateStream.json in Resources */,
+				0064202A19BE793B00DF038B /* getProjects.json in Resources */,
+				0064202619BE78A900DF038B /* getStream.json in Resources */,
+				0064202919BE793B00DF038B /* getProject.json in Resources */,
+				00C5E0FA193EBD63009DA7B9 /* InfoPlist.strings in Resources */,
+				0064203419BE7C0500DF038B /* getStreamRecordings.json in Resources */,
+				0064203019BE7AD000DF038B /* deleteStream.json in Resources */,
+				0064202C19BE79FD00DF038B /* createStream.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		066F3A811F054D2B901D1AB3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2553CDAF23B04686959D9A76 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C8315657D0047019185E92E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1F5D36C55024AACBE909460 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00C5E0D8193EBD63009DA7B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00ADC6C819745BC400857375 /* CineBroadcasterViewController.mm in Sources */,
+				00ADC6F41975993C00857375 /* CinePlayerViewController.m in Sources */,
+				00CDFB731989F6FD001C7304 /* CineRecording.m in Sources */,
+				00ADC6C519745BC400857375 /* CineBroadcasterControlsView.m in Sources */,
+				00C5E107193EBEE1009DA7B9 /* CineClient.m in Sources */,
+				00ADC6C719745BC400857375 /* CineBroadcasterView.m in Sources */,
+				00C5E111193EF041009DA7B9 /* CineConstants.m in Sources */,
+				00C5E10D193EC1CD009DA7B9 /* CineStream.m in Sources */,
+				00ADC6CE1974632B00857375 /* CineRecordButtonView.m in Sources */,
+				00C5E10A193EC06B009DA7B9 /* CineProject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C5E0E8193EBD63009DA7B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C5E0FC193EBD63009DA7B9 /* cineio_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00C5E0F3193EBD63009DA7B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00C5E0DB193EBD63009DA7B9 /* cineio-ios */;
+			targetProxy = 00C5E0F2193EBD63009DA7B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00C5E0F8193EBD63009DA7B9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00C5E0F9193EBD63009DA7B9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00C5E0FD193EBD63009DA7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		00C5E0FE193EBD63009DA7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00C5E100193EBD63009DA7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18DA7FA643AA9FAC02020C3E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/cineio_ios.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cineio-ios/cineio-ios-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		00C5E101193EBD63009DA7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34EE4272C1BB56B2C37C9BF7 /* Pods.release.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/cineio_ios.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cineio-ios/cineio-ios-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		00C5E103193EBD63009DA7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18DA7FA643AA9FAC02020C3E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cineio-ios/cineio-ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "cineio-iosTests/cineio-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		00C5E104193EBD63009DA7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34EE4272C1BB56B2C37C9BF7 /* Pods.release.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cineio-ios/cineio-ios-Prefix.pch";
+				INFOPLIST_FILE = "cineio-iosTests/cineio-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00C5E0D7193EBD63009DA7B9 /* Build configuration list for PBXProject "cineio-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00C5E0FD193EBD63009DA7B9 /* Debug */,
+				00C5E0FE193EBD63009DA7B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00C5E0FF193EBD63009DA7B9 /* Build configuration list for PBXNativeTarget "cineio-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00C5E100193EBD63009DA7B9 /* Debug */,
+				00C5E101193EBD63009DA7B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00C5E102193EBD63009DA7B9 /* Build configuration list for PBXNativeTarget "cineio-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00C5E103193EBD63009DA7B9 /* Debug */,
+				00C5E104193EBD63009DA7B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00C5E0D4193EBD63009DA7B9 /* Project object */;
+}
