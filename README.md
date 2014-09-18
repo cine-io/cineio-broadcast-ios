@@ -1,6 +1,6 @@
 # cineio-ios - cine.io iOS SDK
 
-[![Build Status](https://travis-ci.org/cine-io/cineio-ios.svg?branch=master)](https://travis-ci.org/cine-io/cineio-ios)
+<!-- [![Build Status](https://travis-ci.org/cine-io/cineio-ios.svg?branch=master)](https://travis-ci.org/cine-io/cineio-ios) -->
 
 This is the [cine.io][cineio] iOS SDK. This library allows you to do real-time
 live video streaming from your iOS device to any other device that supports
