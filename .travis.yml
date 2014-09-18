@@ -7,4 +7,4 @@ install:
   - travis_wait pod install
   - cd ..
 #script: "xctool -workspace cineio-ios/cineio-ios.xcworkspace -scheme cineio-iosTests -sdk iphonesimulator test"
-script: "xcodebuild test -workspace cineio-ios/cineio-ios.xcworkspace -scheme cineio-ios"
+script: 'xcodebuild test -workspace cineio-ios/cineio-ios.xcworkspace -scheme cineio-ios -destination name="iPhone 5"'
