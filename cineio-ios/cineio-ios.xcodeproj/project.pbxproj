@@ -554,41 +554,7 @@
 				DSTROOT = /tmp/cineio_ios.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cineio-ios/cineio-ios-Prefix.pch";
-				OTHER_LDFLAGS = (
-					"-l\"Pods-AFNetworking\"",
-					"-l\"Pods-OHHTTPStubs\"",
-					"-l\"Pods-UriParser-cpp\"",
-					"-l\"Pods-VideoCore\"",
-					"-l\"Pods-XCTAsyncTestCase\"",
-					"-l\"Pods-boost\"",
-					"-l\"Pods-glm\"",
-					"-framework",
-					"\"AVFoundation\"",
-					"-framework",
-					"\"AudioToolbox\"",
-					"-framework",
-					"\"CFNetwork\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreMedia\"",
-					"-framework",
-					"\"CoreVideo\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"OpenGLES\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"VideoToolbox\"",
-					"-framework",
-					"\"XCTest\"",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -601,41 +567,7 @@
 				DSTROOT = /tmp/cineio_ios.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cineio-ios/cineio-ios-Prefix.pch";
-				OTHER_LDFLAGS = (
-					"-l\"Pods-AFNetworking\"",
-					"-l\"Pods-OHHTTPStubs\"",
-					"-l\"Pods-UriParser-cpp\"",
-					"-l\"Pods-VideoCore\"",
-					"-l\"Pods-XCTAsyncTestCase\"",
-					"-l\"Pods-boost\"",
-					"-l\"Pods-glm\"",
-					"-framework",
-					"\"AVFoundation\"",
-					"-framework",
-					"\"AudioToolbox\"",
-					"-framework",
-					"\"CFNetwork\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreMedia\"",
-					"-framework",
-					"\"CoreVideo\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"OpenGLES\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"VideoToolbox\"",
-					"-framework",
-					"\"XCTest\"",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
