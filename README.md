@@ -19,15 +19,9 @@ RTMP or HLS streaming (iOS, Android, web).
 
 ## Installation
 
-The easiest way to use the SDK is via [CocoaPods][cocoapods]. However, due to changes
-in iOS 8, you'll need to be on the latest and greatest version of CocoaPods:
-
-```bash
-gem install cocoapods --pre  # depending on your configuration, you may need to run this with 'sudo'
-```
-
-Once you've upgraded your CocoaPods, create a new XCode project with a file named
-`Podfile` that contains at least the following:
+The easiest way to use the SDK is via [CocoaPods][cocoapods]. Create a new
+XCode project with a file named `Podfile` that contains at least the
+following:
 
 ```ruby
 platform :ios, '7.0'
