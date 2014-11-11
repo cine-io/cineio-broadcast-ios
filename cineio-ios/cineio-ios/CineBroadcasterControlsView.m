@@ -91,8 +91,6 @@
 {
     UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
     double rotation = 0;
-    CGRect torchButtonFrame = CGRectZero;
-    CGRect cameraStateButtonFrame = CGRectZero;
 
     //NSLog(@"self.bounds: %.0fx%.0f@%.0f,%.0f", self.bounds.size.width, self.bounds.size.height, self.bounds.origin.x, self.bounds.origin.y);
     //NSLog(@"self.center: %.0f,%.0f", self.center.x, self.center.y);
@@ -102,29 +100,21 @@
         case UIDeviceOrientationPortrait:
         {
             rotation = 0;
-            torchButtonFrame = CGRectMake(25, 31, 25, 25);
-            cameraStateButtonFrame = CGRectMake(self.bounds.size.width - 50, 31, 25, 25);
         }
             break;
         case UIDeviceOrientationPortraitUpsideDown:
         {
             rotation = M_PI;
-            torchButtonFrame = CGRectMake(self.bounds.size.width - 50, 31, 25, 25);
-            cameraStateButtonFrame = CGRectMake(25, 31, 25, 25);
         }
             break;
         case UIDeviceOrientationLandscapeLeft:
         {
             rotation = M_PI_2;
-            torchButtonFrame = CGRectMake(self.bounds.size.height/2 - 25, 25, 25, 25);
-            cameraStateButtonFrame = CGRectMake(self.bounds.size.height/2 - 25, self.bounds.size.width - 50, 25, 25);
         }
             break;
         case UIDeviceOrientationLandscapeRight:
         {
             rotation = -M_PI_2;
-            torchButtonFrame = CGRectMake(self.bounds.size.height/2 - 25, self.bounds.size.width - 50, 25, 25);
-            cameraStateButtonFrame = CGRectMake(self.bounds.size.height/2 - 25, 25, 25, 25);
         }
             break;
         case UIDeviceOrientationFaceDown:
@@ -140,8 +130,6 @@
                         options:UIViewAnimationOptionBeginFromCurrentState
                      animations:^{
                          torchButton.transform = cameraStateButton.transform = transform;
-                         torchButton.frame = torchButtonFrame;
-                         cameraStateButton.frame = cameraStateButtonFrame;
                      }
                      completion:nil];
     

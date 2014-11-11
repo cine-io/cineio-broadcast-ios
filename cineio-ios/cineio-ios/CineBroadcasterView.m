@@ -116,6 +116,11 @@ const NSInteger ControlsViewHeight = 86;
             return;
     }
     
+//    NSLog(@"cameraFrame: %.0fx%.0f@%.0f,%.0f", cameraFrame.size.width, cameraFrame.size.height, cameraFrame.origin.x, cameraFrame.origin.y);
+//    NSLog(@"cameraView.frame: %.0fx%.0f@%.0f,%.0f", cameraView.frame.size.width, cameraView.frame.size.height, cameraView.frame.origin.x, cameraView.frame.origin.y);
+//    NSLog(@"statusFrame: %.0fx%.0f@%.0f,%.0f", statusFrame.size.width, statusFrame.size.height, statusFrame.origin.x, statusFrame.origin.y);
+//    NSLog(@"statusView.frame: %.0fx%.0f@%.0f,%.0f", statusView.frame.size.width, statusView.frame.size.height, statusView.frame.origin.x, statusView.frame.origin.y);
+
     CGAffineTransform transform = CGAffineTransformMakeRotation(rotation);
     [UIView animateWithDuration:0.4
                           delay:0.0
@@ -126,7 +131,6 @@ const NSInteger ControlsViewHeight = 86;
                          statusView.frame = statusFrame;
                      }
                      completion:nil];
-    
 }
 
 @end
