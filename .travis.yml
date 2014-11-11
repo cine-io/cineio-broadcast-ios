@@ -1,3 +1,4 @@
+osx_image: xcode61
 language: objective-c
 xcode_workspace: cineio-ios/cineio-ios.xcworkspace
 xcode_scheme: cineio-iosTests
@@ -6,5 +7,5 @@ install:
   - cd cineio-ios
   - travis_wait pod install
   - cd ..
-#script: "xctool -workspace cineio-ios/cineio-ios.xcworkspace -scheme cineio-iosTests -sdk iphonesimulator test"
-script: 'xcodebuild test -workspace cineio-ios/cineio-ios.xcworkspace -scheme cineio-ios -destination name="iPhone 5"'
+script: "xctool -workspace cineio-ios/cineio-ios.xcworkspace -scheme cineio-iosTests -sdk iphonesimulator test"
+#script: 'xcodebuild test -workspace cineio-ios/cineio-ios.xcworkspace -scheme cineio-ios -destination name="iPhone 5"'
