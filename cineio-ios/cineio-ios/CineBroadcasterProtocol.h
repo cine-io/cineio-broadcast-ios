@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <videocore/api/iOS/VCSimpleSession.h>
 
-enum CineCameraState {
+typedef NS_ENUM(NSUInteger, CineCameraState) {
     CineCameraStateFront = VCCameraStateFront,
     CineCameraStateBack = VCCameraStateBack
 };
 
-enum CineStreamState {
+typedef NS_ENUM(NSUInteger, CineStreamState) {
     CineStreamStateNone = VCSessionStateNone,
     CineStreamStatePreviewStarted = VCSessionStatePreviewStarted,
     CineStreamStateStarting = VCSessionStateStarting,
