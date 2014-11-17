@@ -33,7 +33,7 @@ typedef NS_ENUM(NSUInteger, CineStreamState) {
 @property (nonatomic, assign) int framesPerSecond;
 @property (nonatomic, assign) float sampleRateInHz;
 @property (nonatomic, assign) BOOL torchOn;
-@property (nonatomic, assign) CineCameraState cameraState;
-@property (nonatomic, readonly) CineStreamState streamState;
+@property (nonatomic, assign) enum CineCameraState cameraState;
+@property (nonatomic, readonly) enum CineStreamState streamState;
 
 @end
