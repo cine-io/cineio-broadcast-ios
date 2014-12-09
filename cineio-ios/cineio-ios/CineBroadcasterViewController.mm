@@ -44,6 +44,7 @@
     [super viewDidLoad];
 
     _session = [[VCSimpleSession alloc] initWithVideoSize:self.videoSize frameRate:self.framesPerSecond bitrate:self.videoBitRate useInterfaceOrientation:NO];
+    _session.useAdaptiveBitrate = YES;
 
     _broadcasterView = (CineBroadcasterView *)self.view;
     [_broadcasterView.controlsView.recordButton.button addTarget:self action:@selector(toggleStreaming:) forControlEvents:UIControlEventTouchUpInside];
