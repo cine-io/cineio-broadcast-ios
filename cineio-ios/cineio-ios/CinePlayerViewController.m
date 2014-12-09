@@ -85,6 +85,7 @@
     moviePlayer.controlStyle = MPMovieControlStyleDefault;
     moviePlayer.shouldAutoplay = YES;
     [self.view addSubview:moviePlayer.view];
+    [moviePlayer setScalingMode:MPMovieScalingModeAspectFill];
     [moviePlayer setFullscreen:YES animated:YES];
 }
 
