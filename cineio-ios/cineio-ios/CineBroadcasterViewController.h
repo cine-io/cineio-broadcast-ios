@@ -13,7 +13,7 @@
 
 @interface CineBroadcasterViewController : UIViewController <CineBroadcasterProtocol>
 {
-
+    
 }
 
 - (void)toggleStreaming:(id)sender;

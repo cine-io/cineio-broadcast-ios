@@ -11,6 +11,7 @@
 
 @implementation CineBroadcasterControlsView
 
+@synthesize orientationLocked;
 @synthesize recordButton;
 @synthesize torchButton;
 @synthesize cameraStateButton;
@@ -20,6 +21,7 @@
     self = [super initWithFrame:rect];
 
     // set up UI
+    orientationLocked = NO;
     recordButton = [[CineRecordButtonView alloc] initWithFrame:CGRectMake(self.center.x-36, self.center.y-36, 72, 72)];
     recordButton.enabled = NO;
     [self addSubview:recordButton];
@@ -44,7 +46,9 @@
     cameraStateButton.frame = CGRectMake(0, 0, 25, 25);
     [self addSubview:cameraStateButton];
 
-    [[NSNotificationCenter defaultCenter] addObserver:(self) selector:@selector(orientationChanged) name:UIDeviceOrientationDidChangeNotification object:nil];
+    if (!self.orientationLocked) {
+        [[NSNotificationCenter defaultCenter] addObserver:(self) selector:@selector(orientationChanged) name:UIDeviceOrientationDidChangeNotification object:nil];
+    }
     
     return self;
 }
@@ -91,6 +95,8 @@
 {
     UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
     double rotation = 0;
+
+    if (self.orientationLocked) return;
 
     //NSLog(@"self.bounds: %.0fx%.0f@%.0f,%.0f", self.bounds.size.width, self.bounds.size.height, self.bounds.origin.x, self.bounds.origin.y);
     //NSLog(@"self.center: %.0f,%.0f", self.center.x, self.center.y);

@@ -11,6 +11,8 @@
 
 @interface CineBroadcasterView : UIView
 
+@property (nonatomic, assign) BOOL orientationLocked;
+
 @property (nonatomic, strong) UIView *cameraView;
 
 @property (nonatomic, strong) UIView *statusView;

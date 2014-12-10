@@ -12,6 +12,7 @@
 @interface CineBroadcasterViewController () <VCSessionDelegate>
 {
     CineBroadcasterView *_broadcasterView;
+    BOOL _orientationLocked;
     CGSize _videoSize;
     int _videoBitRate;
     int _framesPerSecond;
@@ -31,6 +32,7 @@
 @synthesize publishStreamName;
 
 // managed by us (and we'll keep in sync w/ VCSimpleSession)
+@dynamic orientationLocked;
 @dynamic videoSize;
 @dynamic videoBitRate;
 @dynamic framesPerSecond;
@@ -44,9 +46,10 @@
     [super viewDidLoad];
 
     _session = [[VCSimpleSession alloc] initWithVideoSize:self.videoSize frameRate:self.framesPerSecond bitrate:self.videoBitRate useInterfaceOrientation:NO];
-    _session.useAdaptiveBitrate = YES;
+    //_session.useAdaptiveBitrate = YES; // this seems to crash VideoCore
 
     _broadcasterView = (CineBroadcasterView *)self.view;
+    _broadcasterView.orientationLocked = _session.orientationLocked = self.orientationLocked;
     [_broadcasterView.controlsView.recordButton.button addTarget:self action:@selector(toggleStreaming:) forControlEvents:UIControlEventTouchUpInside];
     [_broadcasterView.controlsView.torchButton addTarget:self action:@selector(toggleTorch:) forControlEvents:UIControlEventTouchUpInside];
     [_broadcasterView.controlsView.cameraStateButton addTarget:self action:@selector(toggleCameraState:) forControlEvents:UIControlEventTouchUpInside];
@@ -74,6 +77,16 @@
 
 - (BOOL) prefersStatusBarHidden {
     return YES;
+}
+
+- (BOOL)orientationLocked
+{
+    return _orientationLocked;
+}
+
+- (void)setOrientationLocked:(BOOL)orientationLocked
+{
+    _broadcasterView.orientationLocked = _orientationLocked = orientationLocked;
 }
 
 - (CGSize)videoSize

@@ -8,8 +8,13 @@
 
 #import "CineBroadcasterView.h"
 
-@implementation CineBroadcasterView
 
+@implementation CineBroadcasterView
+{
+    BOOL _orientationLocked;
+}
+
+@synthesize orientationLocked = _orientationLocked;
 @synthesize cameraView;
 @synthesize statusView;
 @synthesize status;
@@ -21,12 +26,14 @@ const NSInteger ControlsViewHeight = 86;
 
 - (void)awakeFromNib
 {
+    self.orientationLocked = NO;
     [self setupUI];
 }
 
 - (id)initWithFrame:(CGRect)aRect
 {
     self = [super initWithFrame:aRect];
+    self.orientationLocked = NO;
     [self setupUI];
 
     return self;
@@ -38,8 +45,26 @@ const NSInteger ControlsViewHeight = 86;
     [statusView setFrame:[self statusFrameForOrientation:[[UIDevice currentDevice] orientation]]];
     [status setFrame:CGRectMake(10, 10, statusView.bounds.size.width-20, 20)];
     [controlsView setFrame:CGRectMake(0, self.bounds.size.height-ControlsViewHeight, self.bounds.size.width, ControlsViewHeight)];
-    [[NSNotificationCenter defaultCenter] addObserver:(self) selector:@selector(orientationChanged) name:UIDeviceOrientationDidChangeNotification object:nil];
+
+    if (!self.orientationLocked) {
+        [[NSNotificationCenter defaultCenter] addObserver:(self) selector:@selector(orientationChanged) name:UIDeviceOrientationDidChangeNotification object:nil];
+    }
 }
+
+- (BOOL)orientationLocked
+{
+    return _orientationLocked;
+}
+
+- (void)setOrientationLocked:(BOOL)orientationLocked
+{
+    _orientationLocked = orientationLocked;
+    
+    if (controlsView) {
+        controlsView.orientationLocked = orientationLocked;
+    }
+}
+
 
 - (void)setupUI
 {
@@ -74,6 +99,8 @@ const NSInteger ControlsViewHeight = 86;
 
 - (void)orientationChanged
 {
+    if (self.orientationLocked) return;
+
     UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
     double rotation = 0;
     CGRect statusFrame = CGRectZero;
@@ -109,6 +136,8 @@ const NSInteger ControlsViewHeight = 86;
 
 - (double)rotationForOrientation:(UIDeviceOrientation)orientation
 {
+    if (self.orientationLocked) return 0;
+    
     switch (orientation) {
         case UIDeviceOrientationPortrait:
             return 0;
@@ -128,6 +157,7 @@ const NSInteger ControlsViewHeight = 86;
 
 - (CGRect)cameraFrameForOrientation:(UIDeviceOrientation)orientation
 {
+    // always the same
     return CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
 }
 
@@ -135,29 +165,35 @@ const NSInteger ControlsViewHeight = 86;
 {
     CGRect statusFrame = CGRectZero;
 
-    //NSLog(@"statusView.frame: %.0fx%.0f@%.0f,%.0f", statusView.frame.size.width, statusView.frame.size.height, statusView.frame.origin.x, statusView.frame.origin.y);
-    
-    switch (orientation) {
-        case UIDeviceOrientationPortrait:
-            statusFrame = CGRectMake(0, 0, self.bounds.size.width, StatusViewHeight);
-            break;
-        case UIDeviceOrientationPortraitUpsideDown:
-            statusFrame = CGRectMake(0, 0, self.bounds.size.width, StatusViewHeight);
-            break;
-        case UIDeviceOrientationLandscapeLeft:
-            statusFrame = CGRectMake(self.bounds.size.width-StatusViewHeight, 0, StatusViewHeight, self.bounds.size.height-ControlsViewHeight);
-            break;
-        case UIDeviceOrientationLandscapeRight:
-            statusFrame = CGRectMake(0, 0, StatusViewHeight, self.bounds.size.height-ControlsViewHeight);
-            break;
-        case UIDeviceOrientationFaceDown:
-        case UIDeviceOrientationFaceUp:
-        case UIDeviceOrientationUnknown:
-        default:
-            statusFrame = statusView.frame;
+    if (self.orientationLocked) {
+        // portrait
+        statusFrame = CGRectMake(0, 0, self.bounds.size.width, StatusViewHeight);
+    } else {
+        //NSLog(@"statusView.frame: %.0fx%.0f@%.0f,%.0f", statusView.frame.size.width, statusView.frame.size.height, statusView.frame.origin.x, statusView.frame.origin.y);
+        
+        switch (orientation) {
+            case UIDeviceOrientationPortrait:
+                statusFrame = CGRectMake(0, 0, self.bounds.size.width, StatusViewHeight);
+                break;
+            case UIDeviceOrientationPortraitUpsideDown:
+                statusFrame = CGRectMake(0, 0, self.bounds.size.width, StatusViewHeight);
+                break;
+            case UIDeviceOrientationLandscapeLeft:
+                statusFrame = CGRectMake(self.bounds.size.width-StatusViewHeight, 0, StatusViewHeight, self.bounds.size.height-ControlsViewHeight);
+                break;
+            case UIDeviceOrientationLandscapeRight:
+                statusFrame = CGRectMake(0, 0, StatusViewHeight, self.bounds.size.height-ControlsViewHeight);
+                break;
+            case UIDeviceOrientationFaceDown:
+            case UIDeviceOrientationFaceUp:
+            case UIDeviceOrientationUnknown:
+            default:
+                statusFrame = statusView.frame;
+        }
+        
+        //NSLog(@"statusFrame: %.0fx%.0f@%.0f,%.0f", statusFrame.size.width, statusFrame.size.height, statusFrame.origin.x, statusFrame.origin.y);
     }
     
-    //NSLog(@"statusFrame: %.0fx%.0f@%.0f,%.0f", statusFrame.size.width, statusFrame.size.height, statusFrame.origin.x, statusFrame.origin.y);
     return statusFrame;
 }
 

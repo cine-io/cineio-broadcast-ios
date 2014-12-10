@@ -11,6 +11,7 @@
 
 @interface CineBroadcasterControlsView : UIView
 
+@property (nonatomic, assign) BOOL orientationLocked;
 @property (nonatomic, strong) CineRecordButtonView *recordButton;
 @property (nonatomic, strong) UIButton *torchButton;
 @property (nonatomic, strong) UIButton *cameraStateButton;
