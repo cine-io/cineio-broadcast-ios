@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "cineio-ios"
-  s.version             = "0.5.6"
+  s.version             = "0.5.7"
   s.summary             = "cine.io iOS SDK"
   s.description      = <<-DESC
                           iOS SDK for interacting with the cine.io API.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.frameworks          = [ 'Foundation', 'UIKit', 'QuartzCore', 'CoreGraphics', 'CoreAudio', 'CoreMedia', 'AudioToolbox', 'AVFoundation', 'MediaPlayer' ]
 
   s.dependency          'AFNetworking', '~> 2.4.1'
-  s.dependency          'VideoCore', '~> 0.2'
+  s.dependency          'VideoCore', '0.1.12'
 
   # propagated from VideoCore
   s.xcconfig            = { "HEADER_SEARCH_PATHS" => "${PODS_ROOT}/boost" }
