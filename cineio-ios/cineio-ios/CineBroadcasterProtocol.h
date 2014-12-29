@@ -28,7 +28,7 @@ typedef NS_ENUM(NSUInteger, CineStreamState) {
 @property (nonatomic, strong) NSString *publishUrl;
 @property (nonatomic, strong) NSString *publishStreamName;
 
-@property (nonatomic, assign) BOOL orientationLocked;
+//@property (nonatomic, assign) BOOL orientationLocked;
 @property (nonatomic, assign) CGSize videoSize;
 @property (nonatomic, assign) int videoBitRate;
 @property (nonatomic, assign) int framesPerSecond;

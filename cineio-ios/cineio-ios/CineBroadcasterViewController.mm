@@ -32,7 +32,7 @@
 @synthesize publishStreamName;
 
 // managed by us (and we'll keep in sync w/ VCSimpleSession)
-@dynamic orientationLocked;
+//@dynamic orientationLocked;
 @dynamic videoSize;
 @dynamic videoBitRate;
 @dynamic framesPerSecond;
@@ -49,7 +49,7 @@
     //_session.useAdaptiveBitrate = YES; // this seems to crash VideoCore
 
     _broadcasterView = (CineBroadcasterView *)self.view;
-    _broadcasterView.orientationLocked = _session.orientationLocked = self.orientationLocked;
+    //_broadcasterView.orientationLocked = _session.orientationLocked = self.orientationLocked; // NOT YET SUPPORTED until VideoCore >= 0.2.0
     [_broadcasterView.controlsView.recordButton.button addTarget:self action:@selector(toggleStreaming:) forControlEvents:UIControlEventTouchUpInside];
     [_broadcasterView.controlsView.torchButton addTarget:self action:@selector(toggleTorch:) forControlEvents:UIControlEventTouchUpInside];
     [_broadcasterView.controlsView.cameraStateButton addTarget:self action:@selector(toggleCameraState:) forControlEvents:UIControlEventTouchUpInside];

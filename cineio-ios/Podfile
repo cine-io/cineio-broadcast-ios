@@ -8,7 +8,7 @@ pod 'XCTAsyncTestCase', git: 'https://github.com/iheartradio/xctest-additions.gi
 pod 'OHHTTPStubs',        '~> 3.1.5'
 
 # Comment out this line if working on VideoCore
-pod 'VideoCore',          '~> 0.2'
+pod 'VideoCore',          '0.1.12'
 
 # Uncomment this line if working on VideoCore (also remove VideoCore version from cineio-ios.podspec)
 #pod 'VideoCore',          path: '/Users/jeffrey/dev/cine-dev/VideoCore'

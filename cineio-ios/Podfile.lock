@@ -40,7 +40,7 @@ PODS:
     - OHHTTPStubs/Core
   - OHHTTPStubs/Core (3.1.6)
   - UriParser-cpp (0.1.3)
-  - VideoCore (0.2.0):
+  - VideoCore (0.1.12):
     - boost (~> 1.51.0)
     - glm (~> 0.9.4.6)
     - UriParser-cpp (~> 0.1.3)
@@ -49,7 +49,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.4.1)
   - OHHTTPStubs (~> 3.1.5)
-  - VideoCore (~> 0.2)
+  - VideoCore (= 0.1.12)
   - XCTAsyncTestCase (from `https://github.com/iheartradio/xctest-additions.git`)
 
 EXTERNAL SOURCES:
@@ -62,7 +62,7 @@ SPEC CHECKSUMS:
   glm: 840dd35fe3cc445935accf81ffd1384dad532ee7
   OHHTTPStubs: 6781373b69e0a67b27239799f11764d0fbefac55
   UriParser-cpp: e6df3fd87445ba4ab37a72acafb4f03bc39db524
-  VideoCore: 0ed2a65d8a06842f0d89cd25e98241dfd87dda1e
+  VideoCore: 4842dcca60f127b3c75c1e21aa1304356d911b8d
   XCTAsyncTestCase: 33261474dd19caad96f4df400c1cbbe95f153917
 
 COCOAPODS: 0.34.4
