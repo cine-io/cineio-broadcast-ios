@@ -44,8 +44,8 @@ open <project>.xcworkspace
 
 ## Example Application
 
-Check out the [cineio-ios-example-app][cineio-ios-example-app] and
-[cineio-ios-swift-example-app][cineio-ios-swift-example-app] repositories
+Check out the [cineio-broadcast-ios-example-app][cineio-broadcast-ios-example-app] and
+[cineio-broadcast-ios-swift-example-app][cineio-broadcast-ios-swift-example-app] repositories
 for working examples that use this SDK.
 
 
@@ -364,6 +364,6 @@ Much of the basis for the cine.io iOS SDK comes from the excellent
 [cineio-broadcast]:https://www.cine.io/products/broadcast
 [cocoapods]:http://cocoapods.org/
 [VideoCore]:https://github.com/jamesghurley/VideoCore
-[cineio-ios-example-app]:https://github.com/cine-io/cineio-ios-example-app
-[cineio-ios-swift-example-app]:https://github.com/cine-io/cineio-ios-swift-example-app
+[cineio-broadcast-ios-example-app]:https://github.com/cine-io/cineio-broadcast-ios-example-app
+[cineio-broadcast-ios-swift-example-app]:https://github.com/cine-io/cineio-broadcast-ios-swift-example-app
 [mp-movieplayer-controller]:https://developer.apple.com/library/ios/documentation/MediaPlayer/Reference/MPMoviePlayerController_Class/Reference/Reference.html
