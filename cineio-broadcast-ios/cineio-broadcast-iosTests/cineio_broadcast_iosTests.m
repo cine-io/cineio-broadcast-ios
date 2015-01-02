@@ -13,14 +13,14 @@
 
 const NSString *StreamName = @"my stream";
 
-@interface cineio_iosTests : XCTAsyncTestCase
+@interface cineio_broadcast_iosTests : XCTAsyncTestCase
 {
     CineClient *_client;
     __block CineStream *_stream;
 }
 @end
 
-@implementation cineio_iosTests
+@implementation cineio_broadcast_iosTests
 
 - (void)setUp
 {

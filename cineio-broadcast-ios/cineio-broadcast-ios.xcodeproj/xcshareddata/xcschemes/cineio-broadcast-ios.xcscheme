@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0F549BDA87A14C5BB7951EB3"
+               BlueprintIdentifier = "04442E686FA6219D5A5A2355"
                BuildableName = "libPods.a"
                BlueprintName = "Pods"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00C5E0DB193EBD63009DA7B9"
-               BuildableName = "libcineio-ios.a"
-               BlueprintName = "cineio-ios"
-               ReferencedContainer = "container:cineio-ios.xcodeproj">
+               BuildableName = "libcineio-broadcast-ios.a"
+               BlueprintName = "cineio-broadcast-ios"
+               ReferencedContainer = "container:cineio-broadcast-ios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00C5E0EB193EBD63009DA7B9"
-               BuildableName = "cineio-iosTests.xctest"
-               BlueprintName = "cineio-iosTests"
-               ReferencedContainer = "container:cineio-ios.xcodeproj">
+               BuildableName = "cineio-broadcast-iosTests.xctest"
+               BlueprintName = "cineio-broadcast-iosTests"
+               ReferencedContainer = "container:cineio-broadcast-ios.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -63,6 +63,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "04442E686FA6219D5A5A2355"
+            BuildableName = "libPods.a"
+            BlueprintName = "Pods"
+            ReferencedContainer = "container:Pods/Pods.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

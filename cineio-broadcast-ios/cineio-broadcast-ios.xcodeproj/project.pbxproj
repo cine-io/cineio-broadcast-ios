@@ -17,10 +17,16 @@
 		0064203019BE7AD000DF038B /* deleteStream.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202F19BE7AD000DF038B /* deleteStream.json */; };
 		0064203319BE7C0500DF038B /* deleteStreamRecording.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064203119BE7C0500DF038B /* deleteStreamRecording.json */; };
 		0064203419BE7C0500DF038B /* getStreamRecordings.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064203219BE7C0500DF038B /* getStreamRecordings.json */; };
-		00ADC6C519745BC400857375 /* CineBroadcasterControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6BD19745BC400857375 /* CineBroadcasterControlsView.m */; };
-		00ADC6C719745BC400857375 /* CineBroadcasterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6C219745BC400857375 /* CineBroadcasterView.m */; };
-		00ADC6C819745BC400857375 /* CineBroadcasterViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6C419745BC400857375 /* CineBroadcasterViewController.mm */; };
-		00ADC6CE1974632B00857375 /* CineRecordButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6CC1974632B00857375 /* CineRecordButtonView.m */; };
+		0097899B1A572ADE00A861EF /* CineBroadcasterControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009789851A572ADE00A861EF /* CineBroadcasterControlsView.m */; };
+		0097899C1A572ADE00A861EF /* CineBroadcasterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009789881A572ADE00A861EF /* CineBroadcasterView.m */; };
+		0097899D1A572ADE00A861EF /* CineBroadcasterViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0097898A1A572ADE00A861EF /* CineBroadcasterViewController.mm */; };
+		0097899E1A572ADE00A861EF /* CineClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0097898C1A572ADE00A861EF /* CineClient.m */; };
+		0097899F1A572ADE00A861EF /* CineConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0097898E1A572ADE00A861EF /* CineConstants.m */; };
+		009789A01A572ADE00A861EF /* CinePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009789921A572ADE00A861EF /* CinePlayerViewController.m */; };
+		009789A11A572ADE00A861EF /* CineProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 009789941A572ADE00A861EF /* CineProject.m */; };
+		009789A21A572ADE00A861EF /* CineRecordButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009789961A572ADE00A861EF /* CineRecordButtonView.m */; };
+		009789A31A572ADE00A861EF /* CineRecording.m in Sources */ = {isa = PBXBuildFile; fileRef = 009789981A572ADE00A861EF /* CineRecording.m */; };
+		009789A41A572ADE00A861EF /* CineStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 0097899A1A572ADE00A861EF /* CineStream.m */; };
 		00ADC6D0197464C700857375 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6CF197464C700857375 /* QuartzCore.framework */; };
 		00ADC6D2197464CF00857375 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D1197464CF00857375 /* CoreGraphics.framework */; };
 		00ADC6D4197464D700857375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D3197464D700857375 /* UIKit.framework */; };
@@ -35,20 +41,14 @@
 		00ADC6E3197466A600857375 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E11974669800857375 /* AudioToolbox.framework */; };
 		00ADC6E5197466AF00857375 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E4197466AF00857375 /* CoreAudio.framework */; };
 		00ADC6E6197466BC00857375 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E4197466AF00857375 /* CoreAudio.framework */; };
-		00ADC6F41975993C00857375 /* CinePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADC6F31975993C00857375 /* CinePlayerViewController.m */; };
 		00ADC6F91975A05B00857375 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6F81975A05B00857375 /* MediaPlayer.framework */; };
 		00C5E0E0193EBD63009DA7B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DF193EBD63009DA7B9 /* Foundation.framework */; };
 		00C5E0EE193EBD63009DA7B9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0ED193EBD63009DA7B9 /* XCTest.framework */; };
 		00C5E0EF193EBD63009DA7B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DF193EBD63009DA7B9 /* Foundation.framework */; };
 		00C5E0FA193EBD63009DA7B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00C5E0F8193EBD63009DA7B9 /* InfoPlist.strings */; };
-		00C5E0FC193EBD63009DA7B9 /* cineio_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5E0FB193EBD63009DA7B9 /* cineio_iosTests.m */; };
-		00C5E107193EBEE1009DA7B9 /* CineClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5E106193EBEE1009DA7B9 /* CineClient.m */; };
-		00C5E10A193EC06B009DA7B9 /* CineProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5E109193EC06B009DA7B9 /* CineProject.m */; };
-		00C5E10D193EC1CD009DA7B9 /* CineStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5E10C193EC1CD009DA7B9 /* CineStream.m */; };
-		00C5E10E193ED668009DA7B9 /* libcineio-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DC193EBD63009DA7B9 /* libcineio-ios.a */; };
-		00C5E111193EF041009DA7B9 /* CineConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5E110193EF041009DA7B9 /* CineConstants.m */; };
+		00C5E0FC193EBD63009DA7B9 /* cineio_broadcast_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5E0FB193EBD63009DA7B9 /* cineio_broadcast_iosTests.m */; };
+		00C5E10E193ED668009DA7B9 /* libcineio-broadcast-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DC193EBD63009DA7B9 /* libcineio-broadcast-ios.a */; };
 		00CDFB701989F4E0001C7304 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6F81975A05B00857375 /* MediaPlayer.framework */; };
-		00CDFB731989F6FD001C7304 /* CineRecording.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDFB721989F6FD001C7304 /* CineRecording.m */; };
 		ADA9581DB5FF4B4F835BAD16 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B31761E41A64412FA6E1DC12 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +58,7 @@
 			containerPortal = 00C5E0D4193EBD63009DA7B9 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 00C5E0DB193EBD63009DA7B9;
-			remoteInfo = "cineio-ios";
+			remoteInfo = "cineio-broadcast-ios";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -85,16 +85,31 @@
 		0064202F19BE7AD000DF038B /* deleteStream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deleteStream.json; sourceTree = "<group>"; };
 		0064203119BE7C0500DF038B /* deleteStreamRecording.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deleteStreamRecording.json; sourceTree = "<group>"; };
 		0064203219BE7C0500DF038B /* getStreamRecordings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getStreamRecordings.json; sourceTree = "<group>"; };
-		009CB1A21980965700C0ADF6 /* CineIconsBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CineIconsBase64.h; sourceTree = "<group>"; };
-		00ADC6BC19745BC400857375 /* CineBroadcasterControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineBroadcasterControlsView.h; sourceTree = "<group>"; };
-		00ADC6BD19745BC400857375 /* CineBroadcasterControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineBroadcasterControlsView.m; sourceTree = "<group>"; };
-		00ADC6C019745BC400857375 /* CineBroadcasterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineBroadcasterProtocol.h; sourceTree = "<group>"; };
-		00ADC6C119745BC400857375 /* CineBroadcasterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineBroadcasterView.h; sourceTree = "<group>"; };
-		00ADC6C219745BC400857375 /* CineBroadcasterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineBroadcasterView.m; sourceTree = "<group>"; };
-		00ADC6C319745BC400857375 /* CineBroadcasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineBroadcasterViewController.h; sourceTree = "<group>"; };
-		00ADC6C419745BC400857375 /* CineBroadcasterViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CineBroadcasterViewController.mm; sourceTree = "<group>"; };
-		00ADC6CB1974632B00857375 /* CineRecordButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineRecordButtonView.h; sourceTree = "<group>"; };
-		00ADC6CC1974632B00857375 /* CineRecordButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineRecordButtonView.m; sourceTree = "<group>"; };
+		009789831A57298F00A861EF /* cineio-broadcast-ios.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "cineio-broadcast-ios.podspec"; path = "../cineio-broadcast-ios.podspec"; sourceTree = "<group>"; };
+		009789841A572ADE00A861EF /* CineBroadcasterControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CineBroadcasterControlsView.h; path = "cineio-broadcast-ios/CineBroadcasterControlsView.h"; sourceTree = SOURCE_ROOT; };
+		009789851A572ADE00A861EF /* CineBroadcasterControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CineBroadcasterControlsView.m; path = "cineio-broadcast-ios/CineBroadcasterControlsView.m"; sourceTree = SOURCE_ROOT; };
+		009789861A572ADE00A861EF /* CineBroadcasterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CineBroadcasterProtocol.h; path = "cineio-broadcast-ios/CineBroadcasterProtocol.h"; sourceTree = SOURCE_ROOT; };
+		009789871A572ADE00A861EF /* CineBroadcasterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CineBroadcasterView.h; path = "cineio-broadcast-ios/CineBroadcasterView.h"; sourceTree = SOURCE_ROOT; };
+		009789881A572ADE00A861EF /* CineBroadcasterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CineBroadcasterView.m; path = "cineio-broadcast-ios/CineBroadcasterView.m"; sourceTree = SOURCE_ROOT; };
+		009789891A572ADE00A861EF /* CineBroadcasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CineBroadcasterViewController.h; path = "cineio-broadcast-ios/CineBroadcasterViewController.h"; sourceTree = SOURCE_ROOT; };
+		0097898A1A572ADE00A861EF /* CineBroadcasterViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CineBroadcasterViewController.mm; path = "cineio-broadcast-ios/CineBroadcasterViewController.mm"; sourceTree = SOURCE_ROOT; };
+		0097898B1A572ADE00A861EF /* CineClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CineClient.h; path = "cineio-broadcast-ios/CineClient.h"; sourceTree = SOURCE_ROOT; };
+		0097898C1A572ADE00A861EF /* CineClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CineClient.m; path = "cineio-broadcast-ios/CineClient.m"; sourceTree = SOURCE_ROOT; };
+		0097898D1A572ADE00A861EF /* CineConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CineConstants.h; path = "cineio-broadcast-ios/CineConstants.h"; sourceTree = SOURCE_ROOT; };
+		0097898E1A572ADE00A861EF /* CineConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CineConstants.m; path = "cineio-broadcast-ios/CineConstants.m"; sourceTree = SOURCE_ROOT; };
+		0097898F1A572ADE00A861EF /* CineIconsBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CineIconsBase64.h; path = "cineio-broadcast-ios/CineIconsBase64.h"; sourceTree = SOURCE_ROOT; };
+		009789901A572ADE00A861EF /* CineIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CineIO.h; path = "cineio-broadcast-ios/CineIO.h"; sourceTree = SOURCE_ROOT; };
+		009789911A572ADE00A861EF /* CinePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CinePlayerViewController.h; path = "cineio-broadcast-ios/CinePlayerViewController.h"; sourceTree = SOURCE_ROOT; };
+		009789921A572ADE00A861EF /* CinePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CinePlayerViewController.m; path = "cineio-broadcast-ios/CinePlayerViewController.m"; sourceTree = SOURCE_ROOT; };
+		009789931A572ADE00A861EF /* CineProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CineProject.h; path = "cineio-broadcast-ios/CineProject.h"; sourceTree = SOURCE_ROOT; };
+		009789941A572ADE00A861EF /* CineProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CineProject.m; path = "cineio-broadcast-ios/CineProject.m"; sourceTree = SOURCE_ROOT; };
+		009789951A572ADE00A861EF /* CineRecordButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CineRecordButtonView.h; path = "cineio-broadcast-ios/CineRecordButtonView.h"; sourceTree = SOURCE_ROOT; };
+		009789961A572ADE00A861EF /* CineRecordButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CineRecordButtonView.m; path = "cineio-broadcast-ios/CineRecordButtonView.m"; sourceTree = SOURCE_ROOT; };
+		009789971A572ADE00A861EF /* CineRecording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CineRecording.h; path = "cineio-broadcast-ios/CineRecording.h"; sourceTree = SOURCE_ROOT; };
+		009789981A572ADE00A861EF /* CineRecording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CineRecording.m; path = "cineio-broadcast-ios/CineRecording.m"; sourceTree = SOURCE_ROOT; };
+		009789991A572ADE00A861EF /* CineStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CineStream.h; path = "cineio-broadcast-ios/CineStream.h"; sourceTree = SOURCE_ROOT; };
+		0097899A1A572ADE00A861EF /* CineStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CineStream.m; path = "cineio-broadcast-ios/CineStream.m"; sourceTree = SOURCE_ROOT; };
+		009789A51A572AEE00A861EF /* cineio-broadcast-ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "cineio-broadcast-ios-Prefix.pch"; path = "cineio-broadcast-ios/cineio-broadcast-ios-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		00ADC6CF197464C700857375 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		00ADC6D1197464CF00857375 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		00ADC6D3197464D700857375 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -103,31 +118,17 @@
 		00ADC6DD1974661200857375 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		00ADC6E11974669800857375 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		00ADC6E4197466AF00857375 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		00ADC6F21975993C00857375 /* CinePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinePlayerViewController.h; sourceTree = "<group>"; };
-		00ADC6F31975993C00857375 /* CinePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CinePlayerViewController.m; sourceTree = "<group>"; };
 		00ADC6F81975A05B00857375 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		00C5E0DC193EBD63009DA7B9 /* libcineio-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcineio-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00C5E0DC193EBD63009DA7B9 /* libcineio-broadcast-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcineio-broadcast-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C5E0DF193EBD63009DA7B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		00C5E0E3193EBD63009DA7B9 /* cineio-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cineio-ios-Prefix.pch"; sourceTree = "<group>"; };
-		00C5E0EC193EBD63009DA7B9 /* cineio-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cineio-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00C5E0EC193EBD63009DA7B9 /* cineio-broadcast-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cineio-broadcast-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C5E0ED193EBD63009DA7B9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		00C5E0F7193EBD63009DA7B9 /* cineio-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cineio-iosTests-Info.plist"; sourceTree = "<group>"; };
+		00C5E0F7193EBD63009DA7B9 /* cineio-broadcast-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cineio-broadcast-iosTests-Info.plist"; sourceTree = "<group>"; };
 		00C5E0F9193EBD63009DA7B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		00C5E0FB193EBD63009DA7B9 /* cineio_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cineio_iosTests.m; sourceTree = "<group>"; };
-		00C5E105193EBEE1009DA7B9 /* CineClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineClient.h; sourceTree = "<group>"; };
-		00C5E106193EBEE1009DA7B9 /* CineClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineClient.m; sourceTree = "<group>"; };
-		00C5E108193EC06B009DA7B9 /* CineProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineProject.h; sourceTree = "<group>"; };
-		00C5E109193EC06B009DA7B9 /* CineProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineProject.m; sourceTree = "<group>"; };
-		00C5E10B193EC1CD009DA7B9 /* CineStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineStream.h; sourceTree = "<group>"; };
-		00C5E10C193EC1CD009DA7B9 /* CineStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineStream.m; sourceTree = "<group>"; };
-		00C5E10F193EF02B009DA7B9 /* CineConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineConstants.h; sourceTree = "<group>"; };
-		00C5E110193EF041009DA7B9 /* CineConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineConstants.m; sourceTree = "<group>"; };
+		00C5E0FB193EBD63009DA7B9 /* cineio_broadcast_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cineio_broadcast_iosTests.m; sourceTree = "<group>"; };
 		00C5E112193EF88F009DA7B9 /* cineio-ios.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "cineio-ios.podspec"; path = "../cineio-ios.podspec"; sourceTree = "<group>"; };
 		00C5E113193EF8F2009DA7B9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		00C5E158193F0C5A009DA7B9 /* CineIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineIO.h; sourceTree = "<group>"; };
 		00C5E159193F16B9009DA7B9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		00CDFB711989F6FD001C7304 /* CineRecording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineRecording.h; sourceTree = "<group>"; };
-		00CDFB721989F6FD001C7304 /* CineRecording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineRecording.m; sourceTree = "<group>"; };
 		18DA7FA643AA9FAC02020C3E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		34EE4272C1BB56B2C37C9BF7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B31761E41A64412FA6E1DC12 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,7 +166,7 @@
 				00ADC6E3197466A600857375 /* AudioToolbox.framework in Frameworks */,
 				00ADC6D71974657900857375 /* AVFoundation.framework in Frameworks */,
 				00C5E0EE193EBD63009DA7B9 /* XCTest.framework in Frameworks */,
-				00C5E10E193ED668009DA7B9 /* libcineio-ios.a in Frameworks */,
+				00C5E10E193ED668009DA7B9 /* libcineio-broadcast-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,9 +178,10 @@
 			children = (
 				00C5E159193F16B9009DA7B9 /* README.md */,
 				00C5E113193EF8F2009DA7B9 /* LICENSE */,
+				009789831A57298F00A861EF /* cineio-broadcast-ios.podspec */,
 				00C5E112193EF88F009DA7B9 /* cineio-ios.podspec */,
-				00C5E0E1193EBD63009DA7B9 /* cineio-ios */,
-				00C5E0F5193EBD63009DA7B9 /* cineio-iosTests */,
+				00C5E0E1193EBD63009DA7B9 /* cineio-broadcast-ios */,
+				00C5E0F5193EBD63009DA7B9 /* cineio-broadcast-iosTests */,
 				00C5E0DE193EBD63009DA7B9 /* Frameworks */,
 				00C5E0DD193EBD63009DA7B9 /* Products */,
 				C93C4501B779D93707E7CE5E /* Pods */,
@@ -189,8 +191,8 @@
 		00C5E0DD193EBD63009DA7B9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				00C5E0DC193EBD63009DA7B9 /* libcineio-ios.a */,
-				00C5E0EC193EBD63009DA7B9 /* cineio-iosTests.xctest */,
+				00C5E0DC193EBD63009DA7B9 /* libcineio-broadcast-ios.a */,
+				00C5E0EC193EBD63009DA7B9 /* cineio-broadcast-iosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,58 +216,60 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		00C5E0E1193EBD63009DA7B9 /* cineio-ios */ = {
+		00C5E0E1193EBD63009DA7B9 /* cineio-broadcast-ios */ = {
 			isa = PBXGroup;
 			children = (
-				00C5E158193F0C5A009DA7B9 /* CineIO.h */,
-				009CB1A21980965700C0ADF6 /* CineIconsBase64.h */,
-				00C5E10F193EF02B009DA7B9 /* CineConstants.h */,
-				00C5E110193EF041009DA7B9 /* CineConstants.m */,
-				00C5E105193EBEE1009DA7B9 /* CineClient.h */,
-				00C5E106193EBEE1009DA7B9 /* CineClient.m */,
-				00C5E108193EC06B009DA7B9 /* CineProject.h */,
-				00C5E109193EC06B009DA7B9 /* CineProject.m */,
-				00CDFB711989F6FD001C7304 /* CineRecording.h */,
-				00CDFB721989F6FD001C7304 /* CineRecording.m */,
-				00C5E10B193EC1CD009DA7B9 /* CineStream.h */,
-				00C5E10C193EC1CD009DA7B9 /* CineStream.m */,
-				00ADC6CB1974632B00857375 /* CineRecordButtonView.h */,
-				00ADC6CC1974632B00857375 /* CineRecordButtonView.m */,
-				00ADC6BC19745BC400857375 /* CineBroadcasterControlsView.h */,
-				00ADC6BD19745BC400857375 /* CineBroadcasterControlsView.m */,
-				00ADC6C119745BC400857375 /* CineBroadcasterView.h */,
-				00ADC6C219745BC400857375 /* CineBroadcasterView.m */,
-				00ADC6C019745BC400857375 /* CineBroadcasterProtocol.h */,
-				00ADC6C319745BC400857375 /* CineBroadcasterViewController.h */,
-				00ADC6C419745BC400857375 /* CineBroadcasterViewController.mm */,
-				00ADC6F21975993C00857375 /* CinePlayerViewController.h */,
-				00ADC6F31975993C00857375 /* CinePlayerViewController.m */,
+				009789901A572ADE00A861EF /* CineIO.h */,
+				0097898B1A572ADE00A861EF /* CineClient.h */,
+				0097898C1A572ADE00A861EF /* CineClient.m */,
+				0097898D1A572ADE00A861EF /* CineConstants.h */,
+				0097898E1A572ADE00A861EF /* CineConstants.m */,
+				0097898F1A572ADE00A861EF /* CineIconsBase64.h */,
+				009789931A572ADE00A861EF /* CineProject.h */,
+				009789941A572ADE00A861EF /* CineProject.m */,
+				009789971A572ADE00A861EF /* CineRecording.h */,
+				009789981A572ADE00A861EF /* CineRecording.m */,
+				009789991A572ADE00A861EF /* CineStream.h */,
+				0097899A1A572ADE00A861EF /* CineStream.m */,
+				009789841A572ADE00A861EF /* CineBroadcasterControlsView.h */,
+				009789851A572ADE00A861EF /* CineBroadcasterControlsView.m */,
+				009789861A572ADE00A861EF /* CineBroadcasterProtocol.h */,
+				009789871A572ADE00A861EF /* CineBroadcasterView.h */,
+				009789881A572ADE00A861EF /* CineBroadcasterView.m */,
+				009789891A572ADE00A861EF /* CineBroadcasterViewController.h */,
+				0097898A1A572ADE00A861EF /* CineBroadcasterViewController.mm */,
+				009789911A572ADE00A861EF /* CinePlayerViewController.h */,
+				009789921A572ADE00A861EF /* CinePlayerViewController.m */,
+				009789951A572ADE00A861EF /* CineRecordButtonView.h */,
+				009789961A572ADE00A861EF /* CineRecordButtonView.m */,
 				00C5E0E2193EBD63009DA7B9 /* Supporting Files */,
 			);
-			path = "cineio-ios";
+			name = "cineio-broadcast-ios";
+			path = "cineio-broadcast-ios";
 			sourceTree = "<group>";
 		};
 		00C5E0E2193EBD63009DA7B9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				00C5E0E3193EBD63009DA7B9 /* cineio-ios-Prefix.pch */,
+				009789A51A572AEE00A861EF /* cineio-broadcast-ios-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		00C5E0F5193EBD63009DA7B9 /* cineio-iosTests */ = {
+		00C5E0F5193EBD63009DA7B9 /* cineio-broadcast-iosTests */ = {
 			isa = PBXGroup;
 			children = (
-				00C5E0FB193EBD63009DA7B9 /* cineio_iosTests.m */,
+				00C5E0FB193EBD63009DA7B9 /* cineio_broadcast_iosTests.m */,
 				00C5E0F6193EBD63009DA7B9 /* Supporting Files */,
 			);
-			path = "cineio-iosTests";
+			name = "cineio-broadcast-iosTests";
+			path = "cineio-broadcast-iosTests";
 			sourceTree = "<group>";
 		};
 		00C5E0F6193EBD63009DA7B9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				00C5E0F7193EBD63009DA7B9 /* cineio-iosTests-Info.plist */,
+				00C5E0F7193EBD63009DA7B9 /* cineio-broadcast-iosTests-Info.plist */,
 				00C5E0F8193EBD63009DA7B9 /* InfoPlist.strings */,
 				0064202819BE793B00DF038B /* getProjects.json */,
 				0064202719BE793B00DF038B /* getProject.json */,
@@ -293,9 +297,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00C5E0DB193EBD63009DA7B9 /* cineio-ios */ = {
+		00C5E0DB193EBD63009DA7B9 /* cineio-broadcast-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00C5E0FF193EBD63009DA7B9 /* Build configuration list for PBXNativeTarget "cineio-ios" */;
+			buildConfigurationList = 00C5E0FF193EBD63009DA7B9 /* Build configuration list for PBXNativeTarget "cineio-broadcast-ios" */;
 			buildPhases = (
 				066F3A811F054D2B901D1AB3 /* Check Pods Manifest.lock */,
 				00C5E0D8193EBD63009DA7B9 /* Sources */,
@@ -307,14 +311,14 @@
 			);
 			dependencies = (
 			);
-			name = "cineio-ios";
-			productName = "cineio-ios";
-			productReference = 00C5E0DC193EBD63009DA7B9 /* libcineio-ios.a */;
+			name = "cineio-broadcast-ios";
+			productName = "cineio-broadcast-ios";
+			productReference = 00C5E0DC193EBD63009DA7B9 /* libcineio-broadcast-ios.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		00C5E0EB193EBD63009DA7B9 /* cineio-iosTests */ = {
+		00C5E0EB193EBD63009DA7B9 /* cineio-broadcast-iosTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00C5E102193EBD63009DA7B9 /* Build configuration list for PBXNativeTarget "cineio-iosTests" */;
+			buildConfigurationList = 00C5E102193EBD63009DA7B9 /* Build configuration list for PBXNativeTarget "cineio-broadcast-iosTests" */;
 			buildPhases = (
 				2C8315657D0047019185E92E /* Check Pods Manifest.lock */,
 				00C5E0E8193EBD63009DA7B9 /* Sources */,
@@ -326,9 +330,9 @@
 			dependencies = (
 				00C5E0F3193EBD63009DA7B9 /* PBXTargetDependency */,
 			);
-			name = "cineio-iosTests";
-			productName = "cineio-iosTests";
-			productReference = 00C5E0EC193EBD63009DA7B9 /* cineio-iosTests.xctest */;
+			name = "cineio-broadcast-iosTests";
+			productName = "cineio-broadcast-iosTests";
+			productReference = 00C5E0EC193EBD63009DA7B9 /* cineio-broadcast-iosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -340,7 +344,7 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = cine.io;
 			};
-			buildConfigurationList = 00C5E0D7193EBD63009DA7B9 /* Build configuration list for PBXProject "cineio-ios" */;
+			buildConfigurationList = 00C5E0D7193EBD63009DA7B9 /* Build configuration list for PBXProject "cineio-broadcast-ios" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -352,8 +356,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				00C5E0DB193EBD63009DA7B9 /* cineio-ios */,
-				00C5E0EB193EBD63009DA7B9 /* cineio-iosTests */,
+				00C5E0DB193EBD63009DA7B9 /* cineio-broadcast-ios */,
+				00C5E0EB193EBD63009DA7B9 /* cineio-broadcast-iosTests */,
 			);
 		};
 /* End PBXProject section */
@@ -432,16 +436,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00ADC6C819745BC400857375 /* CineBroadcasterViewController.mm in Sources */,
-				00ADC6F41975993C00857375 /* CinePlayerViewController.m in Sources */,
-				00CDFB731989F6FD001C7304 /* CineRecording.m in Sources */,
-				00ADC6C519745BC400857375 /* CineBroadcasterControlsView.m in Sources */,
-				00C5E107193EBEE1009DA7B9 /* CineClient.m in Sources */,
-				00ADC6C719745BC400857375 /* CineBroadcasterView.m in Sources */,
-				00C5E111193EF041009DA7B9 /* CineConstants.m in Sources */,
-				00C5E10D193EC1CD009DA7B9 /* CineStream.m in Sources */,
-				00ADC6CE1974632B00857375 /* CineRecordButtonView.m in Sources */,
-				00C5E10A193EC06B009DA7B9 /* CineProject.m in Sources */,
+				009789A01A572ADE00A861EF /* CinePlayerViewController.m in Sources */,
+				0097899C1A572ADE00A861EF /* CineBroadcasterView.m in Sources */,
+				009789A41A572ADE00A861EF /* CineStream.m in Sources */,
+				0097899B1A572ADE00A861EF /* CineBroadcasterControlsView.m in Sources */,
+				0097899F1A572ADE00A861EF /* CineConstants.m in Sources */,
+				009789A11A572ADE00A861EF /* CineProject.m in Sources */,
+				0097899E1A572ADE00A861EF /* CineClient.m in Sources */,
+				009789A31A572ADE00A861EF /* CineRecording.m in Sources */,
+				0097899D1A572ADE00A861EF /* CineBroadcasterViewController.mm in Sources */,
+				009789A21A572ADE00A861EF /* CineRecordButtonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00C5E0FC193EBD63009DA7B9 /* cineio_iosTests.m in Sources */,
+				00C5E0FC193EBD63009DA7B9 /* cineio_broadcast_iosTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +462,7 @@
 /* Begin PBXTargetDependency section */
 		00C5E0F3193EBD63009DA7B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 00C5E0DB193EBD63009DA7B9 /* cineio-ios */;
+			target = 00C5E0DB193EBD63009DA7B9 /* cineio-broadcast-ios */;
 			targetProxy = 00C5E0F2193EBD63009DA7B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -553,9 +557,9 @@
 			buildSettings = {
 				DSTROOT = /tmp/cineio_ios.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cineio-ios/cineio-ios-Prefix.pch";
+				GCC_PREFIX_HEADER = "cineio-broadcast-ios/cineio-broadcast-ios-Prefix.pch";
 				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "cineio-broadcast-ios";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -566,9 +570,9 @@
 			buildSettings = {
 				DSTROOT = /tmp/cineio_ios.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cineio-ios/cineio-ios-Prefix.pch";
+				GCC_PREFIX_HEADER = "cineio-broadcast-ios/cineio-broadcast-ios-Prefix.pch";
 				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "cineio-broadcast-ios";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -583,12 +587,12 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cineio-ios/cineio-ios-Prefix.pch";
+				GCC_PREFIX_HEADER = "cineio-broadcast-ios/cineio-broadcast-ios-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "cineio-iosTests/cineio-iosTests-Info.plist";
+				INFOPLIST_FILE = "cineio-broadcast-iosTests/cineio-broadcast-iosTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-l\"Pods-AFNetworking\"",
 					"-l\"Pods-OHHTTPStubs\"",
@@ -624,7 +628,7 @@
 					"-framework",
 					"\"XCTest\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "cineio-broadcast-iosTests";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -639,8 +643,8 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cineio-ios/cineio-ios-Prefix.pch";
-				INFOPLIST_FILE = "cineio-iosTests/cineio-iosTests-Info.plist";
+				GCC_PREFIX_HEADER = "cineio-broadcast-ios/cineio-broadcast-ios-Prefix.pch";
+				INFOPLIST_FILE = "cineio-broadcast-iosTests/cineio-broadcast-iosTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-l\"Pods-AFNetworking\"",
 					"-l\"Pods-OHHTTPStubs\"",
@@ -676,7 +680,7 @@
 					"-framework",
 					"\"XCTest\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "cineio-broadcast-iosTests";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -684,7 +688,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00C5E0D7193EBD63009DA7B9 /* Build configuration list for PBXProject "cineio-ios" */ = {
+		00C5E0D7193EBD63009DA7B9 /* Build configuration list for PBXProject "cineio-broadcast-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00C5E0FD193EBD63009DA7B9 /* Debug */,
@@ -693,7 +697,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		00C5E0FF193EBD63009DA7B9 /* Build configuration list for PBXNativeTarget "cineio-ios" */ = {
+		00C5E0FF193EBD63009DA7B9 /* Build configuration list for PBXNativeTarget "cineio-broadcast-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00C5E100193EBD63009DA7B9 /* Debug */,
@@ -702,7 +706,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		00C5E102193EBD63009DA7B9 /* Build configuration list for PBXNativeTarget "cineio-iosTests" */ = {
+		00C5E102193EBD63009DA7B9 /* Build configuration list for PBXNativeTarget "cineio-broadcast-iosTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00C5E103193EBD63009DA7B9 /* Debug */,

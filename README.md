@@ -1,10 +1,10 @@
-# cineio-ios - cine.io iOS SDK
+# cineio-broadcast-ios - cine.io Broadcast iOS SDK
 
 [![Build Status](https://travis-ci.org/cine-io/cineio-ios.svg?branch=master)](https://travis-ci.org/cine-io/cineio-ios)
 
-This is the [cine.io][cineio] iOS SDK. This library allows you to do real-time
-live video streaming from your iOS device to any other device that supports
-RTMP or HLS streaming (iOS, Android, web).
+This is the [cine.io][cineio] [Broadcast][cineio-broadcast] iOS SDK. This
+library allows you to do real-time live video streaming from your iOS device
+to any other device that supports RTMP or HLS streaming (iOS, Android, web).
 
 
 ## Table of Contents
@@ -26,7 +26,7 @@ following:
 ```ruby
 platform :ios, '7.0'
 
-pod 'cineio-ios', '~> 0.5'
+pod 'cineio-ios', '~> 0.6'
 ```
 
 Then, install the Pod by running the `pod install` command:
@@ -361,6 +361,7 @@ Much of the basis for the cine.io iOS SDK comes from the excellent
 <!-- external links -->
 
 [cineio]:https://www.cine.io/
+[cineio-broadcast]:https://www.cine.io/products/broadcast
 [cocoapods]:http://cocoapods.org/
 [VideoCore]:https://github.com/jamesghurley/VideoCore
 [cineio-ios-example-app]:https://github.com/cine-io/cineio-ios-example-app
