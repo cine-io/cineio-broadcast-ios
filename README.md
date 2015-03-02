@@ -26,7 +26,7 @@ following:
 ```ruby
 platform :ios, '7.0'
 
-pod 'cineio-ios', '~> 0.6'
+pod 'cineio-broadcast-ios', '~> 0.6'
 ```
 
 Then, install the Pod by running the `pod install` command:
