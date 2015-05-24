@@ -2,7 +2,7 @@
 
 #define API_VERSION "1"
 #define BASE_URL "https://www.cine.io/api/"
-#define SDK_VERSION "0.7.0"
+#define SDK_VERSION "0.7.1"
 #define USER_AGENT "cineio-ios"
 
 extern NSString* const BaseUrl;
