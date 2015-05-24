@@ -2,13 +2,13 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '7.0'
 
-pod 'AFNetworking',       '~> 2.4.1'
+pod 'AFNetworking',       '~> 2.5'
 #pod 'XCTAsyncTestCase',   '~> 0.1.1'  # 0.1.1 hasn't been pushed to trunk yet. :-(
 pod 'XCTAsyncTestCase', git: 'https://github.com/iheartradio/xctest-additions.git'
-pod 'OHHTTPStubs',        '~> 3.1.5'
+pod 'OHHTTPStubs',        '~> 4.0'
 
 # Comment out this line if working on VideoCore
-pod 'VideoCore',          '~> 0.2.1.2'
+pod 'VideoCore',          '~> 0.3'
 
 # Uncomment this line if working on VideoCore (also remove VideoCore version from cineio-ios.podspec)
 #pod 'VideoCore',          path: '/Users/jeffrey/dev/cine-dev/VideoCore'

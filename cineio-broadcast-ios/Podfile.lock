@@ -1,23 +1,23 @@
 PODS:
-  - AFNetworking (2.4.1):
+  - AFNetworking (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
     - AFNetworking/UIKit
-  - AFNetworking/NSURLConnection (2.4.1):
+  - AFNetworking/NSURLConnection (2.5.4):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.4.1):
+  - AFNetworking/NSURLSession (2.5.4):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.4.1)
-  - AFNetworking/Security (2.4.1)
-  - AFNetworking/Serialization (2.4.1)
-  - AFNetworking/UIKit (2.4.1):
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - boost (1.51.0):
@@ -36,20 +36,18 @@ PODS:
   - boost/shared_ptr-includes (1.51.0)
   - boost/string_algorithms-includes (1.51.0)
   - glm (0.9.4.6)
-  - OHHTTPStubs (3.1.6):
-    - OHHTTPStubs/Core
-  - OHHTTPStubs/Core (3.1.6)
+  - OHHTTPStubs (4.0.2)
   - UriParser-cpp (0.1.3)
-  - VideoCore (0.2.1.2):
+  - VideoCore (0.3.1):
     - boost (~> 1.51.0)
     - glm (~> 0.9.4.6)
     - UriParser-cpp (~> 0.1.3)
   - XCTAsyncTestCase (0.1.1)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.4.1)
-  - OHHTTPStubs (~> 3.1.5)
-  - VideoCore (~> 0.2.1.2)
+  - AFNetworking (~> 2.5)
+  - OHHTTPStubs (~> 4.0)
+  - VideoCore (~> 0.3)
   - XCTAsyncTestCase (from `https://github.com/iheartradio/xctest-additions.git`)
 
 EXTERNAL SOURCES:
@@ -57,12 +55,12 @@ EXTERNAL SOURCES:
     :git: https://github.com/iheartradio/xctest-additions.git
 
 SPEC CHECKSUMS:
-  AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
-  boost: 581038adda16d11045576013ad27e3eeeabc2d10
-  glm: 840dd35fe3cc445935accf81ffd1384dad532ee7
-  OHHTTPStubs: 6781373b69e0a67b27239799f11764d0fbefac55
-  UriParser-cpp: e6df3fd87445ba4ab37a72acafb4f03bc39db524
-  VideoCore: 208a15ae3517e9739a6170801104b8b30ab70e1b
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  boost: 6c5c8d8daef26ac83c1e1c00ad14de62b80161d7
+  glm: e22c8d9df10404059b19c2952f9fa44d9a9f3056
+  OHHTTPStubs: dbd1957d414659783e07b49c961940b7564c23d9
+  UriParser-cpp: cbbe00080ee432ec4833dca863a7fc83adc9b01a
+  VideoCore: e375f2e5b41067a8c74cf6dc6f0c79a958c88613
   XCTAsyncTestCase: 33261474dd19caad96f4df400c1cbbe95f153917
 
 COCOAPODS: 0.34.4
