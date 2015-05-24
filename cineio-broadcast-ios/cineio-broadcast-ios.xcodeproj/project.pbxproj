@@ -126,7 +126,6 @@
 		00C5E0F7193EBD63009DA7B9 /* cineio-broadcast-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cineio-broadcast-iosTests-Info.plist"; sourceTree = "<group>"; };
 		00C5E0F9193EBD63009DA7B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		00C5E0FB193EBD63009DA7B9 /* cineio_broadcast_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cineio_broadcast_iosTests.m; sourceTree = "<group>"; };
-		00C5E112193EF88F009DA7B9 /* cineio-ios.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "cineio-ios.podspec"; path = "../cineio-ios.podspec"; sourceTree = "<group>"; };
 		00C5E113193EF8F2009DA7B9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		00C5E159193F16B9009DA7B9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		18DA7FA643AA9FAC02020C3E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -179,7 +178,6 @@
 				00C5E159193F16B9009DA7B9 /* README.md */,
 				00C5E113193EF8F2009DA7B9 /* LICENSE */,
 				009789831A57298F00A861EF /* cineio-broadcast-ios.podspec */,
-				00C5E112193EF88F009DA7B9 /* cineio-ios.podspec */,
 				00C5E0E1193EBD63009DA7B9 /* cineio-broadcast-ios */,
 				00C5E0F5193EBD63009DA7B9 /* cineio-broadcast-iosTests */,
 				00C5E0DE193EBD63009DA7B9 /* Frameworks */,
@@ -244,7 +242,6 @@
 				009789961A572ADE00A861EF /* CineRecordButtonView.m */,
 				00C5E0E2193EBD63009DA7B9 /* Supporting Files */,
 			);
-			name = "cineio-broadcast-ios";
 			path = "cineio-broadcast-ios";
 			sourceTree = "<group>";
 		};
@@ -262,7 +259,6 @@
 				00C5E0FB193EBD63009DA7B9 /* cineio_broadcast_iosTests.m */,
 				00C5E0F6193EBD63009DA7B9 /* Supporting Files */,
 			);
-			name = "cineio-broadcast-iosTests";
 			path = "cineio-broadcast-iosTests";
 			sourceTree = "<group>";
 		};

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "cineio-broadcast-ios"
-  s.version             = "0.6.2"
+  s.version             = "0.6.3"
   s.summary             = "cine.io Broadcast iOS SDK"
   s.description      = <<-DESC
                           iOS SDK for Broadcasting using the cine.io API.
