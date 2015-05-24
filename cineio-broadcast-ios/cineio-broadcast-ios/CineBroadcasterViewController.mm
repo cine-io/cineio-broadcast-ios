@@ -60,10 +60,32 @@
     _session.delegate = self;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    if (!self.orientationLocked) {
+        if ([self.view isKindOfClass:[CineBroadcasterView class]]) {
+            CineBroadcasterView *cbView = (CineBroadcasterView *)self.view;
+            if ([cbView respondsToSelector:@selector(orientationChanged)]) {
+                [[NSNotificationCenter defaultCenter] addObserver:(cbView) selector:@selector(orientationChanged) name:UIDeviceOrientationDidChangeNotification object:nil];
+            }
+            if ([cbView.controlsView respondsToSelector:@selector(orientationChanged)]) {
+                [[NSNotificationCenter defaultCenter] addObserver:(cbView.controlsView) selector:@selector(orientationChanged) name:UIDeviceOrientationDidChangeNotification object:nil];
+            }
+        }
+    }
+}
+
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    [[NSNotificationCenter defaultCenter] removeObserver:self.view];
+    
+    if ([self.view isKindOfClass:[CineBroadcasterView class]]) {
+        CineBroadcasterView *cbView = (CineBroadcasterView *)self.view;
+        [[NSNotificationCenter defaultCenter] removeObserver:cbView];
+        [[NSNotificationCenter defaultCenter] removeObserver:cbView.controlsView];
+    }
 }
 
 - (void)didReceiveMemoryWarning

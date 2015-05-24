@@ -46,10 +46,6 @@
     cameraStateButton.frame = CGRectMake(0, 0, 25, 25);
     [self addSubview:cameraStateButton];
 
-    if (!self.orientationLocked) {
-        [[NSNotificationCenter defaultCenter] addObserver:(self) selector:@selector(orientationChanged) name:UIDeviceOrientationDidChangeNotification object:nil];
-    }
-    
     return self;
 }
 

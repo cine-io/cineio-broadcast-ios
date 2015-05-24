@@ -45,10 +45,6 @@ const NSInteger ControlsViewHeight = 86;
     [statusView setFrame:[self statusFrameForOrientation:[[UIDevice currentDevice] orientation]]];
     [status setFrame:CGRectMake(10, 10, statusView.bounds.size.width-20, 20)];
     [controlsView setFrame:CGRectMake(0, self.bounds.size.height-ControlsViewHeight, self.bounds.size.width, ControlsViewHeight)];
-
-    if (!self.orientationLocked) {
-        [[NSNotificationCenter defaultCenter] addObserver:(self) selector:@selector(orientationChanged) name:UIDeviceOrientationDidChangeNotification object:nil];
-    }
 }
 
 - (BOOL)orientationLocked
