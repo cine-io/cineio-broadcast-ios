@@ -26,5 +26,5 @@ Pod::Spec.new do |s|
   # propagated from VideoCore
   s.xcconfig            = { "HEADER_SEARCH_PATHS" => "${PODS_ROOT}/boost" }
 
-  s.ios.deployment_target = '6.0'
+  s.ios.deployment_target = '8.0'
 end

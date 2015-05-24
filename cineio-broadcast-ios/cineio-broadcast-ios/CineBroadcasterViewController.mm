@@ -64,14 +64,16 @@
 {
     [super viewWillAppear:animated];
     
+    
+    
     if (!self.orientationLocked) {
         if ([self.view isKindOfClass:[CineBroadcasterView class]]) {
             CineBroadcasterView *cbView = (CineBroadcasterView *)self.view;
-            if ([cbView respondsToSelector:@selector(orientationChanged)]) {
-                [[NSNotificationCenter defaultCenter] addObserver:(cbView) selector:@selector(orientationChanged) name:UIDeviceOrientationDidChangeNotification object:nil];
+            if ([cbView respondsToSelector:NSSelectorFromString(@"orientationChanged")]) {
+                [[NSNotificationCenter defaultCenter] addObserver:(cbView) selector:NSSelectorFromString(@"orientationChanged") name:UIDeviceOrientationDidChangeNotification object:nil];
             }
-            if ([cbView.controlsView respondsToSelector:@selector(orientationChanged)]) {
-                [[NSNotificationCenter defaultCenter] addObserver:(cbView.controlsView) selector:@selector(orientationChanged) name:UIDeviceOrientationDidChangeNotification object:nil];
+            if ([cbView.controlsView respondsToSelector:NSSelectorFromString(@"orientationChanged")]) {
+                [[NSNotificationCenter defaultCenter] addObserver:(cbView.controlsView) selector:NSSelectorFromString(@"orientationChanged") name:UIDeviceOrientationDidChangeNotification object:nil];
             }
         }
     }
