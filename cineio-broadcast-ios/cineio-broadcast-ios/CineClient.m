@@ -20,6 +20,7 @@
 
 @synthesize masterKey;
 @synthesize projectSecretKey;
+@synthesize projectPublicKey;
 
 - (id)init
 {
@@ -152,6 +153,38 @@
     NSAssert(projectSecretKey != nil, @"projectSecretKey must be set!");
     [_http DELETE:@"stream/recording" parameters:[self params:@{@"id" : streamId, @"name" : name}] success:^(AFHTTPRequestOperation *operation, id attributes) {
         completion(nil, operation.response);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        completion(error, nil);
+    }];
+}
+
+- (void)getStream:(NSString *)streamId byPassword:(NSString *)password withCompletionHandler:(void (^)(NSError* error, CineStream* stream))completion
+{
+    NSAssert(projectPublicKey != nil, @"projectPublicKey must be set!");
+    NSDictionary *params = @{
+                         @"publicKey" : projectPublicKey,
+                         @"id" : streamId,
+                         @"password" : password,
+                         };
+    [_http GET:@"stream" parameters:params success:^(AFHTTPRequestOperation *operation, id attributes) {
+        CineStream *stream = [[CineStream alloc] initWithAttributes:attributes];
+        completion(nil, stream);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        completion(error, nil);
+    }];
+}
+
+- (void)getStream:(NSString *)streamId byTicket:(NSString *)ticket withCompletionHandler:(void (^)(NSError* error, CineStream* stream))completion
+{
+    NSAssert(projectPublicKey != nil, @"projectPublicKey must be set!");
+    NSDictionary *params = @{
+                         @"publicKey" : projectPublicKey,
+                         @"id" : streamId,
+                         @"ticket" : ticket,
+                         };
+    [_http GET:@"stream" parameters:params success:^(AFHTTPRequestOperation *operation, id attributes) {
+        CineStream *stream = [[CineStream alloc] initWithAttributes:attributes];
+        completion(nil, stream);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completion(error, nil);
     }];

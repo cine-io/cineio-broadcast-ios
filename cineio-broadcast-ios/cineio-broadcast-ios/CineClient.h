@@ -19,8 +19,10 @@
 
 @property (nonatomic, strong) NSString *masterKey;
 @property (nonatomic, strong) NSString *projectSecretKey;
+@property (nonatomic, strong) NSString *projectPublicKey;
 
 - (id)init;
+
 - (void)getProjectsWithCompletionHandler:(void (^)(NSError* error, NSArray* projects))completion;
 - (void)getProjectWithCompletionHandler:(void (^)(NSError* error, CineProject* project))completion;
 - (void)getStreamsWithCompletionHandler:(void (^)(NSError* error, NSArray* streams))completion;
@@ -31,5 +33,8 @@
 - (void)deleteStream:(NSString *)streamId withCompletionHandler:(void (^)(NSError* error, NSHTTPURLResponse* response))completion;
 - (void)getStreamRecordings:(NSString *)streamId withCompletionHandler:(void (^)(NSError* error, NSArray* recordings))completion;
 - (void)deleteStreamRecording:(NSString *)streamId withName:(NSString *)name andCompletionHandler:(void (^)(NSError* error, NSHTTPURLResponse* response))completion;
+
+- (void)getStream:(NSString *)streamId byPassword:(NSString *)password withCompletionHandler:(void (^)(NSError* error, CineStream* stream))completion;
+- (void)getStream:(NSString *)streamId byTicket:(NSString *)ticket withCompletionHandler:(void (^)(NSError* error, CineStream* stream))completion;
 
 @end
