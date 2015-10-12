@@ -1,8 +1,8 @@
-# cineio-broadcast-ios - cine.io Broadcast iOS SDK
+# arenacloud-broadcast-ios - ArenaCloud Broadcast iOS SDK
 
 [![Build Status](https://travis-ci.org/cine-io/cineio-broadcast-ios.svg?branch=master)](https://travis-ci.org/cine-io/cineio-broadcast-ios)
 
-This is the [cine.io][cineio] [Broadcast][cineio-broadcast] iOS SDK. This
+This is the [ArenaCloud.com][ArenaCloud] [Broadcast][arenacloud-broadcast] iOS SDK. This
 library allows you to do real-time live video streaming from your iOS device
 to any other device that supports RTMP or HLS streaming (iOS, Android, web).
 
@@ -26,7 +26,7 @@ following:
 ```ruby
 platform :ios, '7.0'
 
-pod 'cineio-broadcast-ios', '~> 0.6'
+pod 'arenacloud-broadcast-ios', '~> 0.8'
 ```
 
 Then, install the Pod by running the `pod install` command:
@@ -44,8 +44,8 @@ open <project>.xcworkspace
 
 ## Example Application
 
-Check out the [cineio-broadcast-ios-example-app][cineio-broadcast-ios-example-app] and
-[cineio-broadcast-ios-swift-example-app][cineio-broadcast-ios-swift-example-app] repositories
+Check out the [arenacloud-broadcast-ios-example-app][arenacloud-broadcast-ios-example-app] and
+[arenacloud-broadcast-ios-swift-example-app][arenacloud-broadcast-ios-swift-example-app] repositories
 for working examples that use this SDK.
 
 
@@ -55,7 +55,7 @@ for working examples that use this SDK.
 ### Import the SDK
 
 ```objective-c
-#import <cineio/CineIO.h>
+#import <ArenaCloud/broadcast/ArenaCloudBroadcast.h>
 ```
 
 ### Instantiate the client
@@ -180,15 +180,15 @@ valid `ACBRStream` object.
 {
     [super viewDidLoad];
 
-    //-- cine.io setup
+    //-- ArenaCloud.com setup
 
-    // read our cine.io configuration from a plist bundle
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"cineio-settings" ofType:@"plist"];
+    // read our ArenaCloud.com configuration from a plist bundle
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"broadcast-settings" ofType:@"plist"];
     NSDictionary *settings = [[NSDictionary alloc] initWithContentsOfFile:path];
 
     // create a new ACBRClient to fetch our stream information
-    ACBRClient *cine = [[ACBRClient alloc] initWithSecretKey:settings[@"CINE_IO_SECRET_KEY"]];
-    [cine getStream:settings[@"CINE_IO_STREAM_ID"] withCompletionHandler:^(NSError *error, ACBRStream *stream) {
+    ACBRClient *client = [[ACBRClient alloc] initWithSecretKey:settings[@"SECRET_KEY"]];
+    [client getStream:settings[@"STREAM_ID"] withCompletionHandler:^(NSError *error, ACBRStream *stream) {
         if (error) {
           UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network error"
                                                           message:@"Couldn't get stream settings from ArenaCloud.com"
@@ -290,18 +290,18 @@ You'll need to initialize these properties, most likely in your `viewDidLoad` me
     // will use them in its viewDidLoad method
     [super viewDidLoad];
 
-    //-- cine.io setup
+    //-- ArenaCloud.com setup
 
-    // read our cine.io configuration from a plist bundle
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"cineio-settings" ofType:@"plist"];
+    // read our ArenaCloud.com configuration from a plist bundle
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"broadcast-settings" ofType:@"plist"];
     NSDictionary *settings = [[NSDictionary alloc] initWithContentsOfFile:path];
 
     // create a new ACBRClient to fetch our stream information
-    ACBRClient *cine = [[ACBRClient alloc] initWithSecretKey:settings[@"CINE_IO_SECRET_KEY"]];
-    [self updateStatus:@"Configuring stream using cine.io ..."];
-    [cine getStream:settings[@"CINE_IO_STREAM_ID"] withCompletionHandler:^(NSError *error, ACBRStream *stream) {
+    ACBRClient *client = [[ACBRClient alloc] initWithSecretKey:settings[@"SECRET_KEY"]];
+    [self updateStatus:@"Configuring stream using ArenaCloud.com..."];
+    [client getStream:settings[@"STREAM_ID"] withCompletionHandler:^(NSError *error, ACBRStream *stream) {
         if (error) {
-            [self updateStatus:@"ERROR: couldn't get stream information from cine.io"];
+            [self updateStatus:@"ERROR: couldn't get stream information from ArenaCloud.com"];
         } else {
             self.publishUrl = [stream publishUrl];
             self.publishStreamName = [stream publishStreamName];
@@ -360,6 +360,7 @@ Much of the basis for the cine.io iOS SDK comes from the excellent
 
 <!-- external links -->
 
+[arenacloud.com]:http://www.arenacloud.com/
 [cineio]:https://www.cine.io/
 [cineio-broadcast]:https://www.cine.io/products/broadcast
 [cocoapods]:http://cocoapods.org/
