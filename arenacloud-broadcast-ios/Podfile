@@ -11,4 +11,4 @@ pod 'OHHTTPStubs',        '~> 4.0'
 pod 'VideoCore',          '~> 0.3'
 
 # Uncomment this line if working on VideoCore (also remove VideoCore version from cineio-ios.podspec)
-#pod 'VideoCore',          path: '/Users/jeffrey/dev/cine-dev/VideoCore'
+#pod 'VideoCore',          path: '../../VideoCore'
