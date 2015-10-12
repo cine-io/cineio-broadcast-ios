@@ -13,6 +13,7 @@
 @property (nonatomic, copy, readonly) NSString *streamId;
 @property (nonatomic, copy, readonly) NSString *playUrlHLS;
 @property (nonatomic, copy, readonly) NSString *playUrlRTMP;
+@property (nonatomic, readonly) int playUrlTTL;
 @property (nonatomic, copy, readonly) NSString *publishUrl;
 @property (nonatomic, copy, readonly) NSString *publishStreamName;
 @property (nonatomic, copy, readonly) NSString *name;

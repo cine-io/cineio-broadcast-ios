@@ -13,6 +13,7 @@
 @synthesize streamId;
 @synthesize playUrlHLS;
 @synthesize playUrlRTMP;
+@synthesize playUrlTTL;
 @synthesize publishUrl;
 @synthesize publishStreamName;
 @synthesize name;
@@ -27,6 +28,7 @@
         streamId = [streamAttributes[@"id"] copy];
         playUrlHLS = [streamAttributes[@"play"][@"hls"] copy];
         playUrlRTMP = [streamAttributes[@"play"][@"rtmp"] copy];
+        playUrlTTL = ((NSNumber *)[streamAttributes[@"play"][@"ttl"] copy]).intValue;
         publishUrl = [streamAttributes[@"publish"][@"url"] copy];
         publishStreamName = [streamAttributes[@"publish"][@"stream"] copy];
         name = [streamAttributes[@"name"] copy];
