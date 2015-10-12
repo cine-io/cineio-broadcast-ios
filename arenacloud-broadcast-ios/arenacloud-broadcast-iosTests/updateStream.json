@@ -1,0 +1,17 @@
+{
+   "name" : "my other stream",
+   "play" : {
+      "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gklJeVgHVg?adbe-live-event=gklJeVgHVg",
+      "hls" : "http://hls.arenacdn.com/cines/gklJeVgHVg/gklJeVgHVg.m3u8"
+   },
+   "publish" : {
+      "stream" : "gklJeVgHVg?go9&amp;adbe-live-event=gklJeVgHVg",
+      "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+   },
+   "password" : "go9",
+   "record" : false,
+   "expiration" : "2034-09-08T00:00:00.000Z",
+   "assignedAt" : "2014-09-08T23:34:24.521Z",
+   "id" : "540e3cf1df00830a005860cf",
+   "streamName" : "gklJeVgHVg"
+}

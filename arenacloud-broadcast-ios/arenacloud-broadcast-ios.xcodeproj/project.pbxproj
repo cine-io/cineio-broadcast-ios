@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0064202219BE776600DF038B /* getNamedStreams.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202119BE776600DF038B /* getNamedStreams.json */; };
+		0064202419BE781000DF038B /* getAllStreams.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202319BE781000DF038B /* getAllStreams.json */; };
+		0064202619BE78A900DF038B /* getStream.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202519BE78A900DF038B /* getStream.json */; };
+		0064202919BE793B00DF038B /* getProject.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202719BE793B00DF038B /* getProject.json */; };
+		0064202A19BE793B00DF038B /* getProjects.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202819BE793B00DF038B /* getProjects.json */; };
+		0064202C19BE79FD00DF038B /* createStream.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202B19BE79FD00DF038B /* createStream.json */; };
+		0064202E19BE7A7600DF038B /* updateStream.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202D19BE7A7600DF038B /* updateStream.json */; };
+		0064203019BE7AD000DF038B /* deleteStream.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064202F19BE7AD000DF038B /* deleteStream.json */; };
+		0064203319BE7C0500DF038B /* deleteStreamRecording.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064203119BE7C0500DF038B /* deleteStreamRecording.json */; };
+		0064203419BE7C0500DF038B /* getStreamRecordings.json in Resources */ = {isa = PBXBuildFile; fileRef = 0064203219BE7C0500DF038B /* getStreamRecordings.json */; };
+		0097899B1A572ADE00A861EF /* ACBRBroadcasterControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009789851A572ADE00A861EF /* ACBRBroadcasterControlsView.m */; };
+		0097899C1A572ADE00A861EF /* ACBRBroadcasterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009789881A572ADE00A861EF /* ACBRBroadcasterView.m */; };
+		0097899D1A572ADE00A861EF /* ACBRBroadcasterViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0097898A1A572ADE00A861EF /* ACBRBroadcasterViewController.mm */; };
+		0097899E1A572ADE00A861EF /* ACBRClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0097898C1A572ADE00A861EF /* ACBRClient.m */; };
+		0097899F1A572ADE00A861EF /* ACBRConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0097898E1A572ADE00A861EF /* ACBRConstants.m */; };
+		009789A01A572ADE00A861EF /* ACBRPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009789921A572ADE00A861EF /* ACBRPlayerViewController.m */; };
+		009789A11A572ADE00A861EF /* ACBRProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 009789941A572ADE00A861EF /* ACBRProject.m */; };
+		009789A21A572ADE00A861EF /* ACBRRecordButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009789961A572ADE00A861EF /* ACBRRecordButtonView.m */; };
+		009789A31A572ADE00A861EF /* ACBRRecording.m in Sources */ = {isa = PBXBuildFile; fileRef = 009789981A572ADE00A861EF /* ACBRRecording.m */; };
+		009789A41A572ADE00A861EF /* ACBRStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 0097899A1A572ADE00A861EF /* ACBRStream.m */; };
+		00ADC6D0197464C700857375 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6CF197464C700857375 /* QuartzCore.framework */; };
+		00ADC6D2197464CF00857375 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D1197464CF00857375 /* CoreGraphics.framework */; };
+		00ADC6D4197464D700857375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D3197464D700857375 /* UIKit.framework */; };
+		00ADC6D61974651A00857375 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D51974651A00857375 /* AVFoundation.framework */; };
+		00ADC6D71974657900857375 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D51974651A00857375 /* AVFoundation.framework */; };
+		00ADC6D81974658200857375 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6CF197464C700857375 /* QuartzCore.framework */; };
+		00ADC6D91974658A00857375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D3197464D700857375 /* UIKit.framework */; };
+		00ADC6DA1974659500857375 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6D1197464CF00857375 /* CoreGraphics.framework */; };
+		00ADC6DC1974660C00857375 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6DB1974660C00857375 /* CoreMedia.framework */; };
+		00ADC6E01974662500857375 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6DB1974660C00857375 /* CoreMedia.framework */; };
+		00ADC6E21974669800857375 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E11974669800857375 /* AudioToolbox.framework */; };
+		00ADC6E3197466A600857375 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E11974669800857375 /* AudioToolbox.framework */; };
+		00ADC6E5197466AF00857375 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E4197466AF00857375 /* CoreAudio.framework */; };
+		00ADC6E6197466BC00857375 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6E4197466AF00857375 /* CoreAudio.framework */; };
+		00ADC6F91975A05B00857375 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6F81975A05B00857375 /* MediaPlayer.framework */; };
+		00C5E0E0193EBD63009DA7B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DF193EBD63009DA7B9 /* Foundation.framework */; };
+		00C5E0EE193EBD63009DA7B9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0ED193EBD63009DA7B9 /* XCTest.framework */; };
+		00C5E0EF193EBD63009DA7B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DF193EBD63009DA7B9 /* Foundation.framework */; };
+		00C5E0FA193EBD63009DA7B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00C5E0F8193EBD63009DA7B9 /* InfoPlist.strings */; };
+		00C5E0FC193EBD63009DA7B9 /* arenacloud_broadcast_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5E0FB193EBD63009DA7B9 /* arenacloud_broadcast_iosTests.m */; };
+		00C5E10E193ED668009DA7B9 /* libarenacloud-broadcast-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C5E0DC193EBD63009DA7B9 /* libarenacloud-broadcast-ios.a */; };
+		00CDFB701989F4E0001C7304 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC6F81975A05B00857375 /* MediaPlayer.framework */; };
+		ADA9581DB5FF4B4F835BAD16 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B31761E41A64412FA6E1DC12 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00C5E0F2193EBD63009DA7B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C5E0D4193EBD63009DA7B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00C5E0DB193EBD63009DA7B9;
+			remoteInfo = "arenacloud-broadcast-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00C5E0DA193EBD63009DA7B9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0064202119BE776600DF038B /* getNamedStreams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getNamedStreams.json; sourceTree = "<group>"; };
+		0064202319BE781000DF038B /* getAllStreams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getAllStreams.json; sourceTree = "<group>"; };
+		0064202519BE78A900DF038B /* getStream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getStream.json; sourceTree = "<group>"; };
+		0064202719BE793B00DF038B /* getProject.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getProject.json; sourceTree = "<group>"; };
+		0064202819BE793B00DF038B /* getProjects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getProjects.json; sourceTree = "<group>"; };
+		0064202B19BE79FD00DF038B /* createStream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = createStream.json; sourceTree = "<group>"; };
+		0064202D19BE7A7600DF038B /* updateStream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = updateStream.json; sourceTree = "<group>"; };
+		0064202F19BE7AD000DF038B /* deleteStream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deleteStream.json; sourceTree = "<group>"; };
+		0064203119BE7C0500DF038B /* deleteStreamRecording.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deleteStreamRecording.json; sourceTree = "<group>"; };
+		0064203219BE7C0500DF038B /* getStreamRecordings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getStreamRecordings.json; sourceTree = "<group>"; };
+		009789831A57298F00A861EF /* arenacloud-broadcast-ios.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "arenacloud-broadcast-ios.podspec"; path = "../arenacloud-broadcast-ios.podspec"; sourceTree = "<group>"; };
+		009789841A572ADE00A861EF /* ACBRBroadcasterControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = ACBRBroadcasterControlsView.h; path = "arenacloud-broadcast-ios/ACBRBroadcasterControlsView.h"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		009789851A572ADE00A861EF /* ACBRBroadcasterControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = ACBRBroadcasterControlsView.m; path = "arenacloud-broadcast-ios/ACBRBroadcasterControlsView.m"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		009789861A572ADE00A861EF /* ACBRBroadcasterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = ACBRBroadcasterProtocol.h; path = "arenacloud-broadcast-ios/ACBRBroadcasterProtocol.h"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		009789871A572ADE00A861EF /* ACBRBroadcasterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = ACBRBroadcasterView.h; path = "arenacloud-broadcast-ios/ACBRBroadcasterView.h"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		009789881A572ADE00A861EF /* ACBRBroadcasterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = ACBRBroadcasterView.m; path = "arenacloud-broadcast-ios/ACBRBroadcasterView.m"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		009789891A572ADE00A861EF /* ACBRBroadcasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = ACBRBroadcasterViewController.h; path = "arenacloud-broadcast-ios/ACBRBroadcasterViewController.h"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0097898A1A572ADE00A861EF /* ACBRBroadcasterViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; name = ACBRBroadcasterViewController.mm; path = "arenacloud-broadcast-ios/ACBRBroadcasterViewController.mm"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0097898B1A572ADE00A861EF /* ACBRClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = ACBRClient.h; path = "arenacloud-broadcast-ios/ACBRClient.h"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0097898C1A572ADE00A861EF /* ACBRClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = ACBRClient.m; path = "arenacloud-broadcast-ios/ACBRClient.m"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0097898D1A572ADE00A861EF /* ACBRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACBRConstants.h; path = "arenacloud-broadcast-ios/ACBRConstants.h"; sourceTree = SOURCE_ROOT; };
+		0097898E1A572ADE00A861EF /* ACBRConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACBRConstants.m; path = "arenacloud-broadcast-ios/ACBRConstants.m"; sourceTree = SOURCE_ROOT; };
+		0097898F1A572ADE00A861EF /* ACBRIconsBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = ACBRIconsBase64.h; path = "arenacloud-broadcast-ios/ACBRIconsBase64.h"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		009789901A572ADE00A861EF /* ArenaCloudBroadcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArenaCloudBroadcast.h; path = "arenacloud-broadcast-ios/ArenaCloudBroadcast.h"; sourceTree = SOURCE_ROOT; };
+		009789911A572ADE00A861EF /* ACBRPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACBRPlayerViewController.h; path = "arenacloud-broadcast-ios/ACBRPlayerViewController.h"; sourceTree = SOURCE_ROOT; };
+		009789921A572ADE00A861EF /* ACBRPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACBRPlayerViewController.m; path = "arenacloud-broadcast-ios/ACBRPlayerViewController.m"; sourceTree = SOURCE_ROOT; };
+		009789931A572ADE00A861EF /* ACBRProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = ACBRProject.h; path = "arenacloud-broadcast-ios/ACBRProject.h"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		009789941A572ADE00A861EF /* ACBRProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = ACBRProject.m; path = "arenacloud-broadcast-ios/ACBRProject.m"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		009789951A572ADE00A861EF /* ACBRRecordButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = ACBRRecordButtonView.h; path = "arenacloud-broadcast-ios/ACBRRecordButtonView.h"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		009789961A572ADE00A861EF /* ACBRRecordButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = ACBRRecordButtonView.m; path = "arenacloud-broadcast-ios/ACBRRecordButtonView.m"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		009789971A572ADE00A861EF /* ACBRRecording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = ACBRRecording.h; path = "arenacloud-broadcast-ios/ACBRRecording.h"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		009789981A572ADE00A861EF /* ACBRRecording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = ACBRRecording.m; path = "arenacloud-broadcast-ios/ACBRRecording.m"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		009789991A572ADE00A861EF /* ACBRStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = ACBRStream.h; path = "arenacloud-broadcast-ios/ACBRStream.h"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0097899A1A572ADE00A861EF /* ACBRStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = ACBRStream.m; path = "arenacloud-broadcast-ios/ACBRStream.m"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		009789A51A572AEE00A861EF /* arenacloud-broadcast-ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "arenacloud-broadcast-ios-Prefix.pch"; path = "arenacloud-broadcast-ios/arenacloud-broadcast-ios-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		00ADC6CF197464C700857375 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		00ADC6D1197464CF00857375 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		00ADC6D3197464D700857375 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		00ADC6D51974651A00857375 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		00ADC6DB1974660C00857375 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		00ADC6DD1974661200857375 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00ADC6E11974669800857375 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00ADC6E4197466AF00857375 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		00ADC6F81975A05B00857375 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		00C5E0DC193EBD63009DA7B9 /* libarenacloud-broadcast-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libarenacloud-broadcast-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00C5E0DF193EBD63009DA7B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		00C5E0EC193EBD63009DA7B9 /* arenacloud-broadcast-ios.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "arenacloud-broadcast-ios.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00C5E0ED193EBD63009DA7B9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		00C5E0F7193EBD63009DA7B9 /* arenacloud-broadcast-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "arenacloud-broadcast-iosTests-Info.plist"; sourceTree = "<group>"; };
+		00C5E0F9193EBD63009DA7B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00C5E0FB193EBD63009DA7B9 /* arenacloud_broadcast_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = arenacloud_broadcast_iosTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		00C5E113193EF8F2009DA7B9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		00C5E159193F16B9009DA7B9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; name = README.md; path = ../README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		18DA7FA643AA9FAC02020C3E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		34EE4272C1BB56B2C37C9BF7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B31761E41A64412FA6E1DC12 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00C5E0D9193EBD63009DA7B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C5E0E0193EBD63009DA7B9 /* Foundation.framework in Frameworks */,
+				00ADC6D4197464D700857375 /* UIKit.framework in Frameworks */,
+				00ADC6D0197464C700857375 /* QuartzCore.framework in Frameworks */,
+				00ADC6D2197464CF00857375 /* CoreGraphics.framework in Frameworks */,
+				00ADC6E6197466BC00857375 /* CoreAudio.framework in Frameworks */,
+				00ADC6DC1974660C00857375 /* CoreMedia.framework in Frameworks */,
+				00ADC6F91975A05B00857375 /* MediaPlayer.framework in Frameworks */,
+				00ADC6E21974669800857375 /* AudioToolbox.framework in Frameworks */,
+				00ADC6D61974651A00857375 /* AVFoundation.framework in Frameworks */,
+				ADA9581DB5FF4B4F835BAD16 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C5E0E9193EBD63009DA7B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C5E0EF193EBD63009DA7B9 /* Foundation.framework in Frameworks */,
+				00ADC6D91974658A00857375 /* UIKit.framework in Frameworks */,
+				00ADC6D81974658200857375 /* QuartzCore.framework in Frameworks */,
+				00ADC6DA1974659500857375 /* CoreGraphics.framework in Frameworks */,
+				00ADC6E5197466AF00857375 /* CoreAudio.framework in Frameworks */,
+				00ADC6E01974662500857375 /* CoreMedia.framework in Frameworks */,
+				00CDFB701989F4E0001C7304 /* MediaPlayer.framework in Frameworks */,
+				00ADC6E3197466A600857375 /* AudioToolbox.framework in Frameworks */,
+				00ADC6D71974657900857375 /* AVFoundation.framework in Frameworks */,
+				00C5E0EE193EBD63009DA7B9 /* XCTest.framework in Frameworks */,
+				00C5E10E193ED668009DA7B9 /* libarenacloud-broadcast-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00C5E0D3193EBD63009DA7B9 = {
+			isa = PBXGroup;
+			children = (
+				00C5E159193F16B9009DA7B9 /* README.md */,
+				00C5E113193EF8F2009DA7B9 /* LICENSE */,
+				009789831A57298F00A861EF /* arenacloud-broadcast-ios.podspec */,
+				00C5E0E1193EBD63009DA7B9 /* arenacloud-broadcast-ios */,
+				00C5E0F5193EBD63009DA7B9 /* arenacloud-broadcast-iosTests */,
+				00C5E0DE193EBD63009DA7B9 /* Frameworks */,
+				00C5E0DD193EBD63009DA7B9 /* Products */,
+				C93C4501B779D93707E7CE5E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		00C5E0DD193EBD63009DA7B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C5E0DC193EBD63009DA7B9 /* libarenacloud-broadcast-ios.a */,
+				00C5E0EC193EBD63009DA7B9 /* arenacloud-broadcast-ios.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00C5E0DE193EBD63009DA7B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00ADC6F81975A05B00857375 /* MediaPlayer.framework */,
+				00ADC6E4197466AF00857375 /* CoreAudio.framework */,
+				00ADC6E11974669800857375 /* AudioToolbox.framework */,
+				00ADC6DD1974661200857375 /* AudioUnit.framework */,
+				00ADC6DB1974660C00857375 /* CoreMedia.framework */,
+				00ADC6D51974651A00857375 /* AVFoundation.framework */,
+				00ADC6D3197464D700857375 /* UIKit.framework */,
+				00ADC6D1197464CF00857375 /* CoreGraphics.framework */,
+				00ADC6CF197464C700857375 /* QuartzCore.framework */,
+				00C5E0DF193EBD63009DA7B9 /* Foundation.framework */,
+				00C5E0ED193EBD63009DA7B9 /* XCTest.framework */,
+				B31761E41A64412FA6E1DC12 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00C5E0E1193EBD63009DA7B9 /* arenacloud-broadcast-ios */ = {
+			isa = PBXGroup;
+			children = (
+				009789901A572ADE00A861EF /* ArenaCloudBroadcast.h */,
+				0097898B1A572ADE00A861EF /* ACBRClient.h */,
+				0097898C1A572ADE00A861EF /* ACBRClient.m */,
+				0097898D1A572ADE00A861EF /* ACBRConstants.h */,
+				0097898E1A572ADE00A861EF /* ACBRConstants.m */,
+				0097898F1A572ADE00A861EF /* ACBRIconsBase64.h */,
+				009789931A572ADE00A861EF /* ACBRProject.h */,
+				009789941A572ADE00A861EF /* ACBRProject.m */,
+				009789971A572ADE00A861EF /* ACBRRecording.h */,
+				009789981A572ADE00A861EF /* ACBRRecording.m */,
+				009789991A572ADE00A861EF /* ACBRStream.h */,
+				0097899A1A572ADE00A861EF /* ACBRStream.m */,
+				009789841A572ADE00A861EF /* ACBRBroadcasterControlsView.h */,
+				009789851A572ADE00A861EF /* ACBRBroadcasterControlsView.m */,
+				009789861A572ADE00A861EF /* ACBRBroadcasterProtocol.h */,
+				009789871A572ADE00A861EF /* ACBRBroadcasterView.h */,
+				009789881A572ADE00A861EF /* ACBRBroadcasterView.m */,
+				009789891A572ADE00A861EF /* ACBRBroadcasterViewController.h */,
+				0097898A1A572ADE00A861EF /* ACBRBroadcasterViewController.mm */,
+				009789911A572ADE00A861EF /* ACBRPlayerViewController.h */,
+				009789921A572ADE00A861EF /* ACBRPlayerViewController.m */,
+				009789951A572ADE00A861EF /* ACBRRecordButtonView.h */,
+				009789961A572ADE00A861EF /* ACBRRecordButtonView.m */,
+				00C5E0E2193EBD63009DA7B9 /* Supporting Files */,
+			);
+			path = "arenacloud-broadcast-ios";
+			sourceTree = "<group>";
+		};
+		00C5E0E2193EBD63009DA7B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				009789A51A572AEE00A861EF /* arenacloud-broadcast-ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00C5E0F5193EBD63009DA7B9 /* arenacloud-broadcast-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				00C5E0FB193EBD63009DA7B9 /* arenacloud_broadcast_iosTests.m */,
+				00C5E0F6193EBD63009DA7B9 /* Supporting Files */,
+			);
+			path = "arenacloud-broadcast-iosTests";
+			sourceTree = "<group>";
+		};
+		00C5E0F6193EBD63009DA7B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00C5E0F7193EBD63009DA7B9 /* arenacloud-broadcast-iosTests-Info.plist */,
+				00C5E0F8193EBD63009DA7B9 /* InfoPlist.strings */,
+				0064202819BE793B00DF038B /* getProjects.json */,
+				0064202719BE793B00DF038B /* getProject.json */,
+				0064202B19BE79FD00DF038B /* createStream.json */,
+				0064202319BE781000DF038B /* getAllStreams.json */,
+				0064202119BE776600DF038B /* getNamedStreams.json */,
+				0064202519BE78A900DF038B /* getStream.json */,
+				0064202D19BE7A7600DF038B /* updateStream.json */,
+				0064202F19BE7AD000DF038B /* deleteStream.json */,
+				0064203219BE7C0500DF038B /* getStreamRecordings.json */,
+				0064203119BE7C0500DF038B /* deleteStreamRecording.json */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C93C4501B779D93707E7CE5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18DA7FA643AA9FAC02020C3E /* Pods.debug.xcconfig */,
+				34EE4272C1BB56B2C37C9BF7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00C5E0DB193EBD63009DA7B9 /* arenacloud-broadcast-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00C5E0FF193EBD63009DA7B9 /* Build configuration list for PBXNativeTarget "arenacloud-broadcast-ios" */;
+			buildPhases = (
+				066F3A811F054D2B901D1AB3 /* Check Pods Manifest.lock */,
+				00C5E0D8193EBD63009DA7B9 /* Sources */,
+				00C5E0D9193EBD63009DA7B9 /* Frameworks */,
+				00C5E0DA193EBD63009DA7B9 /* CopyFiles */,
+				C1F5D36C55024AACBE909460 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "arenacloud-broadcast-ios";
+			productName = "arenacloud-broadcast-ios";
+			productReference = 00C5E0DC193EBD63009DA7B9 /* libarenacloud-broadcast-ios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		00C5E0EB193EBD63009DA7B9 /* arenacloud-broadcast-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00C5E102193EBD63009DA7B9 /* Build configuration list for PBXNativeTarget "arenacloud-broadcast-iosTests" */;
+			buildPhases = (
+				2C8315657D0047019185E92E /* Check Pods Manifest.lock */,
+				00C5E0E8193EBD63009DA7B9 /* Sources */,
+				00C5E0E9193EBD63009DA7B9 /* Frameworks */,
+				00C5E0EA193EBD63009DA7B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00C5E0F3193EBD63009DA7B9 /* PBXTargetDependency */,
+			);
+			name = "arenacloud-broadcast-iosTests";
+			productName = "arenacloud-broadcast-iosTests";
+			productReference = 00C5E0EC193EBD63009DA7B9 /* arenacloud-broadcast-ios.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00C5E0D4193EBD63009DA7B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ACBR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ArenaCloud.com;
+			};
+			buildConfigurationList = 00C5E0D7193EBD63009DA7B9 /* Build configuration list for PBXProject "arenacloud-broadcast-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 00C5E0D3193EBD63009DA7B9;
+			productRefGroup = 00C5E0DD193EBD63009DA7B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00C5E0DB193EBD63009DA7B9 /* arenacloud-broadcast-ios */,
+				00C5E0EB193EBD63009DA7B9 /* arenacloud-broadcast-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00C5E0EA193EBD63009DA7B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0064202419BE781000DF038B /* getAllStreams.json in Resources */,
+				0064202219BE776600DF038B /* getNamedStreams.json in Resources */,
+				0064203319BE7C0500DF038B /* deleteStreamRecording.json in Resources */,
+				0064202E19BE7A7600DF038B /* updateStream.json in Resources */,
+				0064202A19BE793B00DF038B /* getProjects.json in Resources */,
+				0064202619BE78A900DF038B /* getStream.json in Resources */,
+				0064202919BE793B00DF038B /* getProject.json in Resources */,
+				00C5E0FA193EBD63009DA7B9 /* InfoPlist.strings in Resources */,
+				0064203419BE7C0500DF038B /* getStreamRecordings.json in Resources */,
+				0064203019BE7AD000DF038B /* deleteStream.json in Resources */,
+				0064202C19BE79FD00DF038B /* createStream.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		066F3A811F054D2B901D1AB3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2C8315657D0047019185E92E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1F5D36C55024AACBE909460 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00C5E0D8193EBD63009DA7B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009789A01A572ADE00A861EF /* ACBRPlayerViewController.m in Sources */,
+				0097899C1A572ADE00A861EF /* ACBRBroadcasterView.m in Sources */,
+				009789A41A572ADE00A861EF /* ACBRStream.m in Sources */,
+				0097899B1A572ADE00A861EF /* ACBRBroadcasterControlsView.m in Sources */,
+				0097899F1A572ADE00A861EF /* ACBRConstants.m in Sources */,
+				009789A11A572ADE00A861EF /* ACBRProject.m in Sources */,
+				0097899E1A572ADE00A861EF /* ACBRClient.m in Sources */,
+				009789A31A572ADE00A861EF /* ACBRRecording.m in Sources */,
+				0097899D1A572ADE00A861EF /* ACBRBroadcasterViewController.mm in Sources */,
+				009789A21A572ADE00A861EF /* ACBRRecordButtonView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C5E0E8193EBD63009DA7B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C5E0FC193EBD63009DA7B9 /* arenacloud_broadcast_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00C5E0F3193EBD63009DA7B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00C5E0DB193EBD63009DA7B9 /* arenacloud-broadcast-ios */;
+			targetProxy = 00C5E0F2193EBD63009DA7B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00C5E0F8193EBD63009DA7B9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00C5E0F9193EBD63009DA7B9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00C5E0FD193EBD63009DA7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		00C5E0FE193EBD63009DA7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00C5E100193EBD63009DA7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18DA7FA643AA9FAC02020C3E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/arenacloud_broadcast_ios.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "arenacloud-broadcast-ios/arenacloud-broadcast-ios-Prefix.pch";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "arenacloud-broadcast-ios";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		00C5E101193EBD63009DA7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34EE4272C1BB56B2C37C9BF7 /* Pods.release.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/arenacloud_broadcast_ios.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "arenacloud-broadcast-ios/arenacloud-broadcast-ios-Prefix.pch";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "arenacloud-broadcast-ios";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		00C5E103193EBD63009DA7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18DA7FA643AA9FAC02020C3E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "arenacloud-broadcast-ios/arenacloud-broadcast-ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "arenacloud-broadcast-iosTests/arenacloud-broadcast-iosTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-l\"Pods-AFNetworking\"",
+					"-l\"Pods-OHHTTPStubs\"",
+					"-l\"Pods-UriParser-cpp\"",
+					"-l\"Pods-VideoCore\"",
+					"-l\"Pods-XCTAsyncTestCase\"",
+					"-l\"Pods-boost\"",
+					"-l\"Pods-glm\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"VideoToolbox\"",
+					"-framework",
+					"\"XCTest\"",
+				);
+				PRODUCT_NAME = "arenacloud-broadcast-ios";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		00C5E104193EBD63009DA7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34EE4272C1BB56B2C37C9BF7 /* Pods.release.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "arenacloud-broadcast-ios/arenacloud-broadcast-ios-Prefix.pch";
+				INFOPLIST_FILE = "arenacloud-broadcast-iosTests/arenacloud-broadcast-iosTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-l\"Pods-AFNetworking\"",
+					"-l\"Pods-OHHTTPStubs\"",
+					"-l\"Pods-UriParser-cpp\"",
+					"-l\"Pods-VideoCore\"",
+					"-l\"Pods-XCTAsyncTestCase\"",
+					"-l\"Pods-boost\"",
+					"-l\"Pods-glm\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"VideoToolbox\"",
+					"-framework",
+					"\"XCTest\"",
+				);
+				PRODUCT_NAME = "arenacloud-broadcast-ios";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00C5E0D7193EBD63009DA7B9 /* Build configuration list for PBXProject "arenacloud-broadcast-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00C5E0FD193EBD63009DA7B9 /* Debug */,
+				00C5E0FE193EBD63009DA7B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00C5E0FF193EBD63009DA7B9 /* Build configuration list for PBXNativeTarget "arenacloud-broadcast-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00C5E100193EBD63009DA7B9 /* Debug */,
+				00C5E101193EBD63009DA7B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00C5E102193EBD63009DA7B9 /* Build configuration list for PBXNativeTarget "arenacloud-broadcast-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00C5E103193EBD63009DA7B9 /* Debug */,
+				00C5E104193EBD63009DA7B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00C5E0D4193EBD63009DA7B9 /* Project object */;
+}
