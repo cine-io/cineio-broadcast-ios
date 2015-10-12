@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc        = true
 
-  s.header_dir          = 'arenacloud-broadcast'
+  s.header_dir          = 'ArenaCloud/broadcast'
 
   s.source_files        = [ 'arenacloud-broadcast-ios/arenacloud-broadcast-ios/*.h',
                             'arenacloud-broadcast-ios/arenacloud-broadcast-ios/*.m*',
