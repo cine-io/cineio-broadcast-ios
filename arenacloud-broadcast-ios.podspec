@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
 
   s.dependency          'AFNetworking', '~> 2.5'
   s.dependency          'VideoCore', '~> 0.3'
+  s.dependency          'ijkplayer', '~> 1.1'
 
   # propagated from VideoCore
   s.xcconfig            = { "HEADER_SEARCH_PATHS" => "${PODS_ROOT}/boost" }

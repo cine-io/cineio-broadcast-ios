@@ -8,7 +8,13 @@ pod 'XCTAsyncTestCase', git: 'https://github.com/iheartradio/xctest-additions.gi
 pod 'OHHTTPStubs',        '~> 4.0'
 
 # Comment out this line if working on VideoCore
-pod 'VideoCore',          '~> 0.3'
+pod 'VideoCore', :git => 'https://github.com/ArenaCloud/VideoCore.git', :branch => 'master'
+
+# Comment out this line if working on ijkplayer
+pod 'ijkplayer', :git => 'https://github.com/ArenaCloud/ijkplayer.git', :tag => '1.1.0'
 
 # Uncomment this line if working on VideoCore (also remove VideoCore version from cineio-ios.podspec)
-#pod 'VideoCore',          path: '../../VideoCore'
+#pod 'VideoCore', :path => '../../VideoCore'
+
+# Uncomment this line if working on ijkplayer
+#pod 'ijkplayer', :path => '../../ijkplayer'
