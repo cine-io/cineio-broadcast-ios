@@ -553,6 +553,10 @@
 			baseConfigurationReference = 18DA7FA643AA9FAC02020C3E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/arenacloud_broadcast_ios.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PLATFORM_DIR)/Developer/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "arenacloud-broadcast-ios/arenacloud-broadcast-ios-Prefix.pch";
 				OTHER_LDFLAGS = "";
@@ -566,6 +570,10 @@
 			baseConfigurationReference = 34EE4272C1BB56B2C37C9BF7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/arenacloud_broadcast_ios.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PLATFORM_DIR)/Developer/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "arenacloud-broadcast-ios/arenacloud-broadcast-ios-Prefix.pch";
 				OTHER_LDFLAGS = "";
