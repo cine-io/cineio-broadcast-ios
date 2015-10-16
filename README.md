@@ -1,8 +1,8 @@
-# cineio-broadcast-ios - cine.io Broadcast iOS SDK
+# arenacloud-broadcast-ios - ArenaCloud Broadcast iOS SDK
 
 [![Build Status](https://travis-ci.org/cine-io/cineio-broadcast-ios.svg?branch=master)](https://travis-ci.org/cine-io/cineio-broadcast-ios)
 
-This is the [cine.io][cineio] [Broadcast][cineio-broadcast] iOS SDK. This
+This is the [ArenaCloud.com][ArenaCloud] [Broadcast][arenacloud-broadcast] iOS SDK. This
 library allows you to do real-time live video streaming from your iOS device
 to any other device that supports RTMP or HLS streaming (iOS, Android, web).
 
@@ -26,7 +26,7 @@ following:
 ```ruby
 platform :ios, '7.0'
 
-pod 'cineio-broadcast-ios', '~> 0.6'
+pod 'arenacloud-broadcast-ios', '~> 0.8'
 ```
 
 Then, install the Pod by running the `pod install` command:
@@ -44,8 +44,8 @@ open <project>.xcworkspace
 
 ## Example Application
 
-Check out the [cineio-broadcast-ios-example-app][cineio-broadcast-ios-example-app] and
-[cineio-broadcast-ios-swift-example-app][cineio-broadcast-ios-swift-example-app] repositories
+Check out the [arenacloud-broadcast-ios-example-app][arenacloud-broadcast-ios-example-app] and
+[arenacloud-broadcast-ios-swift-example-app][arenacloud-broadcast-ios-swift-example-app] repositories
 for working examples that use this SDK.
 
 
@@ -55,18 +55,18 @@ for working examples that use this SDK.
 ### Import the SDK
 
 ```objective-c
-#import <cineio/CineIO.h>
+#import <ArenaCloud/broadcast/ArenaCloudBroadcast.h>
 ```
 
 ### Instantiate the client
 
 ```objective-c
-CineClient *client = [[CineClient alloc] init];
+ACBRClient *client = [[ACBRClient alloc] init];
 ```
 
 ### Set the client properties
 
-Most of the APIs on the CineClient require that the `projectSecretKey` property
+Most of the APIs on the ACBRClient require that the `projectSecretKey` property
 has been set. In addition, the `getProjectsWithCompletionHandler` API requires
 that the `masterKey` property has been set. Be sure to set the appropriate
 properties for the APIs you wish to use.
@@ -81,7 +81,7 @@ client.projectSecretKey = @"YOUR_PROJECT_SECRET_KEY";
 ```objective-c
 [client getProjectsWithCompletionHandler:^(NSError *err, NSArray *projects) {
   for (id object in streams) {
-    CineProject *project = (CineProject *)object;
+    ACBRProject *project = (ACBRProject *)object;
     // do something
   }
 }];
@@ -90,7 +90,7 @@ client.projectSecretKey = @"YOUR_PROJECT_SECRET_KEY";
 ### Get your project (asynchronously)
 
 ```objective-c
-[client getProjectWithCompletionHandler:^(NSError *error, CineProject *project) {
+[client getProjectWithCompletionHandler:^(NSError *error, ACBRProject *project) {
   // do something
 }];
 ```
@@ -100,7 +100,7 @@ client.projectSecretKey = @"YOUR_PROJECT_SECRET_KEY";
 ```objective-c
 [client getStreamsWithCompletionHandler:^(NSError *err, NSArray *streams) {
   for (id object in streams) {
-    CineStream *stream = (CineStream *)object;
+    ACBRStream *stream = (ACBRStream *)object;
     // do something
   }
 }];
@@ -108,14 +108,14 @@ client.projectSecretKey = @"YOUR_PROJECT_SECRET_KEY";
 
 ### Get an individual stream (asynchronously)
 ```objective-c
-[client getStream:@"<SOME STREAM ID>" withCompletionHandler:^(NSError* error, CineStream* stream) {
+[client getStream:@"<SOME STREAM ID>" withCompletionHandler:^(NSError* error, ACBRStream* stream) {
   // do something
 }];
 ```
 
 ### Create a new stream (asynchronously)
 ```objective-c
-[client createStream:@{ @"name" : @"my stream" } withCompletionHandler:^(NSError* error, CineStream* stream) {
+[client createStream:@{ @"name" : @"my stream" } withCompletionHandler:^(NSError* error, ACBRStream* stream) {
   // do something
 }];
 
@@ -123,7 +123,7 @@ client.projectSecretKey = @"YOUR_PROJECT_SECRET_KEY";
 
 ### Update a stream (asynchronously)
 ```objective-c
-[client updateStream:@{ @"" : "<SOME STREAM ID>", @"name" : @"my stream" } withCompletionHandler:^(NSError* error, CineStream* stream) {
+[client updateStream:@{ @"" : "<SOME STREAM ID>", @"name" : @"my stream" } withCompletionHandler:^(NSError* error, ACBRStream* stream) {
   // do something
 }];
 
@@ -157,7 +157,7 @@ client.projectSecretKey = @"YOUR_PROJECT_SECRET_KEY";
 
 ## Playback (using `CinePlayerView`)
 
-To make playback as easy as possible, cineio-ios comes with a ready-made view
+To make playback as easy as possible, broadcast-ios comes with a ready-made view
 controller that takes care of most of the heavy-lifting. Using it is pretty
 straight forward.
 
@@ -166,32 +166,32 @@ straight forward.
 If you're using XCode's Storyboards to build your user interface, our UI
 components should work seamlessly. To use them, follow these steps:
 
-1. Make your view controller inherit from `CinePlayerViewController` rather than `UIViewController`.
+1. Make your view controller inherit from `ACBRPlayerViewController` rather than `UIViewController`.
 2. Ensure that the view controller in your Storyboard has the correct class name set. It should be set to *your subclass* of `CinePlayererViewController`.
 
 ### The `stream` Property
 
-Your class that inherits from `CinePlayerViewController` will have a writeable
+Your class that inherits from `ACBRPlayerViewController` will have a writeable
 `stream` property. You'll need to ensure that this property is set with a
-valid `CineStream` object.
+valid `ACBRStream` object.
 
 ```objective-c
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    //-- cine.io setup
+    //-- ArenaCloud.com setup
 
-    // read our cine.io configuration from a plist bundle
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"cineio-settings" ofType:@"plist"];
+    // read our ArenaCloud.com configuration from a plist bundle
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"broadcast-settings" ofType:@"plist"];
     NSDictionary *settings = [[NSDictionary alloc] initWithContentsOfFile:path];
 
-    // create a new CineClient to fetch our stream information
-    CineClient *cine = [[CineClient alloc] initWithSecretKey:settings[@"CINE_IO_SECRET_KEY"]];
-    [cine getStream:settings[@"CINE_IO_STREAM_ID"] withCompletionHandler:^(NSError *error, CineStream *stream) {
+    // create a new ACBRClient to fetch our stream information
+    ACBRClient *client = [[ACBRClient alloc] initWithSecretKey:settings[@"SECRET_KEY"]];
+    [client getStream:settings[@"STREAM_ID"] withCompletionHandler:^(NSError *error, ACBRStream *stream) {
         if (error) {
           UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network error"
-                                                          message:@"Couldn't get stream settings from cine.io."
+                                                          message:@"Couldn't get stream settings from ArenaCloud.com"
                                                          delegate:nil
                                                 cancelButtonTitle:@"OK"
                                                 otherButtonTitles:nil];
@@ -238,9 +238,9 @@ this method (such as re-enabling the idle timer).
 ```
 
 
-## Publishing (using `CineBroadcasterView` and `CineBroadcasterViewController`)
+## Publishing (using `ACBRBroadcasterView` and `ACBRBroadcasterViewController`)
 
-To make publishing as easy as possible, cineio-ios comes with some ready-made
+To make publishing as easy as possible, broadcast-ios comes with some ready-made
 user-interface components that take care of most of the heavy-lifting. Using
 them is pretty straight forward.
 
@@ -248,7 +248,7 @@ them is pretty straight forward.
 
 #### Handling Device Rotation
 
-For user-experience reasons, our CineBroadcasterView uses neither "Auto
+For user-experience reasons, our ACBRBroadcasterView uses neither "Auto
 Layout" nor "Springs and Struts". Instead, the entire user-interface is
 constructed programatically. This means that we need to listen for
 notifications about when the device changes orientation. The best place to do
@@ -268,9 +268,9 @@ this is in the `AppDelegate didFinishLaunchingWithOptions` method:
 If you're using XCode's Storyboards to build your user interface, our UI
 components should work seamlessly. To use them, follow these steps:
 
-1. Make your view controller inherit from `CineBroadcasterViewController` rather than `UIViewController`.
-2. Ensure that the view controller in your Storyboard has the correct class name set. It should be set to *your subclass* of `CineBroadcasterViewController`.
-3. Ensure that the view in your Storyboard has the correct class name set. It should be set to `CineBroadcasterView`.
+1. Make your view controller inherit from `ACBRBroadcasterViewController` rather than `UIViewController`.
+2. Ensure that the view controller in your Storyboard has the correct class name set. It should be set to *your subclass* of `ACBRBroadcasterViewController`.
+3. Ensure that the view in your Storyboard has the correct class name set. It should be set to `ACBRBroadcasterView`.
 
 
 ### Initializing the properties
@@ -290,18 +290,18 @@ You'll need to initialize these properties, most likely in your `viewDidLoad` me
     // will use them in its viewDidLoad method
     [super viewDidLoad];
 
-    //-- cine.io setup
+    //-- ArenaCloud.com setup
 
-    // read our cine.io configuration from a plist bundle
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"cineio-settings" ofType:@"plist"];
+    // read our ArenaCloud.com configuration from a plist bundle
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"broadcast-settings" ofType:@"plist"];
     NSDictionary *settings = [[NSDictionary alloc] initWithContentsOfFile:path];
 
-    // create a new CineClient to fetch our stream information
-    CineClient *cine = [[CineClient alloc] initWithSecretKey:settings[@"CINE_IO_SECRET_KEY"]];
-    [self updateStatus:@"Configuring stream using cine.io ..."];
-    [cine getStream:settings[@"CINE_IO_STREAM_ID"] withCompletionHandler:^(NSError *error, CineStream *stream) {
+    // create a new ACBRClient to fetch our stream information
+    ACBRClient *client = [[ACBRClient alloc] initWithSecretKey:settings[@"SECRET_KEY"]];
+    [self updateStatus:@"Configuring stream using ArenaCloud.com..."];
+    [client getStream:settings[@"STREAM_ID"] withCompletionHandler:^(NSError *error, ACBRStream *stream) {
         if (error) {
-            [self updateStatus:@"ERROR: couldn't get stream information from cine.io"];
+            [self updateStatus:@"ERROR: couldn't get stream information from ArenaCloud.com"];
         } else {
             self.publishUrl = [stream publishUrl];
             self.publishStreamName = [stream publishStreamName];
@@ -325,10 +325,10 @@ disable the idle timer in this method as appropriate.
 - (void)toggleStreaming:(id)sender
 {
     switch(self.streamState) {
-        case CineStreamStateNone:
-        case CineStreamStatePreviewStarted:
-        case CineStreamStateEnded:
-        case CineStreamStateError:
+        case ACBRStreamStateNone:
+        case ACBRStreamStatePreviewStarted:
+        case ACBRStreamStateEnded:
+        case ACBRStreamStateError:
             [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
             break;
         default:
@@ -360,6 +360,7 @@ Much of the basis for the cine.io iOS SDK comes from the excellent
 
 <!-- external links -->
 
+[arenacloud.com]:http://www.arenacloud.com/
 [cineio]:https://www.cine.io/
 [cineio-broadcast]:https://www.cine.io/products/broadcast
 [cocoapods]:http://cocoapods.org/

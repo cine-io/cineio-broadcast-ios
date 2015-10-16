@@ -1,0 +1,92 @@
+PODS:
+  - AFNetworking (2.6.0):
+    - AFNetworking/NSURLConnection (= 2.6.0)
+    - AFNetworking/NSURLSession (= 2.6.0)
+    - AFNetworking/Reachability (= 2.6.0)
+    - AFNetworking/Security (= 2.6.0)
+    - AFNetworking/Serialization (= 2.6.0)
+    - AFNetworking/UIKit (= 2.6.0)
+  - AFNetworking/NSURLConnection (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.0)
+  - AFNetworking/Security (2.6.0)
+  - AFNetworking/Serialization (2.6.0)
+  - AFNetworking/UIKit (2.6.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - boost (1.51.0):
+    - boost/graph-includes (= 1.51.0)
+    - boost/math-includes (= 1.51.0)
+    - boost/numeric-includes (= 1.51.0)
+    - boost/pointer_cast-includes (= 1.51.0)
+    - boost/preprocessor-includes (= 1.51.0)
+    - boost/shared_ptr-includes (= 1.51.0)
+    - boost/string_algorithms-includes (= 1.51.0)
+  - boost/graph-includes (1.51.0)
+  - boost/math-includes (1.51.0)
+  - boost/numeric-includes (1.51.0)
+  - boost/pointer_cast-includes (1.51.0)
+  - boost/preprocessor-includes (1.51.0)
+  - boost/shared_ptr-includes (1.51.0)
+  - boost/string_algorithms-includes (1.51.0)
+  - glm (0.9.4.6)
+  - ijkplayer (1.1.0):
+    - ijkplayer/include (= 1.1.0)
+  - ijkplayer/include (1.1.0)
+  - OHHTTPStubs (4.3.0):
+    - OHHTTPStubs/Default (= 4.3.0)
+  - OHHTTPStubs/Core (4.3.0)
+  - OHHTTPStubs/Default (4.3.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (4.3.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (4.3.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (4.3.0)
+  - UriParser-cpp (0.1.3)
+  - VideoCore (0.3.2):
+    - boost (~> 1.51.0)
+    - glm (~> 0.9.4.6)
+    - UriParser-cpp (~> 0.1.3)
+  - XCTAsyncTestCase (0.1.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.5)
+  - ijkplayer (from `/Users/WilliamShi/Desktop/HoopMediaPlayer/ijkplayer`)
+  - OHHTTPStubs (~> 4.0)
+  - VideoCore (from `../../VideoCore`)
+  - XCTAsyncTestCase (from `https://github.com/iheartradio/xctest-additions.git`)
+
+EXTERNAL SOURCES:
+  ijkplayer:
+    :path: /Users/WilliamShi/Desktop/HoopMediaPlayer/ijkplayer
+  VideoCore:
+    :path: ../../VideoCore
+  XCTAsyncTestCase:
+    :git: https://github.com/iheartradio/xctest-additions.git
+
+CHECKOUT OPTIONS:
+  XCTAsyncTestCase:
+    :commit: 2ed4b07c8a8ba6866641bb411e6cfd5221786501
+    :git: https://github.com/iheartradio/xctest-additions.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  boost: 6c5c8d8daef26ac83c1e1c00ad14de62b80161d7
+  glm: e22c8d9df10404059b19c2952f9fa44d9a9f3056
+  ijkplayer: 4fef6fb7b376f245df3d810b25907ad1992ee68e
+  OHHTTPStubs: 0aec5755528693a165bd616cb79f69387de306a8
+  UriParser-cpp: cbbe00080ee432ec4833dca863a7fc83adc9b01a
+  VideoCore: 9b783edd81b91a80c5599bae1f98e9c93ee029e7
+  XCTAsyncTestCase: 1aed7ec7905cc37287be0869afec48b6dd9c51ad
+
+COCOAPODS: 0.37.2

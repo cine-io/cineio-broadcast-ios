@@ -1,0 +1,1515 @@
+[
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gklJeVgHVg?adbe-live-event=gklJeVgHVg",
+         "hls" : "http://hls.arenacdn.com/cines/gklJeVgHVg/gklJeVgHVg.m3u8"
+      },
+      "publish" : {
+         "stream" : "gklJeVgHVg?go9&amp;adbe-live-event=gklJeVgHVg",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "go9",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:34:24.521Z",
+      "id" : "540e3cfcdf00830a005860d1",
+      "streamName" : "gklJeVgHVg"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/xk1iJNlHVe?adbe-live-event=xk1iJNlHVe",
+         "hls" : "http://hls.arenacdn.com/cines/xk1iJNlHVe/xk1iJNlHVe.m3u8"
+      },
+      "publish" : {
+         "stream" : "xk1iJNlHVe?tune2&amp;adbe-live-event=xk1iJNlHVe",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "tune2",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:34:23.906Z",
+      "id" : "540e3ceadf00830a005860ce",
+      "streamName" : "xk1iJNlHVe"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gyO5y4xHVl?adbe-live-event=gyO5y4xHVl",
+         "hls" : "http://hls.arenacdn.com/cines/gyO5y4xHVl/gyO5y4xHVl.m3u8"
+      },
+      "publish" : {
+         "stream" : "gyO5y4xHVl?tune1&amp;adbe-live-event=gyO5y4xHVl",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "tune1",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:34:23.515Z",
+      "id" : "540e3ce9c11e8108006871c2",
+      "streamName" : "gyO5y4xHVl"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/eJU9JNxBEx?adbe-live-event=eJU9JNxBEx",
+         "hls" : "http://hls.arenacdn.com/cines/eJU9JNxBEx/eJU9JNxBEx.m3u8"
+      },
+      "publish" : {
+         "stream" : "eJU9JNxBEx?pitch1&amp;adbe-live-event=eJU9JNxBEx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "pitch1",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:34:22.772Z",
+      "id" : "540e3ce9c11e8108006871c1",
+      "streamName" : "eJU9JNxBEx"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/eJiYJEer4x?adbe-live-event=eJiYJEer4x",
+         "hls" : "http://hls.arenacdn.com/cines/eJiYJEer4x/eJiYJEer4x.m3u8"
+      },
+      "publish" : {
+         "stream" : "eJiYJEer4x?prelude0&amp;adbe-live-event=eJiYJEer4x",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "prelude0",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:34:21.949Z",
+      "id" : "540e3ce8df00830a005860cc",
+      "streamName" : "eJiYJEer4x"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/l1NuAmeH4l?adbe-live-event=l1NuAmeH4l",
+         "hls" : "http://hls.arenacdn.com/cines/l1NuAmeH4l/l1NuAmeH4l.m3u8"
+      },
+      "publish" : {
+         "stream" : "l1NuAmeH4l?pitch32&amp;adbe-live-event=l1NuAmeH4l",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "pitch32",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:34:20.896Z",
+      "id" : "540e3cccc11e8108006871bf",
+      "streamName" : "l1NuAmeH4l"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/ek4STXeS4l?adbe-live-event=ek4STXeS4l",
+         "hls" : "http://hls.arenacdn.com/cines/ek4STXeS4l/ek4STXeS4l.m3u8"
+      },
+      "publish" : {
+         "stream" : "ek4STXeS4l?harmony2&amp;adbe-live-event=ek4STXeS4l",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "harmony2",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:34:09.036Z",
+      "id" : "540e3caec11e8108006871bd",
+      "streamName" : "ek4STXeS4l"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/g1Jr6XxH4x?adbe-live-event=g1Jr6XxH4x",
+         "hls" : "http://hls.arenacdn.com/cines/g1Jr6XxH4x/g1Jr6XxH4x.m3u8"
+      },
+      "publish" : {
+         "stream" : "g1Jr6XxH4x?pitch1&amp;adbe-live-event=g1Jr6XxH4x",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "pitch1",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:34:02.530Z",
+      "id" : "540e3cadc11e8108006871bc",
+      "streamName" : "g1Jr6XxH4x"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/xJ2N67xSEl?adbe-live-event=xJ2N67xSEl",
+         "hls" : "http://hls.arenacdn.com/cines/xJ2N67xSEl/xJ2N67xSEl.m3u8"
+      },
+      "publish" : {
+         "stream" : "xJ2N67xSEl?harp1&amp;adbe-live-event=xJ2N67xSEl",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "harp1",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:34:01.825Z",
+      "id" : "540e3caddf00830a005860cb",
+      "streamName" : "xJ2N67xSEl"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/xk_4aXerEe?adbe-live-event=xk_4aXerEe",
+         "hls" : "http://hls.arenacdn.com/cines/xk_4aXerEe/xk_4aXerEe.m3u8"
+      },
+      "publish" : {
+         "stream" : "xk_4aXerEe?bass1&amp;adbe-live-event=xk_4aXerEe",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "bass1",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:34:01.607Z",
+      "id" : "540e3caddf00830a005860ca",
+      "streamName" : "xk_4aXerEe"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/xkG4a7xSVe?adbe-live-event=xkG4a7xSVe",
+         "hls" : "http://hls.arenacdn.com/cines/xkG4a7xSVe/xkG4a7xSVe.m3u8"
+      },
+      "publish" : {
+         "stream" : "xkG4a7xSVe?minor0&amp;adbe-live-event=xkG4a7xSVe",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "minor0",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:34:01.204Z",
+      "id" : "540e3cacdf00830a005860c9",
+      "streamName" : "xkG4a7xSVe"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gkBnpMlB4l?adbe-live-event=gkBnpMlB4l",
+         "hls" : "http://hls.arenacdn.com/cines/gkBnpMlB4l/gkBnpMlB4l.m3u8"
+      },
+      "publish" : {
+         "stream" : "gkBnpMlB4l?bass23&amp;adbe-live-event=gkBnpMlB4l",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "bass23",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:34:00.179Z",
+      "id" : "540e3b1fdf00830a005860c7",
+      "streamName" : "gkBnpMlB4l"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/xye26fgHEe?adbe-live-event=xye26fgHEe",
+         "hls" : "http://hls.arenacdn.com/cines/xye26fgHEe/xye26fgHEe.m3u8"
+      },
+      "publish" : {
+         "stream" : "xye26fgHEe?minor23&amp;adbe-live-event=xye26fgHEe",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "minor23",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:33:32.677Z",
+      "id" : "540e3b1fdf00830a005860c6",
+      "streamName" : "xye26fgHEe"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/g19jpfgBNe?adbe-live-event=g19jpfgBNe",
+         "hls" : "http://hls.arenacdn.com/cines/g19jpfgBNe/g19jpfgBNe.m3u8"
+      },
+      "publish" : {
+         "stream" : "g19jpfgBNe?harmony22&amp;adbe-live-event=g19jpfgBNe",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "harmony22",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:33:02.719Z",
+      "id" : "540e3b1edf00830a005860c5",
+      "streamName" : "g19jpfgBNe"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/ekfiazerNe?adbe-live-event=ekfiazerNe",
+         "hls" : "http://hls.arenacdn.com/cines/ekfiazerNe/ekfiazerNe.m3u8"
+      },
+      "publish" : {
+         "stream" : "ekfiazerNe?sharp22&amp;adbe-live-event=ekfiazerNe",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "sharp22",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:33:01.688Z",
+      "id" : "540e3b1ec11e8108006871bb",
+      "streamName" : "ekfiazerNe"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/xkpcTzgrEg?adbe-live-event=xkpcTzgrEg",
+         "hls" : "http://hls.arenacdn.com/cines/xkpcTzgrEg/xkpcTzgrEg.m3u8"
+      },
+      "publish" : {
+         "stream" : "xkpcTzgrEg?song21&amp;adbe-live-event=xkpcTzgrEg",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "song21",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:33:01.423Z",
+      "id" : "540e3b1dc11e8108006871ba",
+      "streamName" : "xkpcTzgrEg"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/g1g9TzlHEl?adbe-live-event=g1g9TzlHEl",
+         "hls" : "http://hls.arenacdn.com/cines/g1g9TzlHEl/g1g9TzlHEl.m3u8"
+      },
+      "publish" : {
+         "stream" : "g1g9TzlHEl?song20&amp;adbe-live-event=g1g9TzlHEl",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "song20",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:33:00.397Z",
+      "id" : "540e3b1cdf00830a005860c2",
+      "streamName" : "g1g9TzlHEl"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/lJJ_JdRENx?adbe-live-event=lJJ_JdRENx",
+         "hls" : "http://hls.arenacdn.com/cines/lJJ_JdRENx/lJJ_JdRENx.m3u8"
+      },
+      "publish" : {
+         "stream" : "lJJ_JdRENx?band48&amp;adbe-live-event=lJJ_JdRENx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "band48",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:32:59.755Z",
+      "id" : "540e1018cb63a608007bc7bc",
+      "streamName" : "lJJ_JdRENx"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gkXNen2EEl?adbe-live-event=gkXNen2EEl",
+         "hls" : "http://hls.arenacdn.com/cines/gkXNen2EEl/gkXNen2EEl.m3u8"
+      },
+      "publish" : {
+         "stream" : "gkXNen2EEl?band59&amp;adbe-live-event=gkXNen2EEl",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "band59",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:26:23.904Z",
+      "id" : "540de35fcb63a608007bc7ba",
+      "streamName" : "gkXNen2EEl"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/eJAtcUF4Ee?adbe-live-event=eJAtcUF4Ee",
+         "hls" : "http://hls.arenacdn.com/cines/eJAtcUF4Ee/eJAtcUF4Ee.m3u8"
+      },
+      "publish" : {
+         "stream" : "eJAtcUF4Ee?keyboard46&amp;adbe-live-event=eJAtcUF4Ee",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "keyboard46",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:26:23.421Z",
+      "id" : "540d8e02fecb050900b598c7",
+      "streamName" : "eJAtcUF4Ee"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gJ_Op4Y44g?adbe-live-event=gJ_Op4Y44g",
+         "hls" : "http://hls.arenacdn.com/cines/gJ_Op4Y44g/gJ_Op4Y44g.m3u8"
+      },
+      "publish" : {
+         "stream" : "gJ_Op4Y44g?guitar21&amp;adbe-live-event=gJ_Op4Y44g",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "guitar21",
+      "record" : true,
+      "expiration" : "2034-09-08T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:26:22.888Z",
+      "id" : "540d8b19fecb050900b598c6",
+      "streamName" : "gJ_Op4Y44g"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gJiNBK07Vl?adbe-live-event=gJiNBK07Vl",
+         "hls" : "http://hls.arenacdn.com/cines/gJiNBK07Vl/gJiNBK07Vl.m3u8"
+      },
+      "publish" : {
+         "stream" : "gJiNBK07Vl?earth29&amp;adbe-live-event=gJiNBK07Vl",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "earth29",
+      "record" : true,
+      "expiration" : "2034-09-07T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:26:22.040Z",
+      "id" : "540c78ad3f272008004e3bd8",
+      "streamName" : "gJiNBK07Vl"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/eJDEm10QNg?adbe-live-event=eJDEm10QNg",
+         "hls" : "http://hls.arenacdn.com/cines/eJDEm10QNg/eJDEm10QNg.m3u8"
+      },
+      "publish" : {
+         "stream" : "eJDEm10QNg?world21&amp;adbe-live-event=eJDEm10QNg",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "world21",
+      "record" : true,
+      "expiration" : "2034-09-07T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:26:21.146Z",
+      "id" : "540c687960753c09004797ff",
+      "streamName" : "eJDEm10QNg"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/xyaFU7tXVx?adbe-live-event=xyaFU7tXVx",
+         "hls" : "http://hls.arenacdn.com/cines/xyaFU7tXVx/xyaFU7tXVx.m3u8"
+      },
+      "publish" : {
+         "stream" : "xyaFU7tXVx?harp57&amp;adbe-live-event=xyaFU7tXVx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "harp57",
+      "record" : true,
+      "expiration" : "2034-09-07T00:00:00.000Z",
+      "assignedAt" : "2014-09-08T23:26:20.200Z",
+      "id" : "540bef3560753c09004797fb",
+      "streamName" : "xyaFU7tXVx"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/lkzAYu4LXe?adbe-live-event=lkzAYu4LXe",
+         "hls" : "http://hls.arenacdn.com/cines/lkzAYu4LXe/lkzAYu4LXe.m3u8"
+      },
+      "publish" : {
+         "stream" : "lkzAYu4LXe?cleff12&amp;adbe-live-event=lkzAYu4LXe",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "cleff12",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:29:23.138Z",
+      "id" : "53f6aabcbbc10c0a00a36953",
+      "streamName" : "lkzAYu4LXe"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/lyRptuVLmg?adbe-live-event=lyRptuVLmg",
+         "hls" : "http://hls.arenacdn.com/cines/lyRptuVLmg/lyRptuVLmg.m3u8"
+      },
+      "publish" : {
+         "stream" : "lyRptuVLmg?trumpet12&amp;adbe-live-event=lyRptuVLmg",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "trumpet12",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:29:22.734Z",
+      "id" : "53f6aabc8cd8760800427282",
+      "streamName" : "lyRptuVLmg"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/x1FTY_NLQg?adbe-live-event=x1FTY_NLQg",
+         "hls" : "http://hls.arenacdn.com/cines/x1FTY_NLQg/x1FTY_NLQg.m3u8"
+      },
+      "publish" : {
+         "stream" : "x1FTY_NLQg?group11&amp;adbe-live-event=x1FTY_NLQg",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "group11",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:29:22.320Z",
+      "id" : "53f6aabb8cd8760800427281",
+      "streamName" : "x1FTY_NLQg"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gkHTYdV8Qx?adbe-live-event=gkHTYdV8Qx",
+         "hls" : "http://hls.arenacdn.com/cines/gkHTYdV8Qx/gkHTYdV8Qx.m3u8"
+      },
+      "publish" : {
+         "stream" : "gkHTYdV8Qx?world11&amp;adbe-live-event=gkHTYdV8Qx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "world11",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:29:21.914Z",
+      "id" : "53f6aabb8cd8760800427280",
+      "streamName" : "gkHTYdV8Qx"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/l1jQtOE8me?adbe-live-event=l1jQtOE8me",
+         "hls" : "http://hls.arenacdn.com/cines/l1jQtOE8me/l1jQtOE8me.m3u8"
+      },
+      "publish" : {
+         "stream" : "l1jQtOE8me?sharp55&amp;adbe-live-event=l1jQtOE8me",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "sharp55",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:29:16.117Z",
+      "id" : "53f6aaab8cd876080042727e",
+      "streamName" : "l1jQtOE8me"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/eybXFd4UQg?adbe-live-event=eybXFd4UQg",
+         "hls" : "http://hls.arenacdn.com/cines/eybXFd4UQg/eybXFd4UQg.m3u8"
+      },
+      "publish" : {
+         "stream" : "eybXFd4UQg?song54&amp;adbe-live-event=eybXFd4UQg",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "song54",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:28:13.285Z",
+      "id" : "53f6aaaa8cd876080042727d",
+      "streamName" : "eybXFd4UQg"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gkOGKu4U7e?adbe-live-event=gkOGKu4U7e",
+         "hls" : "http://hls.arenacdn.com/cines/gkOGKu4U7e/gkOGKu4U7e.m3u8"
+      },
+      "publish" : {
+         "stream" : "gkOGKu4U7e?song53&amp;adbe-live-event=gkOGKu4U7e",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "song53",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:28:12.471Z",
+      "id" : "53f6aaa98cd876080042727b",
+      "streamName" : "gkOGKu4U7e"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gyVfY_ELQl?adbe-live-event=gyVfY_ELQl",
+         "hls" : "http://hls.arenacdn.com/cines/gyVfY_ELQl/gyVfY_ELQl.m3u8"
+      },
+      "publish" : {
+         "stream" : "gyVfY_ELQl?song53&amp;adbe-live-event=gyVfY_ELQl",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "song53",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:28:12.070Z",
+      "id" : "53f6aaa9bbc10c0a00a36951",
+      "streamName" : "gyVfY_ELQl"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/l1fvL_EIQx?adbe-live-event=l1fvL_EIQx",
+         "hls" : "http://hls.arenacdn.com/cines/l1fvL_EIQx/l1fvL_EIQx.m3u8"
+      },
+      "publish" : {
+         "stream" : "l1fvL_EIQx?fans44&amp;adbe-live-event=l1fvL_EIQx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "fans44",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:28:11.558Z",
+      "id" : "53f6aa64bbc10c0a00a36950",
+      "streamName" : "l1fvL_EIQx"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/xJ0ULu4Uml?adbe-live-event=xJ0ULu4Uml",
+         "hls" : "http://hls.arenacdn.com/cines/xJ0ULu4Uml/xJ0ULu4Uml.m3u8"
+      },
+      "publish" : {
+         "stream" : "xJ0ULu4Uml?bass44&amp;adbe-live-event=xJ0ULu4Uml",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "bass44",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:28:11.147Z",
+      "id" : "53f6aa648cd876080042727a",
+      "streamName" : "xJ0ULu4Uml"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/lk58IO4Ime?adbe-live-event=lk58IO4Ime",
+         "hls" : "http://hls.arenacdn.com/cines/lk58IO4Ime/lk58IO4Ime.m3u8"
+      },
+      "publish" : {
+         "stream" : "lk58IO4Ime?bass43&amp;adbe-live-event=lk58IO4Ime",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "bass43",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:27:56.191Z",
+      "id" : "53f6aa63bbc10c0a00a3694f",
+      "streamName" : "lk58IO4Ime"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/xJd78_4IXe?adbe-live-event=xJd78_4IXe",
+         "hls" : "http://hls.arenacdn.com/cines/xJd78_4IXe/xJd78_4IXe.m3u8"
+      },
+      "publish" : {
+         "stream" : "xJd78_4IXe?drums38&amp;adbe-live-event=xJd78_4IXe",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "drums38",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:27:55.389Z",
+      "id" : "53f6aa5ebbc10c0a00a3694e",
+      "streamName" : "xJd78_4IXe"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/xyM7Id4UQx?adbe-live-event=xyM7Id4UQx",
+         "hls" : "http://hls.arenacdn.com/cines/xyM7Id4UQx/xyM7Id4UQx.m3u8"
+      },
+      "publish" : {
+         "stream" : "xyM7Id4UQx?tune38&amp;adbe-live-event=xyM7Id4UQx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "tune38",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:27:54.287Z",
+      "id" : "53f6aa5ebbc10c0a00a3694d",
+      "streamName" : "xyM7Id4UQx"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/ey1wSdV8Xx?adbe-live-event=ey1wSdV8Xx",
+         "hls" : "http://hls.arenacdn.com/cines/ey1wSdV8Xx/ey1wSdV8Xx.m3u8"
+      },
+      "publish" : {
+         "stream" : "ey1wSdV8Xx?notes18&amp;adbe-live-event=ey1wSdV8Xx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "notes18",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:27:53.866Z",
+      "id" : "53f6aa4abbc10c0a00a3694c",
+      "streamName" : "ey1wSdV8Xx"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/eJo8HOE8me?adbe-live-event=eJo8HOE8me",
+         "hls" : "http://hls.arenacdn.com/cines/eJo8HOE8me/eJo8HOE8me.m3u8"
+      },
+      "publish" : {
+         "stream" : "eJo8HOE8me?piano18&amp;adbe-live-event=eJo8HOE8me",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "piano18",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:27:53.410Z",
+      "id" : "53f6aa4a8cd8760800427277",
+      "streamName" : "eJo8HOE8me"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/e1J97u4IQl?adbe-live-event=e1J97u4IQl",
+         "hls" : "http://hls.arenacdn.com/cines/e1J97u4IQl/e1J97u4IQl.m3u8"
+      },
+      "publish" : {
+         "stream" : "e1J97u4IQl?tune32&amp;adbe-live-event=e1J97u4IQl",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "tune32",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:26:44.424Z",
+      "id" : "53f6aa1c8cd8760800427276",
+      "streamName" : "e1J97u4IQl"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/g1aYmuNIme?adbe-live-event=g1aYmuNIme",
+         "hls" : "http://hls.arenacdn.com/cines/g1aYmuNIme/g1aYmuNIme.m3u8"
+      },
+      "publish" : {
+         "stream" : "g1aYmuNIme?earth31&amp;adbe-live-event=g1aYmuNIme",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "earth31",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:26:44.015Z",
+      "id" : "53f6aa1b8cd8760800427275",
+      "streamName" : "g1aYmuNIme"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/lJYF7_EU7x?adbe-live-event=lJYF7_EU7x",
+         "hls" : "http://hls.arenacdn.com/cines/lJYF7_EU7x/lJYF7_EU7x.m3u8"
+      },
+      "publish" : {
+         "stream" : "lJYF7_EU7x?keyboard31&amp;adbe-live-event=lJYF7_EU7x",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "keyboard31",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:26:43.610Z",
+      "id" : "53f6aa1b8cd8760800427274",
+      "streamName" : "lJYF7_EU7x"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/g1EYm_NI7g?adbe-live-event=g1EYm_NI7g",
+         "hls" : "http://hls.arenacdn.com/cines/g1EYm_NI7g/g1EYm_NI7g.m3u8"
+      },
+      "publish" : {
+         "stream" : "g1EYm_NI7g?tune31&amp;adbe-live-event=g1EYm_NI7g",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "tune31",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:26:43.202Z",
+      "id" : "53f6aa1b8cd8760800427273",
+      "streamName" : "g1EYm_NI7g"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/lJeERP4IXe?adbe-live-event=lJeERP4IXe",
+         "hls" : "http://hls.arenacdn.com/cines/lJeERP4IXe/lJeERP4IXe.m3u8"
+      },
+      "publish" : {
+         "stream" : "lJeERP4IXe?earth14&amp;adbe-live-event=lJeERP4IXe",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "earth14",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:26:38.445Z",
+      "id" : "53f6a9928cd8760800427271",
+      "streamName" : "lJeERP4IXe"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/e1LmRDEL7e?adbe-live-event=e1LmRDEL7e",
+         "hls" : "http://hls.arenacdn.com/cines/e1LmRDEL7e/e1LmRDEL7e.m3u8"
+      },
+      "publish" : {
+         "stream" : "e1LmRDEL7e?drums13&amp;adbe-live-event=e1LmRDEL7e",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "drums13",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:26:18.514Z",
+      "id" : "53f6a991bbc10c0a00a3694a",
+      "streamName" : "e1LmRDEL7e"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/x1Z70DN8ml?adbe-live-event=x1Z70DN8ml",
+         "hls" : "http://hls.arenacdn.com/cines/x1Z70DN8ml/x1Z70DN8ml.m3u8"
+      },
+      "publish" : {
+         "stream" : "x1Z70DN8ml?earth13&amp;adbe-live-event=x1Z70DN8ml",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "earth13",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:26:18.101Z",
+      "id" : "53f6a991bbc10c0a00a36949",
+      "streamName" : "x1Z70DN8ml"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/xytMRDNUQx?adbe-live-event=xytMRDNUQx",
+         "hls" : "http://hls.arenacdn.com/cines/xytMRDNUQx/xytMRDNUQx.m3u8"
+      },
+      "publish" : {
+         "stream" : "xytMRDNUQx?minor12&amp;adbe-live-event=xytMRDNUQx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "minor12",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:25:31.905Z",
+      "id" : "53f6a9908cd876080042726f",
+      "streamName" : "xytMRDNUQx"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/ly5WCP4IXl?adbe-live-event=ly5WCP4IXl",
+         "hls" : "http://hls.arenacdn.com/cines/ly5WCP4IXl/ly5WCP4IXl.m3u8"
+      },
+      "publish" : {
+         "stream" : "ly5WCP4IXl?drums10&amp;adbe-live-event=ly5WCP4IXl",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "drums10",
+      "record" : true,
+      "expiration" : "2034-08-22T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:25:31.498Z",
+      "id" : "53f6a98e8cd876080042726e",
+      "streamName" : "ly5WCP4IXl"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/g1bOSPf8Qe?adbe-live-event=g1bOSPf8Qe",
+         "hls" : "http://hls.arenacdn.com/cines/g1bOSPf8Qe/g1bOSPf8Qe.m3u8"
+      },
+      "publish" : {
+         "stream" : "g1bOSPf8Qe?drums3&amp;adbe-live-event=g1bOSPf8Qe",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "drums3",
+      "record" : true,
+      "expiration" : "2034-08-21T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:25:30.651Z",
+      "id" : "53f6757f2dbe090a00911059",
+      "streamName" : "g1bOSPf8Qe"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gk2sfXZL7e?adbe-live-event=gk2sfXZL7e",
+         "hls" : "http://hls.arenacdn.com/cines/gk2sfXZL7e/gk2sfXZL7e.m3u8"
+      },
+      "publish" : {
+         "stream" : "gk2sfXZL7e?bass20&amp;adbe-live-event=gk2sfXZL7e",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "bass20",
+      "record" : true,
+      "expiration" : "2034-08-21T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:23:14.616Z",
+      "id" : "53f6553882dcc609000e4621",
+      "streamName" : "gk2sfXZL7e"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/xJu7fUKEQe?adbe-live-event=xJu7fUKEQe",
+         "hls" : "http://hls.arenacdn.com/cines/xJu7fUKEQe/xJu7fUKEQe.m3u8"
+      },
+      "publish" : {
+         "stream" : "xJu7fUKEQe?harmony9&amp;adbe-live-event=xJu7fUKEQe",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "harmony9",
+      "record" : true,
+      "expiration" : "2034-08-20T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:23:13.598Z",
+      "id" : "53f3f39106707a0a00243173",
+      "streamName" : "xJu7fUKEQe"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/g1CaUrPNXg?adbe-live-event=g1CaUrPNXg",
+         "hls" : "http://hls.arenacdn.com/cines/g1CaUrPNXg/g1CaUrPNXg.m3u8"
+      },
+      "publish" : {
+         "stream" : "g1CaUrPNXg?rock52&amp;adbe-live-event=g1CaUrPNXg",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "rock52",
+      "record" : true,
+      "expiration" : "2034-08-19T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:23:12.741Z",
+      "id" : "53f3bf3ca16fe90800502824",
+      "streamName" : "g1CaUrPNXg"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gJnoJiHVmx?adbe-live-event=gJnoJiHVmx",
+         "hls" : "http://hls.arenacdn.com/cines/gJnoJiHVmx/gJnoJiHVmx.m3u8"
+      },
+      "publish" : {
+         "stream" : "gJnoJiHVmx?music19&amp;adbe-live-event=gJnoJiHVmx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "music19",
+      "record" : true,
+      "expiration" : "2034-08-19T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:23:12.314Z",
+      "id" : "53f394ebd3f1630900071424",
+      "streamName" : "gJnoJiHVmx"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gk7cOb27Qx?adbe-live-event=gk7cOb27Qx",
+         "hls" : "http://hls.arenacdn.com/cines/gk7cOb27Qx/gk7cOb27Qx.m3u8"
+      },
+      "publish" : {
+         "stream" : "gk7cOb27Qx?violin49&amp;adbe-live-event=gk7cOb27Qx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "violin49",
+      "record" : true,
+      "expiration" : "2034-08-19T00:00:00.000Z",
+      "assignedAt" : "2014-08-22T02:23:10.885Z",
+      "id" : "53f29f692bc640090045c6be",
+      "streamName" : "gk7cOb27Qx"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/lJLCWe2mme?adbe-live-event=lJLCWe2mme",
+         "hls" : "http://hls.arenacdn.com/cines/lJLCWe2mme/lJLCWe2mme.m3u8"
+      },
+      "publish" : {
+         "stream" : "lJLCWe2mme?treble7&amp;adbe-live-event=lJLCWe2mme",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "treble7",
+      "record" : true,
+      "expiration" : "2034-08-19T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:50:49.288Z",
+      "id" : "53f29d23a023f108008db1e2",
+      "streamName" : "lJLCWe2mme"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/ekX0-g3XXx?adbe-live-event=ekX0-g3XXx",
+         "hls" : "http://hls.arenacdn.com/cines/ekX0-g3XXx/ekX0-g3XXx.m3u8"
+      },
+      "publish" : {
+         "stream" : "ekX0-g3XXx?notes6&amp;adbe-live-event=ekX0-g3XXx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "notes6",
+      "record" : true,
+      "expiration" : "2034-08-19T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:50:48.802Z",
+      "id" : "53f29d226e7fba0a0000971c",
+      "streamName" : "ekX0-g3XXx"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/xkF6-x377g?adbe-live-event=xkF6-x377g",
+         "hls" : "http://hls.arenacdn.com/cines/xkF6-x377g/xkF6-x377g.m3u8"
+      },
+      "publish" : {
+         "stream" : "xkF6-x377g?treble5&amp;adbe-live-event=xkF6-x377g",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "treble5",
+      "record" : true,
+      "expiration" : "2034-08-19T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:50:47.856Z",
+      "id" : "53f29d21a023f108008db1e0",
+      "streamName" : "xkF6-x377g"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/xyN6bl2QQe?adbe-live-event=xyN6bl2QQe",
+         "hls" : "http://hls.arenacdn.com/cines/xyN6bl2QQe/xyN6bl2QQe.m3u8"
+      },
+      "publish" : {
+         "stream" : "xyN6bl2QQe?major5&amp;adbe-live-event=xyN6bl2QQe",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "major5",
+      "record" : true,
+      "expiration" : "2034-08-19T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:50:47.355Z",
+      "id" : "53f29d21a023f108008db1df",
+      "streamName" : "xyN6bl2QQe"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/e1D9w1hQQg?adbe-live-event=e1D9w1hQQg",
+         "hls" : "http://hls.arenacdn.com/cines/e1D9w1hQQg/e1D9w1hQQg.m3u8"
+      },
+      "publish" : {
+         "stream" : "e1D9w1hQQg?song44&amp;adbe-live-event=e1D9w1hQQg",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "song44",
+      "record" : true,
+      "expiration" : "2034-08-19T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:49:54.668Z",
+      "id" : "53f29c1ca023f108008db1de",
+      "streamName" : "e1D9w1hQQg"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/lkB5vynQme?adbe-live-event=lkB5vynQme",
+         "hls" : "http://hls.arenacdn.com/cines/lkB5vynQme/lkB5vynQme.m3u8"
+      },
+      "publish" : {
+         "stream" : "lkB5vynQme?go44&amp;adbe-live-event=lkB5vynQme",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "go44",
+      "record" : true,
+      "expiration" : "2034-08-19T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:41:08.299Z",
+      "id" : "53f29c1ca023f108008db1dd",
+      "streamName" : "lkB5vynQme"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/l1x5DJhXQl?adbe-live-event=l1x5DJhXQl",
+         "hls" : "http://hls.arenacdn.com/cines/l1x5DJhXQl/l1x5DJhXQl.m3u8"
+      },
+      "publish" : {
+         "stream" : "l1x5DJhXQl?piano44&amp;adbe-live-event=l1x5DJhXQl",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "piano44",
+      "record" : true,
+      "expiration" : "2034-08-19T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:41:07.813Z",
+      "id" : "53f29c1ca023f108008db1dc",
+      "streamName" : "l1x5DJhXQl"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/lk5FwJhXXx?adbe-live-event=lk5FwJhXXx",
+         "hls" : "http://hls.arenacdn.com/cines/lk5FwJhXXx/lk5FwJhXXx.m3u8"
+      },
+      "publish" : {
+         "stream" : "lk5FwJhXXx?prelude43&amp;adbe-live-event=lk5FwJhXXx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "prelude43",
+      "record" : true,
+      "expiration" : "2034-08-19T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:41:07.243Z",
+      "id" : "53f29c1b6e7fba0a0000971a",
+      "streamName" : "lk5FwJhXXx"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/e1mYPyhQQx?adbe-live-event=e1mYPyhQQx",
+         "hls" : "http://hls.arenacdn.com/cines/e1mYPyhQQx/e1mYPyhQQx.m3u8"
+      },
+      "publish" : {
+         "stream" : "e1mYPyhQQx?prelude42&amp;adbe-live-event=e1mYPyhQQx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "prelude42",
+      "record" : true,
+      "expiration" : "2034-08-19T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:41:06.899Z",
+      "id" : "53f29c1a6e7fba0a00009719",
+      "streamName" : "e1mYPyhQQx"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gkIrP1hmmx?adbe-live-event=gkIrP1hmmx",
+         "hls" : "http://hls.arenacdn.com/cines/gkIrP1hmmx/gkIrP1hmmx.m3u8"
+      },
+      "publish" : {
+         "stream" : "gkIrP1hmmx?keyboard36&amp;adbe-live-event=gkIrP1hmmx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "keyboard36",
+      "record" : true,
+      "expiration" : "2034-08-19T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:41:06.421Z",
+      "id" : "53f29c14a023f108008db1db",
+      "streamName" : "gkIrP1hmmx"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/lJ8y4yhQ7e?adbe-live-event=lJ8y4yhQ7e",
+         "hls" : "http://hls.arenacdn.com/cines/lJ8y4yhQ7e/lJ8y4yhQ7e.m3u8"
+      },
+      "publish" : {
+         "stream" : "lJ8y4yhQ7e?song10&amp;adbe-live-event=lJ8y4yhQ7e",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "song10",
+      "record" : true,
+      "expiration" : "2034-08-19T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:36:44.956Z",
+      "id" : "53f29bbe6e7fba0a00009717",
+      "streamName" : "lJ8y4yhQ7e"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/g1k1EkhXml?adbe-live-event=g1k1EkhXml",
+         "hls" : "http://hls.arenacdn.com/cines/g1k1EkhXml/g1k1EkhXml.m3u8"
+      },
+      "publish" : {
+         "stream" : "g1k1EkhXml?drums9&amp;adbe-live-event=g1k1EkhXml",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "drums9",
+      "record" : true,
+      "expiration" : "2034-08-19T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:36:44.756Z",
+      "id" : "53f29bbd6e7fba0a00009716",
+      "streamName" : "g1k1EkhXml"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/xyi0m137Xl?adbe-live-event=xyi0m137Xl",
+         "hls" : "http://hls.arenacdn.com/cines/xyi0m137Xl/xyi0m137Xl.m3u8"
+      },
+      "publish" : {
+         "stream" : "xyi0m137Xl?world9&amp;adbe-live-event=xyi0m137Xl",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "world9",
+      "record" : true,
+      "expiration" : "2034-08-19T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:36:44.281Z",
+      "id" : "53f29bbda023f108008db1d8",
+      "streamName" : "xyi0m137Xl"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/xJLCXJ377x?adbe-live-event=xJLCXJ377x",
+         "hls" : "http://hls.arenacdn.com/cines/xJLCXJ377x/xJLCXJ377x.m3u8"
+      },
+      "publish" : {
+         "stream" : "xJLCXJ377x?earth8&amp;adbe-live-event=xJLCXJ377x",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "earth8",
+      "record" : true,
+      "expiration" : "2034-08-19T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:36:43.615Z",
+      "id" : "53f29bbca023f108008db1d7",
+      "streamName" : "xJLCXJ377x"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gkJw15s7mx?adbe-live-event=gkJw15s7mx",
+         "hls" : "http://hls.arenacdn.com/cines/gkJw15s7mx/gkJw15s7mx.m3u8"
+      },
+      "publish" : {
+         "stream" : "gkJw15s7mx?violin6&amp;adbe-live-event=gkJw15s7mx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "violin6",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:36:42.982Z",
+      "id" : "53f2934a6e7fba0a00009715",
+      "streamName" : "gkJw15s7mx"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gk7UkcomXe?adbe-live-event=gk7UkcomXe",
+         "hls" : "http://hls.arenacdn.com/cines/gk7UkcomXe/gk7UkcomXe.m3u8"
+      },
+      "publish" : {
+         "stream" : "gk7UkcomXe?earth5&amp;adbe-live-event=gk7UkcomXe",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "earth5",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:35:12.069Z",
+      "id" : "53f293496e7fba0a00009714",
+      "streamName" : "gk7UkcomXe"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/g1g81com7l?adbe-live-event=g1g81com7l",
+         "hls" : "http://hls.arenacdn.com/cines/g1g81com7l/g1g81com7l.m3u8"
+      },
+      "publish" : {
+         "stream" : "g1g81com7l?fans5&amp;adbe-live-event=g1g81com7l",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "fans5",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:35:11.550Z",
+      "id" : "53f293496e7fba0a00009713",
+      "streamName" : "g1g81com7l"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/lJNrk5jQme?adbe-live-event=lJNrk5jQme",
+         "hls" : "http://hls.arenacdn.com/cines/lJNrk5jQme/lJNrk5jQme.m3u8"
+      },
+      "publish" : {
+         "stream" : "lJNrk5jQme?pitch3&amp;adbe-live-event=lJNrk5jQme",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "pitch3",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:35:10.467Z",
+      "id" : "53f29347a023f108008db1d5",
+      "streamName" : "lJNrk5jQme"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/xyhzyqoQmg?adbe-live-event=xyhzyqoQmg",
+         "hls" : "http://hls.arenacdn.com/cines/xyhzyqoQmg/xyhzyqoQmg.m3u8"
+      },
+      "publish" : {
+         "stream" : "xyhzyqoQmg?cello59&amp;adbe-live-event=xyhzyqoQmg",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "cello59",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:35:09.769Z",
+      "id" : "53f29343a023f108008db1d4",
+      "streamName" : "xyhzyqoQmg"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/l1osnKsQQe?adbe-live-event=l1osnKsQQe",
+         "hls" : "http://hls.arenacdn.com/cines/l1osnKsQQe/l1osnKsQQe.m3u8"
+      },
+      "publish" : {
+         "stream" : "l1osnKsQQe?go57&amp;adbe-live-event=l1osnKsQQe",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "go57",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-19T00:35:08.825Z",
+      "id" : "53f29305a023f108008db1d2",
+      "streamName" : "l1osnKsQQe"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/x1KDotiX7g?adbe-live-event=x1KDotiX7g",
+         "hls" : "http://hls.arenacdn.com/cines/x1KDotiX7g/x1KDotiX7g.m3u8"
+      },
+      "publish" : {
+         "stream" : "x1KDotiX7g?treble25&amp;adbe-live-event=x1KDotiX7g",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "treble25",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-18T23:59:05.877Z",
+      "id" : "53f292e56e7fba0a00009711",
+      "streamName" : "x1KDotiX7g"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/e1VLqYiQQg?adbe-live-event=e1VLqYiQQg",
+         "hls" : "http://hls.arenacdn.com/cines/e1VLqYiQQg/e1VLqYiQQg.m3u8"
+      },
+      "publish" : {
+         "stream" : "e1VLqYiQQg?notes57&amp;adbe-live-event=e1VLqYiQQg",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "notes57",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-18T23:59:05.043Z",
+      "id" : "53f292c9a023f108008db1d0",
+      "streamName" : "e1VLqYiQQg"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gyxI9YsQQx?adbe-live-event=gyxI9YsQQx",
+         "hls" : "http://hls.arenacdn.com/cines/gyxI9YsQQx/gyxI9YsQQx.m3u8"
+      },
+      "publish" : {
+         "stream" : "gyxI9YsQQx?group57&amp;adbe-live-event=gyxI9YsQQx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "group57",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-18T23:59:04.493Z",
+      "id" : "53f292c9a023f108008db1cf",
+      "streamName" : "gyxI9YsQQx"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gkgMcFj7Qe?adbe-live-event=gkgMcFj7Qe",
+         "hls" : "http://hls.arenacdn.com/cines/gkgMcFj7Qe/gkgMcFj7Qe.m3u8"
+      },
+      "publish" : {
+         "stream" : "gkgMcFj7Qe?bass50&amp;adbe-live-event=gkgMcFj7Qe",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "bass50",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-18T23:59:03.881Z",
+      "id" : "53f292c2a023f108008db1ce",
+      "streamName" : "gkgMcFj7Qe"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/lyNJctj77x?adbe-live-event=lyNJctj77x",
+         "hls" : "http://hls.arenacdn.com/cines/lyNJctj77x/lyNJctj77x.m3u8"
+      },
+      "publish" : {
+         "stream" : "lyNJctj77x?minor46&amp;adbe-live-event=lyNJctj77x",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "minor46",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-18T23:58:59.820Z",
+      "id" : "53f292be6e7fba0a0000970f",
+      "streamName" : "lyNJctj77x"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gJFMWwomQx?adbe-live-event=gJFMWwomQx",
+         "hls" : "http://hls.arenacdn.com/cines/gJFMWwomQx/gJFMWwomQx.m3u8"
+      },
+      "publish" : {
+         "stream" : "gJFMWwomQx?pitch21&amp;adbe-live-event=gJFMWwomQx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "pitch21",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-18T23:57:57.905Z",
+      "id" : "53f28ea9809762080024f6a0",
+      "streamName" : "gJFMWwomQx"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/lyCbbPiXXl?adbe-live-event=lyCbbPiXXl",
+         "hls" : "http://hls.arenacdn.com/cines/lyCbbPiXXl/lyCbbPiXXl.m3u8"
+      },
+      "publish" : {
+         "stream" : "lyCbbPiXXl?cello20&amp;adbe-live-event=lyCbbPiXXl",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "cello20",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-18T23:57:25.182Z",
+      "id" : "53f28ea8809762080024f69e",
+      "streamName" : "lyCbbPiXXl"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/lytWbwsXQl?adbe-live-event=lytWbwsXQl",
+         "hls" : "http://hls.arenacdn.com/cines/lytWbwsXQl/lytWbwsXQl.m3u8"
+      },
+      "publish" : {
+         "stream" : "lytWbwsXQl?creative20&amp;adbe-live-event=lytWbwsXQl",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "creative20",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-18T23:56:57.718Z",
+      "id" : "53f28ea8809762080024f69d",
+      "streamName" : "lytWbwsXQl"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/g1hPKIoQ7g?adbe-live-event=g1hPKIoQ7g",
+         "hls" : "http://hls.arenacdn.com/cines/g1hPKIoQ7g/g1hPKIoQ7g.m3u8"
+      },
+      "publish" : {
+         "stream" : "g1hPKIoQ7g?bass5&amp;adbe-live-event=g1hPKIoQ7g",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "bass5",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-18T23:56:57.486Z",
+      "id" : "53f28de5809762080024f69c",
+      "streamName" : "g1hPKIoQ7g"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gkQPFLsQmg?adbe-live-event=gkQPFLsQmg",
+         "hls" : "http://hls.arenacdn.com/cines/gkQPFLsQmg/gkQPFLsQmg.m3u8"
+      },
+      "publish" : {
+         "stream" : "gkQPFLsQmg?treble4&amp;adbe-live-event=gkQPFLsQmg",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "treble4",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-18T23:56:50.588Z",
+      "id" : "53f28de4809762080024f69a",
+      "streamName" : "gkQPFLsQmg"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gkoLYLiXml?adbe-live-event=gkoLYLiXml",
+         "hls" : "http://hls.arenacdn.com/cines/gkoLYLiXml/gkoLYLiXml.m3u8"
+      },
+      "publish" : {
+         "stream" : "gkoLYLiXml?harmony3&amp;adbe-live-event=gkoLYLiXml",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "harmony3",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-18T23:56:46.196Z",
+      "id" : "53f28de3809762080024f699",
+      "streamName" : "gkoLYLiXml"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/gySUY8i7Ql?adbe-live-event=gySUY8i7Ql",
+         "hls" : "http://hls.arenacdn.com/cines/gySUY8i7Ql/gySUY8i7Ql.m3u8"
+      },
+      "publish" : {
+         "stream" : "gySUY8i7Ql?drums3&amp;adbe-live-event=gySUY8i7Ql",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "drums3",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-18T23:39:21.921Z",
+      "id" : "53f28de3809762080024f698",
+      "streamName" : "gySUY8i7Ql"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/lkz8tUo7me?adbe-live-event=lkz8tUo7me",
+         "hls" : "http://hls.arenacdn.com/cines/lkz8tUo7me/lkz8tUo7me.m3u8"
+      },
+      "publish" : {
+         "stream" : "lkz8tUo7me?music2&amp;adbe-live-event=lkz8tUo7me",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "music2",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-18T23:39:21.494Z",
+      "id" : "53f28de29db5be0a003cacb3",
+      "streamName" : "lkz8tUo7me"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/lJnBYIsQml?adbe-live-event=lJnBYIsQml",
+         "hls" : "http://hls.arenacdn.com/cines/lJnBYIsQml/lJnBYIsQml.m3u8"
+      },
+      "publish" : {
+         "stream" : "lJnBYIsQml?world2&amp;adbe-live-event=lJnBYIsQml",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "world2",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-18T23:39:21.068Z",
+      "id" : "53f28de2809762080024f697",
+      "streamName" : "lJnBYIsQml"
+   },
+   {
+      "name" : "my stream",
+      "play" : {
+         "rtmp" : "rtmp://fml.arenacdn.com/20C45E/cines/ekfsBIomXx?adbe-live-event=ekfsBIomXx",
+         "hls" : "http://hls.arenacdn.com/cines/ekfsBIomXx/ekfsBIomXx.m3u8"
+      },
+      "publish" : {
+         "stream" : "ekfsBIomXx?notes28&amp;adbe-live-event=ekfsBIomXx",
+         "url" : "rtmp://publish.arenacdn.com/20C45E/cines"
+      },
+      "password" : "notes28",
+      "record" : true,
+      "expiration" : "2034-08-18T00:00:00.000Z",
+      "assignedAt" : "2014-08-18T23:39:20.865Z",
+      "id" : "53f28d84809762080024f695",
+      "streamName" : "ekfsBIomXx"
+   }
+]
