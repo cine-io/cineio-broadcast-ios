@@ -64,8 +64,6 @@
 {
     [super viewWillAppear:animated];
     
-    
-    
     if (!self.orientationLocked) {
         if ([self.view isKindOfClass:[ACBRBroadcasterView class]]) {
             ACBRBroadcasterView *cbView = (ACBRBroadcasterView *)self.view;

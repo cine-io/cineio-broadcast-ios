@@ -61,14 +61,14 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
-  - ijkplayer (from `../../ijkplayer`)
+  - ijkplayer (from `/Users/WilliamShi/Desktop/HoopMediaPlayer/ijkplayer`)
   - OHHTTPStubs (~> 4.0)
   - VideoCore (from `../../VideoCore`)
   - XCTAsyncTestCase (from `https://github.com/iheartradio/xctest-additions.git`)
 
 EXTERNAL SOURCES:
   ijkplayer:
-    :path: ../../ijkplayer
+    :path: /Users/WilliamShi/Desktop/HoopMediaPlayer/ijkplayer
   VideoCore:
     :path: ../../VideoCore
   XCTAsyncTestCase:

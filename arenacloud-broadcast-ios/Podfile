@@ -17,4 +17,5 @@ pod 'OHHTTPStubs',        '~> 4.0'
 pod 'VideoCore', :path => '../../VideoCore'
 
 # Uncomment this line if working on ijkplayer
-pod 'ijkplayer', :path => '../../ijkplayer'
+#pod 'ijkplayer', :path => '../../ijkplayer'
+pod 'ijkplayer', :path => '/Users/WilliamShi/Desktop/HoopMediaPlayer/ijkplayer'

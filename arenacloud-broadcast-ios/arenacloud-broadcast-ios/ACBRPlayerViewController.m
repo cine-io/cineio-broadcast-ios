@@ -110,7 +110,7 @@
     
     //for test
 //    NSURL *theMovieURL = [NSURL URLWithString:@"http://v.iask.com/v_play_ipad.php?vid=99264895"];
-    NSURL *theMovieURL = [NSURL URLWithString:stream.playUrlHLS];
+    NSURL *theMovieURL = [NSURL URLWithString:stream.playUrlRTMP];
     
     [IJKFFMoviePlayerController setLogReport:YES];
     IJKFFOptions *options = [IJKFFOptions optionsByDefault];
@@ -262,7 +262,7 @@
         
         //for test
         //NSURL *theMovieURL = [NSURL URLWithString:@"http://v.iask.com/v_play_ipad.php?vid=99264895"];
-        NSURL *theMovieURL = [NSURL URLWithString:stream.playUrlHLS];
+        NSURL *theMovieURL = [NSURL URLWithString:stream.playUrlRTMP];
         
         [IJKFFMoviePlayerController setLogReport:YES];
         IJKFFOptions *options = [IJKFFOptions optionsByDefault];
