@@ -20,7 +20,7 @@ to any other device that supports RTMP or HLS streaming (iOS, Android, web).
 ## Installation
 
 The easiest way to use the SDK is via [CocoaPods][cocoapods]. Create a new
-XCode project with a file named `Podfile` that contains at least the
+Xcode project with a file named `Podfile` that contains at least the
 following:
 
 ```ruby
@@ -163,7 +163,7 @@ straight forward.
 
 ### Storyboard Setup
 
-If you're using XCode's Storyboards to build your user interface, our UI
+If you're using Xcode's Storyboards to build your user interface, our UI
 components should work seamlessly. To use them, follow these steps:
 
 1. Make your view controller inherit from `CinePlayerViewController` rather than `UIViewController`.
@@ -265,7 +265,7 @@ this is in the `AppDelegate didFinishLaunchingWithOptions` method:
 
 #### Storyboard Setup
 
-If you're using XCode's Storyboards to build your user interface, our UI
+If you're using Xcode's Storyboards to build your user interface, our UI
 components should work seamlessly. To use them, follow these steps:
 
 1. Make your view controller inherit from `CineBroadcasterViewController` rather than `UIViewController`.
